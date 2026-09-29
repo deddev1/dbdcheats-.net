@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Completes project-zomboid-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
+ * Completes dbd-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
  * Run: node scripts/complete-seo-audit.mjs
  */
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
@@ -11,57 +11,57 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const NODE = 'C:\\Program Files\\nodejs\\node.exe';
 
 const EXTRA_PAGES = [
-	{ id: 'hacks', dir: 'project-zomboid-cheats', pageId: 'hacks' },
-	{ id: 'cheat-download', dir: 'zomboid-cheat-download', pageId: 'cheat-download' },
-	{ id: 'mod-menu', dir: 'zomboid-mod-menu', pageId: 'mod-menu' },
-	{ id: 'soft-aim', dir: 'project-zomboid-soft-aim', pageId: 'soft-aim' },
-	{ id: 'best-cheats', dir: 'best-project-zomboid-cheats', pageId: 'best-cheats' },
-	{ id: 'aimbot-hack', dir: 'project-zomboid-aimbot-hack', pageId: 'aimbot-hack' },
-	{ id: 'esp-hack', dir: 'project-zomboid-esp-hack', pageId: 'esp-hack' },
-	{ id: 'unlock-all', dir: 'zomboid-unlock-all', pageId: 'unlock-all' },
+	{ id: 'hacks', dir: 'dbd-cheats', pageId: 'hacks' },
+	{ id: 'cheat-download', dir: 'dbd-cheat-download', pageId: 'cheat-download' },
+	{ id: 'mod-menu', dir: 'dbd-mod-menu', pageId: 'mod-menu' },
+	{ id: 'soft-aim', dir: 'dbd-soft-aim', pageId: 'soft-aim' },
+	{ id: 'best-cheats', dir: 'best-dbd-cheats', pageId: 'best-cheats' },
+	{ id: 'aimbot-hack', dir: 'dbd-aimbot-hack', pageId: 'aimbot-hack' },
+	{ id: 'esp-hack', dir: 'dbd-esp-hack', pageId: 'esp-hack' },
+	{ id: 'unlock-all', dir: 'dbd-unlock-all', pageId: 'unlock-all' },
 ];
 
 const GLOBAL_REPLACEMENTS = [
 	[/warzone-warzone/g, 'rust'],
-	[/eac-bypass-project-zomboid-warzone/g, 'eac-bypass-project-zomboid'],
-	[/Call of Duty: Warzone/g, 'Project Zomboid'],
-	[/Call of Duty Warzone/g, 'Project Zomboid'],
-	[/Call of Duty/g, 'Project Zomboid'],
-	[/Warzone Wallhack/g, 'Project Zomboid Wallhack'],
-	[/Warzone Radar Hack/g, 'Project Zomboid Radar Hack'],
-	[/Warzone Cheat Features/g, 'Project Zomboid Cheat Features'],
-	[/Warzone Cheat Pricing/g, 'Project Zomboid Cheat Pricing'],
-	[/Warzone Cheat Setup/g, 'Project Zomboid Cheat Setup'],
-	[/Warzone Cheat Status/g, 'Project Zomboid Cheat Status'],
-	[/Warzone Cheat Support/g, 'Project Zomboid Cheat Support'],
-	[/Warzone group fight/g, 'Project Zomboid group fight'],
-	[/Warzone squad builder/g, 'Project Zomboid loadout builder'],
-	[/Warzone store header/g, 'Project Zomboid header'],
-	[/Warzone wasteland combat/g, 'Project Zomboid loot runs combat'],
-	[/Warzone loadout builder/g, 'Project Zomboid loadout builder'],
-	[/Warzone pricing/g, 'Project Zomboid pricing'],
-	[/Warzone Project Zomboid anti-cheat/g, 'Project Zomboid Project Zomboid anti-cheat'],
-	[/on Warzone/g, 'on Project Zomboid'],
-	[/for Warzone/g, 'for Project Zomboid'],
-	[/Warzone guides/g, 'Project Zomboid guides'],
-	[/Warzone guide/g, 'Project Zomboid guide'],
-	[/Warzone hileleri/g, 'Project Zomboid hileleri'],
-	[/Warzone hile/g, 'Project Zomboid hile'],
-	[/Warzone hileleri/g, 'Project Zomboid hileleri'],
-	[/cheatów Warzone/g, 'cheatów Project Zomboid'],
-	[/cheat Warzone/g, 'cheat Project Zomboid'],
-	[/cheats Warzone/g, 'cheats Project Zomboid'],
-	[/trucos Warzone/g, 'trucos Project Zomboid'],
-	[/triche Warzone/g, 'triche Project Zomboid'],
-	[/trucchi Warzone/g, 'trucchi Project Zomboid'],
-	[/Wallhack Warzone/g, 'Project Zomboid Wallhack'],
-	[/cheat Warzone undetected/g, 'cheat Project Zomboid undetected'],
-	[/cheats Warzone undetected/g, 'cheats Project Zomboid undetected'],
+	[/eac-bypass-dbd-warzone/g, 'eac-bypass-dbd'],
+	[/Call of Duty: Warzone/g, 'Dead by Daylight'],
+	[/Call of Duty Warzone/g, 'Dead by Daylight'],
+	[/Call of Duty/g, 'Dead by Daylight'],
+	[/Warzone Wallhack/g, 'Dead by Daylight Wallhack'],
+	[/Warzone Radar Hack/g, 'Dead by Daylight Radar Hack'],
+	[/Warzone Cheat Features/g, 'Dead by Daylight Cheat Features'],
+	[/Warzone Cheat Pricing/g, 'Dead by Daylight Cheat Pricing'],
+	[/Warzone Cheat Setup/g, 'Dead by Daylight Cheat Setup'],
+	[/Warzone Cheat Status/g, 'Dead by Daylight Cheat Status'],
+	[/Warzone Cheat Support/g, 'Dead by Daylight Cheat Support'],
+	[/Warzone group fight/g, 'Dead by Daylight group fight'],
+	[/Warzone squad builder/g, 'Dead by Daylight loadout builder'],
+	[/Warzone store header/g, 'Dead by Daylight header'],
+	[/Warzone wasteland combat/g, 'Dead by Daylight generator routes combat'],
+	[/Warzone loadout builder/g, 'Dead by Daylight loadout builder'],
+	[/Warzone pricing/g, 'Dead by Daylight pricing'],
+	[/Warzone Dead by Daylight anti-cheat/g, 'Dead by Daylight Dead by Daylight anti-cheat'],
+	[/on Warzone/g, 'on Dead by Daylight'],
+	[/for Warzone/g, 'for Dead by Daylight'],
+	[/Warzone guides/g, 'Dead by Daylight guides'],
+	[/Warzone guide/g, 'Dead by Daylight guide'],
+	[/Warzone hileleri/g, 'Dead by Daylight hileleri'],
+	[/Warzone hile/g, 'Dead by Daylight hile'],
+	[/Warzone hileleri/g, 'Dead by Daylight hileleri'],
+	[/cheatów Warzone/g, 'cheatów Dead by Daylight'],
+	[/cheat Warzone/g, 'cheat Dead by Daylight'],
+	[/cheats Warzone/g, 'cheats Dead by Daylight'],
+	[/trucos Warzone/g, 'trucos Dead by Daylight'],
+	[/triche Warzone/g, 'triche Dead by Daylight'],
+	[/trucchi Warzone/g, 'trucchi Dead by Daylight'],
+	[/Wallhack Warzone/g, 'Dead by Daylight Wallhack'],
+	[/cheat Warzone undetected/g, 'cheat Dead by Daylight undetected'],
+	[/cheats Warzone undetected/g, 'cheats Dead by Daylight undetected'],
 	[/Verdansk beams/g, 'long-range AR beams'],
 	[/Resurgence room clears/g, 'close-quarters room clears'],
-	[/Verdansk and Urzikstan/g, 'Project Zomboid and loot objectives'],
-	[/Verdansk, Urzikstan/g, 'Project Zomboid, loot objectives'],
-	[/loot runs and Resurgence/g, 'loot runs and loot objectives'],
+	[/Verdansk and Urzikstan/g, 'Dead by Daylight and generator objectives'],
+	[/Verdansk, Urzikstan/g, 'Dead by Daylight, generator objectives'],
+	[/generator routes and Resurgence/g, 'generator routes and generator objectives'],
 	[/Activision's anti-cheat/g, "Embark' anti-cheat"],
 	[/Activision anti-cheat/g, 'Embark anti-cheat'],
 	[/Activision ships/g, 'Embark ships'],
@@ -69,12 +69,12 @@ const GLOBAL_REPLACEMENTS = [
 	[/Activision bans/g, 'Embark bans'],
 	[/Activision/g, 'Embark'],
 	[/ricochet/gi, 'eac'],
-	[/Ricochet/g, 'Project Zomboid anti-cheat (EAC)'],
-	[/call-of-duty-warzone-cheats/g, 'project-zomboid-cheats'],
+	[/Ricochet/g, 'Dead by Daylight anti-cheat (EAC)'],
+	[/call-of-duty-warzone-cheats/g, 'dbd-cheats'],
 	[/call-of-duty-warzone/g, 'rust'],
-	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Project Zomboid'],
+	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Dead by Daylight'],
 	[/How ESP wallhack, radar, and Aimbot rebuild after Call of Duty anti-cheat/g,
-		'How ESP wallhack, radar, and Aimbot rebuild after Project Zomboid anti-cheat'],
+		'How ESP wallhack, radar, and Aimbot rebuild after Dead by Daylight anti-cheat'],
 ];
 
 /** Remove Zadeyo from meta description/title strings only */
@@ -90,7 +90,7 @@ function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, 'instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Project Zomboid Cheats')
+		.replace(/Buy on Zadeyo/g, 'Buy Dead by Daylight Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -169,38 +169,38 @@ import LocalizedPage from '../../components/LocalizedPage.astro';
 async function fixLocalesBlogUi() {
 	const file = path.join(ROOT, 'src', 'data', 'i18n', 'locales.ts');
 	let content = await readFile(file, 'utf8');
-	content = content.replace(/Warzone guides/g, 'Project Zomboid guides');
-	content = content.replace(/Warzone guide/g, 'Project Zomboid guide');
-	content = content.replace(/Warzone hileleri/g, 'Project Zomboid hileleri');
-	content = content.replace(/Warzone hile/g, 'Project Zomboid hile');
-	content = content.replace(/cheat Warzone/g, 'cheat Project Zomboid');
-	content = content.replace(/cheats Warzone/g, 'cheats Project Zomboid');
-	content = content.replace(/trucos Warzone/g, 'trucos Project Zomboid');
-	content = content.replace(/triche Warzone/g, 'triche Project Zomboid');
-	content = content.replace(/trucchi Warzone/g, 'trucchi Project Zomboid');
-	content = content.replace(/cheatów Warzone/g, 'cheatów Project Zomboid');
-	content = content.replace(/читов Warzone/g, 'читов Project Zomboid');
-	content = content.replace(/читів Warzone/g, 'читів Project Zomboid');
-	content = content.replace(/Warzoneチート/g, 'Project Zomboidチート');
-	content = content.replace(/Warzone 치트/g, 'Project Zomboid 치트');
-	content = content.replace(/Warzone作弊/g, 'Project Zomboid作弊');
-	content = content.replace(/Warzone rehberleri/g, 'Project Zomboid rehberleri');
-	content = content.replace(/Warzone gidsen/g, 'Project Zomboid gidsen');
-	content = content.replace(/Warzone průvodce/g, 'Project Zomboid průvodce');
-	content = content.replace(/Warzone guider/g, 'Project Zomboid guider');
-	content = content.replace(/Warzone related/g, 'Project Zomboid related');
-	content = content.replace(/Warzone ガイド/g, 'Project Zomboid ガイド');
-	content = content.replace(/Warzone 가이드/g, 'Project Zomboid 가이드');
-	content = content.replace(/Warzone指南/g, 'Project Zomboid指南');
-	content = content.replace(/Warzone गाइड/g, 'Project Zomboid गाइड');
-	content = content.replace(/Warzone panduan/g, 'Project Zomboid panduan');
-	content = content.replace(/Warzone คู่มือ/g, 'Project Zomboid คู่มือ');
-	content = content.replace(/Warzone hướng dẫn/g, 'Project Zomboid hướng dẫn');
+	content = content.replace(/Warzone guides/g, 'Dead by Daylight guides');
+	content = content.replace(/Warzone guide/g, 'Dead by Daylight guide');
+	content = content.replace(/Warzone hileleri/g, 'Dead by Daylight hileleri');
+	content = content.replace(/Warzone hile/g, 'Dead by Daylight hile');
+	content = content.replace(/cheat Warzone/g, 'cheat Dead by Daylight');
+	content = content.replace(/cheats Warzone/g, 'cheats Dead by Daylight');
+	content = content.replace(/trucos Warzone/g, 'trucos Dead by Daylight');
+	content = content.replace(/triche Warzone/g, 'triche Dead by Daylight');
+	content = content.replace(/trucchi Warzone/g, 'trucchi Dead by Daylight');
+	content = content.replace(/cheatów Warzone/g, 'cheatów Dead by Daylight');
+	content = content.replace(/читов Warzone/g, 'читов Dead by Daylight');
+	content = content.replace(/читів Warzone/g, 'читів Dead by Daylight');
+	content = content.replace(/Warzoneチート/g, 'Dead by Daylightチート');
+	content = content.replace(/Warzone 치트/g, 'Dead by Daylight 치트');
+	content = content.replace(/Warzone作弊/g, 'Dead by Daylight作弊');
+	content = content.replace(/Warzone rehberleri/g, 'Dead by Daylight rehberleri');
+	content = content.replace(/Warzone gidsen/g, 'Dead by Daylight gidsen');
+	content = content.replace(/Warzone průvodce/g, 'Dead by Daylight průvodce');
+	content = content.replace(/Warzone guider/g, 'Dead by Daylight guider');
+	content = content.replace(/Warzone related/g, 'Dead by Daylight related');
+	content = content.replace(/Warzone ガイド/g, 'Dead by Daylight ガイド');
+	content = content.replace(/Warzone 가이드/g, 'Dead by Daylight 가이드');
+	content = content.replace(/Warzone指南/g, 'Dead by Daylight指南');
+	content = content.replace(/Warzone गाइड/g, 'Dead by Daylight गाइड');
+	content = content.replace(/Warzone panduan/g, 'Dead by Daylight panduan');
+	content = content.replace(/Warzone คู่มือ/g, 'Dead by Daylight คู่มือ');
+	content = content.replace(/Warzone hướng dẫn/g, 'Dead by Daylight hướng dẫn');
 	await writeFile(file, content, 'utf8');
 	console.log('Fixed locales.ts blogUi');
 }
 
-console.log('=== Project Zomboid Cheats SEO completion ===\n');
+console.log('=== Dead by Daylight Cheats SEO completion ===\n');
 await applyGlobalFixes();
 await createExtraPages();
 await fixLocalesBlogUi();

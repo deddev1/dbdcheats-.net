@@ -1,0 +1,443 @@
+---
+interface Slide {
+	title: string;
+	summary: string;
+	items: readonly string[];
+	imageSrc: string;
+	imageSrcSet?: string;
+	imageSizes?: string;
+	imageAlt: string;
+}
+
+interface Props {
+	slides: Slide[];
+	title: string;
+	subtitle?: string;
+}
+
+const { slides, title, subtitle } = Astro.props;
+---
+
+<section class="feat-carousel" aria-labelledby="feat-carousel-title" data-feat-carousel>
+	<header class="feat-carousel__head">
+		<h2 id="feat-carousel-title">{title}</h2>
+		{subtitle && <p>{subtitle}</p>}
+	</header>
+
+	<div class="feat-carousel__frame">
+		<div class="feat-carousel__viewport">
+			{
+				slides.map((slide, index) => (
+					<article
+						class:list={['feat-carousel__slide', index === 0 && 'is-active']}
+						data-feat-slide={index}
+						aria-hidden={index === 0 ? 'false' : 'true'}
+						hidden={index !== 0}
+					>
+						<figure class="feat-carousel__media">
+							<img
+								src={slide.imageSrc}
+								srcset={slide.imageSrcSet}
+								sizes={slide.imageSizes ?? '(max-width: 860px) 100vw, 52vw'}
+								alt={slide.imageAlt}
+								width="720"
+								height="450"
+								loading={index === 0 ? 'eager' : 'lazy'}
+								decoding="async"
+								fetchpriority={index === 0 ? 'low' : undefined}
+								draggable="false"
+							/>
+						</figure>
+
+						<div class="feat-carousel__copy">
+							<span class="feat-carousel__index">
+								{String(index + 1).padStart(2, '0')}
+								<em>/</em>
+								{String(slides.length).padStart(2, '0')}
+							</span>
+							<h3>{slide.title}</h3>
+							<p>{slide.summary}</p>
+							<ul>
+								{slide.items.slice(0, 6).map((item) => (
+									<li>{item}</li>
+								))}
+							</ul>
+							{slide.items.length > 6 && (
+								<span class="feat-carousel__more">+{slide.items.length - 6} more in full breakdown</span>
+							)}
+						</div>
+					</article>
+				))
+			}
+		</div>
+
+		<nav class="feat-carousel__nav" aria-label="Feature categories">
+			<button type="button" class="feat-carousel__arrow" data-feat-prev aria-label="Previous">
+				<svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+					<path d="m15 6-6 6 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</button>
+
+			<div class="feat-carousel__tabs" role="tablist">
+				{
+					slides.map((slide, index) => (
+						<button
+							type="button"
+							class:list={['feat-carousel__tab', index === 0 && 'is-active']}
+							role="tab"
+							aria-selected={index === 0 ? 'true' : 'false'}
+							data-feat-tab={index}
+						>
+							{slide.title}
+						</button>
+					))
+				}
+			</div>
+
+			<button type="button" class="feat-carousel__arrow" data-feat-next aria-label="Next">
+				<svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+					<path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</button>
+		</nav>
+	</div>
+</section>
+
+<script>
+	function initFeatCarousel(root: HTMLElement) {
+		const slides = [...root.querySelectorAll<HTMLElement>('[data-feat-slide]')];
+		const tabs = [...root.querySelectorAll<HTMLButtonElement>('[data-feat-tab]')];
+		const prev = root.querySelector<HTMLButtonElement>('[data-feat-prev]');
+		const next = root.querySelector<HTMLButtonElement>('[data-feat-next]');
+		const viewport = root.querySelector<HTMLElement>('.feat-carousel__viewport');
+		if (!slides.length) return;
+
+		let index = 0;
+
+		const go = (nextIndex: number) => {
+			index = (nextIndex + slides.length) % slides.length;
+			slides.forEach((slide, i) => {
+				const active = i === index;
+				slide.classList.toggle('is-active', active);
+				slide.hidden = !active;
+				slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+			});
+			tabs.forEach((tab, i) => {
+				const active = i === index;
+				tab.classList.toggle('is-active', active);
+				tab.setAttribute('aria-selected', active ? 'true' : 'false');
+			});
+		};
+
+		prev?.addEventListener('click', () => go(index - 1));
+		next?.addEventListener('click', () => go(index + 1));
+		tabs.forEach((tab) => {
+			tab.addEventListener('click', () => go(Number(tab.dataset.featTab ?? 0)));
+		});
+
+		// Lock height so slide swaps never jump page scroll.
+		const lockHeight = () => {
+			if (!viewport) return;
+			viewport.style.minHeight = '';
+			let max = 0;
+			slides.forEach((slide) => {
+				const wasHidden = slide.hidden;
+				slide.hidden = false;
+				max = Math.max(max, slide.getBoundingClientRect().height);
+				slide.hidden = wasHidden;
+			});
+			if (max > 0) viewport.style.minHeight = `${Math.ceil(max)}px`;
+		};
+
+		lockHeight();
+		window.addEventListener('resize', lockHeight, { passive: true });
+	}
+
+	document.querySelectorAll<HTMLElement>('[data-feat-carousel]').forEach(initFeatCarousel);
+</script>
+
+<style>
+	.feat-carousel {
+		display: grid;
+		gap: 1.35rem;
+		width: 100%;
+		margin: 0;
+		overflow-anchor: none;
+	}
+
+	.feat-carousel__viewport {
+		position: relative;
+		min-height: 18rem;
+		overflow-anchor: none;
+	}
+
+	.feat-carousel__head {
+		display: grid;
+		gap: 0.45rem;
+		justify-items: center;
+		text-align: center;
+	}
+
+	.feat-carousel__head h2 {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.7rem, 3.4vw, 2.2rem);
+		font-weight: 700;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: var(--color-ink);
+	}
+
+	.feat-carousel__head p {
+		margin: 0;
+		max-width: 32rem;
+		color: var(--color-muted);
+		font-size: 0.95rem;
+		line-height: 1.6;
+	}
+
+	.feat-carousel__frame {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.feat-carousel__slide {
+		display: none;
+		grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+		gap: clamp(1.1rem, 3vw, 2rem);
+		align-items: center;
+	}
+
+	.feat-carousel__slide.is-active {
+		display: grid;
+		animation: feat-fade 0.45s ease;
+	}
+
+	@keyframes feat-fade {
+		from {
+			opacity: 0;
+			transform: translateY(10px);
+		}
+		to {
+			opacity: 1;
+			transform: none;
+		}
+	}
+
+	.feat-carousel__media {
+		margin: 0;
+		aspect-ratio: 16 / 10;
+		border-radius: 1.1rem;
+		overflow: hidden;
+		border: 1px solid rgba(41, 34, 47, 0.9);
+		background: #101014;
+		box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+	}
+
+	.feat-carousel__media img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center top;
+		display: block;
+	}
+
+	.feat-carousel__copy {
+		display: grid;
+		align-content: center;
+		gap: 0.7rem;
+		min-width: 0;
+	}
+
+	.feat-carousel__index {
+		display: inline-flex;
+		align-items: baseline;
+		gap: 0.25rem;
+		font-family: var(--font-display);
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--color-orchid);
+	}
+
+	.feat-carousel__index em {
+		font-style: normal;
+		color: var(--color-faint);
+		font-weight: 500;
+	}
+
+	.feat-carousel__copy h3 {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.35rem, 2.6vw, 1.75rem);
+		font-weight: 700;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color: var(--color-ink);
+		line-height: 1.15;
+	}
+
+	.feat-carousel__copy > p {
+		margin: 0;
+		color: var(--color-muted);
+		font-size: 0.92rem;
+		line-height: 1.6;
+		max-width: 34ch;
+	}
+
+	.feat-carousel__copy ul {
+		margin: 0.25rem 0 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 0.45rem;
+	}
+
+	.feat-carousel__copy li {
+		position: relative;
+		padding-left: 1rem;
+		color: var(--color-ink);
+		font-size: 0.9rem;
+		font-weight: 600;
+		line-height: 1.4;
+	}
+
+	.feat-carousel__copy li::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0.5rem;
+		width: 0.35rem;
+		height: 0.35rem;
+		border-radius: 999px;
+		background: var(--color-orchid);
+		opacity: 0.85;
+	}
+
+	.feat-carousel__more {
+		color: var(--color-faint);
+		font-size: 0.78rem;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+	}
+
+	.feat-carousel__nav {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		gap: 0.65rem;
+		align-items: center;
+	}
+
+	.feat-carousel__arrow {
+		appearance: none;
+		width: 2.4rem;
+		height: 2.4rem;
+		border-radius: 999px;
+		border: 1px solid rgba(41, 34, 47, 0.95);
+		background: rgba(22, 11, 32, 0.85);
+		color: var(--color-ink);
+		display: inline-grid;
+		place-items: center;
+		cursor: pointer;
+		transition:
+			border-color 0.2s ease,
+			background 0.2s ease,
+			color 0.2s ease;
+	}
+
+	.feat-carousel__arrow:hover {
+		border-color: rgba(109, 40, 217, 0.55);
+		background: rgba(109, 40, 217, 0.14);
+		color: #F2EFF5;
+	}
+
+	.feat-carousel__tabs {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.35rem;
+	}
+
+	.feat-carousel__tab {
+		appearance: none;
+		border: 0;
+		background: transparent;
+		color: var(--color-faint);
+		padding: 0.55rem 0.85rem;
+		border-radius: 999px;
+		font-family: var(--font-display);
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition:
+			color 0.2s ease,
+			background 0.2s ease;
+	}
+
+	.feat-carousel__tab:hover {
+		color: var(--color-ink);
+	}
+
+	.feat-carousel__tab.is-active {
+		color: var(--color-ink);
+		background: rgba(109, 40, 217, 0.16);
+	}
+
+	@media (max-width: 860px) {
+		.feat-carousel__slide.is-active {
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+
+		.feat-carousel__media {
+			max-height: 15rem;
+		}
+
+		.feat-carousel__copy > p {
+			max-width: none;
+		}
+	}
+
+	@media (max-width: 560px) {
+		.feat-carousel__nav {
+			grid-template-columns: auto auto;
+			justify-content: space-between;
+		}
+
+		.feat-carousel__tabs {
+			grid-column: 1 / -1;
+			order: 3;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+			overscroll-behavior-x: contain;
+			touch-action: pan-x;
+			scrollbar-width: none;
+			padding-bottom: 0.15rem;
+		}
+
+		.feat-carousel__tabs::-webkit-scrollbar {
+			display: none;
+		}
+
+		.feat-carousel__tab {
+			flex: 0 0 auto;
+			min-height: var(--touch-min);
+		}
+
+		.feat-carousel__arrow {
+			width: var(--touch-min);
+			height: var(--touch-min);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.feat-carousel__slide.is-active {
+			animation: none;
+		}
+	}
+</style>

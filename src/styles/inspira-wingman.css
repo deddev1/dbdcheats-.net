@@ -39,20 +39,33 @@
 	transition: filter 0.2s ease, transform 0.2s ease;
 }
 
+.wingman__character-wrap::before {
+	content: '';
+	position: absolute;
+	inset: 8% -12% -6% -8%;
+	z-index: -1;
+	border-radius: 50%;
+	background:
+		radial-gradient(ellipse at 45% 55%, rgba(109, 40, 217, 0.22) 0%, transparent 58%),
+		radial-gradient(ellipse at 70% 70%, rgba(165, 29, 45, 0.14) 0%, transparent 55%);
+	filter: blur(18px);
+	pointer-events: none;
+}
+
 .wingman__character-wrap:hover {
 	filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.55));
 	transform: translateY(-2px);
 }
 
 .wingman__character-wrap:focus-visible {
-	outline: 2px solid #d2ae76;
+	outline: 2px solid #6D28D9;
 	outline-offset: 4px;
 	border-radius: 0.35rem;
 }
 
 .wingman__character {
 	display: block;
-	width: clamp(5.5rem, 14vw, 8.5rem);
+	width: clamp(6.5rem, 16vw, 10rem);
 	height: auto;
 	background: transparent;
 	user-select: none;
@@ -65,7 +78,7 @@
 	bottom: calc(100% + 0.35rem);
 	margin: 0;
 	padding: 0;
-	color: #d2ae76;
+	color: #6D28D9;
 	font-size: clamp(0.8rem, 1.6vw, 1rem);
 	font-weight: 800;
 	letter-spacing: 0.06em;

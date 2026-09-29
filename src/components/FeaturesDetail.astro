@@ -1,5 +1,5 @@
 ---
-import { featureGallery, featureSectionImages } from '../data/zomboid';
+import { featureGallery, featureSectionImages } from '../data/dbd';
 import { getUi } from '../data/i18n';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productFeatureDetails, productInfo, siteConfig } from '../data/site';
@@ -64,10 +64,10 @@ const responsiveImage = (src: string) => ({
 		})
 	}
 
-	<section class="features-detail__gallery" aria-label="Project Zomboid cheats screenshots">
+	<section class="features-detail__gallery" aria-label="Dead by Daylight cheats screenshots">
 		<header class="features-detail__gallery-head">
 			<h2>In-game screenshots</h2>
-			<p>Menu, ESP, aimbot, and radar from live Project Zomboid sessions.</p>
+			<p>Menu, ESP, aimbot, and radar from live Dead by Daylight matches.</p>
 		</header>
 		<div class="features-detail__gallery-grid">
 			{
@@ -124,7 +124,7 @@ const responsiveImage = (src: string) => ({
 		padding: clamp(1rem, 2vw, 1.35rem);
 		border-radius: var(--radius-card);
 		border: 1px solid var(--color-border);
-		background: rgba(17, 21, 20, 0.55);
+		background: rgba(16, 16, 20, 0.55);
 	}
 
 	@media (min-width: 768px) {
@@ -138,7 +138,7 @@ const responsiveImage = (src: string) => ({
 		width: 100%;
 		max-width: 240px;
 		aspect-ratio: 16 / 10;
-		border: 1px solid rgba(104, 112, 82, 0.16);
+		border: 1px solid rgba(109, 40, 217, 0.16);
 		border-radius: 0.75rem;
 		overflow: hidden;
 	}
@@ -172,7 +172,7 @@ const responsiveImage = (src: string) => ({
 		display: grid;
 		gap: 0.45rem;
 		padding-bottom: 0.85rem;
-		border-bottom: 1px solid rgba(104, 112, 82, 0.12);
+		border-bottom: 1px solid rgba(109, 40, 217, 0.12);
 	}
 
 	.features-detail__section-head h2 {
@@ -206,7 +206,7 @@ const responsiveImage = (src: string) => ({
 		column-gap: 0.55rem;
 		row-gap: 0.2rem;
 		padding: 0.75rem 0;
-		border-bottom: 1px solid rgba(104, 112, 82, 0.1);
+		border-bottom: 1px solid rgba(109, 40, 217, 0.1);
 		align-items: start;
 	}
 
@@ -253,7 +253,7 @@ const responsiveImage = (src: string) => ({
 		padding: clamp(1rem, 2vw, 1.35rem);
 		border-radius: var(--radius-card);
 		border: 1px solid var(--color-border);
-		background: rgba(17, 21, 20, 0.55);
+		background: rgba(16, 16, 20, 0.55);
 	}
 
 	.features-detail__gallery-head {
@@ -288,7 +288,7 @@ const responsiveImage = (src: string) => ({
 	.features-detail__gallery-item {
 		margin: 0;
 		aspect-ratio: 16 / 10;
-		border: 1px solid rgba(104, 112, 82, 0.12);
+		border: 1px solid rgba(109, 40, 217, 0.12);
 		border-radius: 0.6rem;
 		overflow: hidden;
 	}
@@ -325,7 +325,7 @@ const responsiveImage = (src: string) => ({
 		padding: 0.95rem 1.35rem;
 		border-radius: 0.75rem;
 		border: 1px solid var(--color-border);
-		background: rgba(17, 21, 20, 0.9);
+		background: rgba(16, 16, 20, 0.9);
 		color: var(--color-muted);
 		font-weight: 650;
 		text-decoration: none;
@@ -334,7 +334,7 @@ const responsiveImage = (src: string) => ({
 
 	.features-detail__checkout-link:hover {
 		color: var(--color-ink);
-		border-color: rgba(104, 112, 82, 0.45);
+		border-color: rgba(109, 40, 217, 0.45);
 	}
 
 	@media (max-width: 767px) {

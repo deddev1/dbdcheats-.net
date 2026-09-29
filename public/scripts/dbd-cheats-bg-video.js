@@ -1,5 +1,5 @@
 /**
- * Plays muted Project Zomboid Cheats background clips without blocking interaction.
+ * Plays muted Dead by Daylight Cheats background clips without blocking interaction.
  * - hero: eager muted autoplay (real src in HTML; poster is first paint)
  * - product / lazy: hydrate data-src only when near the viewport
  */
@@ -118,7 +118,7 @@
 		if (reduceMq.matches) return;
 
 		var heroes = Array.prototype.slice.call(
-			document.querySelectorAll('[data-zomboid-cheats-video="hero"]'),
+			document.querySelectorAll('[data-dbd-cheats-video="hero"]'),
 		);
 		if (!heroes.length) return;
 
@@ -140,7 +140,7 @@
 	observeLazy(
 		Array.prototype.slice.call(
 			document.querySelectorAll(
-				'[data-zomboid-cheats-video="product"], [data-zomboid-cheats-video="lazy"]',
+				'[data-dbd-cheats-video="product"], [data-dbd-cheats-video="lazy"]',
 			),
 		),
 	);

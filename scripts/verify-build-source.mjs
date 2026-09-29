@@ -13,16 +13,17 @@ try {
 
 console.log(`[verify-build] commit=${commit} package=${packageName}`);
 
-if (packageName === 'warframe-cheats') {
+const stalePackages = new Set(['warframe-cheats', 'project-zomboid-cheats', 'project-zomboid-cheats-com']);
+if (stalePackages.has(packageName)) {
 	console.error(
-		'[verify-build] Cloudflare is building a stale Warframe commit. Cancel retry and deploy latest main (228547e or newer).',
+		`[verify-build] Cloudflare is building a stale package (${packageName}). Cancel retry and deploy latest main with dbd-cheats.`,
 	);
 	process.exit(1);
 }
 
-if (!existsSync('src/components/ZomboidAuthorityLinks.astro')) {
+if (!existsSync('src/components/DbdAuthorityLinks.astro')) {
 	console.error(
-		'[verify-build] Missing src/components/ZomboidAuthorityLinks.astro. Deploy latest main instead of retrying an old failed build.',
+		'[verify-build] Missing src/components/DbdAuthorityLinks.astro. Deploy latest main instead of retrying an old failed build.',
 	);
 	process.exit(1);
 }

@@ -7,7 +7,7 @@ import {
 	type LocaleCode,
 } from './i18n/locales';
 import { siteConfig } from './site';
-import { zomboidImages } from './zomboid';
+import { dbdImages } from './dbd';
 import { pageSitemapMeta } from './sitemap-meta';
 import { escapeXml } from './sitemap-xml';
 import { bannerHeroSrc } from '../lib/performance';

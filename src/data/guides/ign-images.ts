@@ -150,7 +150,7 @@ export const guideIgnImages: Record<string, { src: string; alt: string; ignSourc
 	},
 	'arena-breakout-infinite': {
 		src: '/images/guides/arena-breakout-infinite.webp',
-		alt: 'Arena Breakout Infinite tactical extraction loot run',
+		alt: 'Arena Breakout Infinite tactical extraction generator route',
 		ignSource: 'https://assets-prd.ignimgs.com/2024/08/08/arena-breakout-infinite-button.jpg',
 	},
 	'arma-reforger': {
@@ -198,10 +198,10 @@ export const guideIgnImages: Record<string, { src: string; alt: string; ignSourc
 		alt: 'Path of Exile dark fantasy action RPG combat',
 		ignSource: 'https://assets-prd.ignimgs.com/2013/10/23/path-of-exile-button.jpg',
 	},
-	'project-zomboid': {
-		src: '/images/guides/project-zomboid.webp',
-		alt: 'Project Zomboid isometric zombie survival Knox County',
-		ignSource: 'https://assets-prd.ignimgs.com/2013/03/25/project-zomboid-button.jpg',
+	'dbd': {
+		src: '/images/guides/dbd.webp',
+		alt: 'Dead by Daylight Fog trial atmosphere with survivors and killer chase',
+		ignSource: 'https://assets-prd.ignimgs.com/2013/03/25/dbd-button.jpg',
 	},
 	'raft': {
 		src: '/images/guides/raft.webp',

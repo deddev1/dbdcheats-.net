@@ -1,5 +1,5 @@
 ---
-import { pricingGallery } from '../data/zomboid';
+import { pricingGallery } from '../data/dbd';
 import { getUi } from '../data/i18n';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productInfo, siteConfig } from '../data/site';
@@ -45,21 +45,36 @@ const featurePills = [
 	aria-label={ui.nav.pricing}
 >
 	<div class="pricing-showcase__media">
-		<figure class="pricing-showcase__figure media-frame">
-			<img
-				src={mainImage.displaySrc}
-				srcset={mainImage.displaySrcSet}
-				sizes={productMainSizes}
-				alt={mainImage.alt}
-				width="1280"
-				height="720"
-				class="pricing-showcase__image"
-				data-main-image
-				loading="lazy"
-				decoding="async"
-			/>
-		</figure>
-		<div class="pricing-showcase__thumbs" role="group" aria-label="Project Zomboid cheats screenshots">
+		<div class="pricing-showcase__stage">
+			<button type="button" class="pricing-showcase__arrow pricing-showcase__arrow--prev" data-gallery-prev aria-label="Previous screenshot">
+				<svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+					<path d="m15 6-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</button>
+
+			<figure class="pricing-showcase__figure media-frame">
+				<img
+					src={mainImage.displaySrc}
+					srcset={mainImage.displaySrcSet}
+					sizes={productMainSizes}
+					alt={mainImage.alt}
+					width="1280"
+					height="720"
+					class="pricing-showcase__image"
+					data-main-image
+					loading="lazy"
+					decoding="async"
+				/>
+			</figure>
+
+			<button type="button" class="pricing-showcase__arrow pricing-showcase__arrow--next" data-gallery-next aria-label="Next screenshot">
+				<svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+					<path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</button>
+		</div>
+
+		<div class="pricing-showcase__thumbs" role="group" aria-label="Dead by Daylight cheats screenshots">
 			{
 				galleryImages.map((image, index) => (
 					<button
@@ -75,7 +90,7 @@ const featurePills = [
 						<img
 							src={image.displaySrc}
 							srcset={image.displaySrcSet}
-							alt={image.alt}
+							alt=""
 							sizes={productThumbSizes}
 							width="320"
 							height="200"
@@ -125,6 +140,7 @@ const featurePills = [
 						$<span class="pricing-showcase__plan-amount">{monthlyPlan.price}</span>
 					</span>
 				</span>
+				<span class="pricing-showcase__plan-sub">Billed every month</span>
 			</button>
 
 			{
@@ -221,62 +237,81 @@ const featurePills = [
 
 <script>
 	import { initPlanSelectors } from '../lib/plan-selector';
+	import { initProductGalleries } from '../lib/product-gallery';
 	initPlanSelectors();
-
-	document.querySelectorAll('[data-product]').forEach((root) => {
-		const imageThumbs = root.querySelectorAll('[data-thumb]');
-		const mainImage = root.querySelector('[data-main-image]');
-
-		imageThumbs.forEach((thumb) => {
-			thumb.addEventListener('click', () => {
-				if (!(mainImage instanceof HTMLImageElement)) return;
-				const src = thumb.getAttribute('data-src');
-				const srcset = thumb.getAttribute('data-srcset');
-				const alt = thumb.getAttribute('data-alt');
-				if (src) mainImage.src = src;
-				if (srcset) mainImage.srcset = srcset;
-				else mainImage.removeAttribute('srcset');
-				if (alt) mainImage.alt = alt;
-				imageThumbs.forEach((item) => {
-					const active = item === thumb;
-					item.classList.toggle('is-active', active);
-					item.setAttribute('aria-pressed', active ? 'true' : 'false');
-				});
-			});
-		});
-	});
+	initProductGalleries();
 </script>
 
 <style>
 	.pricing-showcase {
 		display: grid;
-		grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
-		gap: clamp(1rem, 2vw, 1.5rem);
-		align-items: center;
+		grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+		gap: clamp(1rem, 2.2vw, 1.75rem);
+		align-items: stretch;
 		width: 100%;
 		margin: 0;
-		padding: clamp(0.9rem, 1.8vw, 1.25rem);
+		padding: clamp(1rem, 2vw, 1.35rem);
 		border-radius: var(--radius-card);
-		border: 1px solid rgba(104, 112, 82, 0.18);
-		background: linear-gradient(145deg, rgba(17, 21, 20, 0.96) 0%, rgba(10, 28, 29, 0.98) 100%);
-		box-shadow:
-			0 0 0 1px rgba(104, 112, 82, 0.05) inset,
-			0 16px 40px rgba(0, 0, 0, 0.28);
+		border: 1px solid var(--color-border);
+		background: linear-gradient(160deg, rgba(22, 11, 32, 0.98) 0%, rgba(7, 7, 10, 0.98) 100%);
+		box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
 	}
 
 	.pricing-showcase__media {
 		display: flex;
 		flex-direction: column;
-		gap: 0.75rem;
+		gap: 0.7rem;
 		min-width: 0;
+		height: 100%;
+	}
+
+	.pricing-showcase__stage {
+		position: relative;
 	}
 
 	.pricing-showcase__figure {
 		margin: 0;
+		width: 100%;
 		aspect-ratio: 16 / 10;
-		border: 1px solid rgba(104, 112, 82, 0.2);
+		border: 1px solid rgba(41, 34, 47, 0.95);
 		border-radius: 0.85rem;
 		overflow: hidden;
+		background: #101014;
+	}
+
+	.pricing-showcase__arrow {
+		appearance: none;
+		position: absolute;
+		top: 50%;
+		z-index: 3;
+		transform: translateY(-50%);
+		width: 2.35rem;
+		height: 2.35rem;
+		border-radius: 999px;
+		border: 1px solid rgba(41, 34, 47, 0.95);
+		background: rgba(7, 7, 10, 0.72);
+		color: var(--color-ink);
+		display: inline-grid;
+		place-items: center;
+		cursor: pointer;
+		backdrop-filter: blur(8px);
+		transition:
+			border-color 0.2s ease,
+			background 0.2s ease,
+			color 0.2s ease;
+	}
+
+	.pricing-showcase__arrow:hover {
+		border-color: rgba(109, 40, 217, 0.55);
+		background: rgba(109, 40, 217, 0.22);
+	}
+
+	.pricing-showcase__arrow--prev {
+		left: 0.65rem;
+	}
+
+	.pricing-showcase__arrow--next {
+		right: 0.65rem;
 	}
 
 	.pricing-showcase__figure.media-frame img,
@@ -301,6 +336,9 @@ const featurePills = [
 		padding-bottom: 0.15rem;
 		scroll-snap-type: x proximity;
 		scrollbar-width: thin;
+		-webkit-overflow-scrolling: touch;
+		overscroll-behavior-x: contain;
+		touch-action: pan-x;
 	}
 
 	.pricing-showcase__thumb {
@@ -308,9 +346,9 @@ const featurePills = [
 		flex: 0 0 5.75rem;
 		padding: 0;
 		aspect-ratio: 16 / 10;
-		border: 2px solid rgba(104, 112, 82, 0.2);
+		border: 2px solid rgba(109, 40, 217, 0.2);
 		border-radius: 0.65rem;
-		background: rgba(17, 21, 20, 0.8);
+		background: rgba(16, 16, 20, 0.8);
 		cursor: pointer;
 		overflow: hidden;
 		scroll-snap-align: start;
@@ -329,9 +367,10 @@ const featurePills = [
 	.pricing-showcase__checkout {
 		display: flex;
 		flex-direction: column;
-		gap: 0.7rem;
+		gap: 0.85rem;
 		min-width: 0;
 		justify-content: center;
+		height: 100%;
 	}
 
 	.pricing-showcase__header {
@@ -358,8 +397,8 @@ const featurePills = [
 		flex-shrink: 0;
 		padding: 0.35rem 0.7rem;
 		border-radius: 999px;
-		border: 1px solid rgba(104, 112, 82, 0.35);
-		background: rgba(104, 112, 82, 0.1);
+		border: 1px solid rgba(74, 222, 128, 0.35);
+		background: rgba(74, 222, 128, 0.1);
 		color: var(--color-mint);
 		font-size: 0.68rem;
 		font-weight: 800;
@@ -377,7 +416,7 @@ const featurePills = [
 	.pricing-showcase__plans {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 0.6rem;
+		gap: 0.65rem;
 		align-items: stretch;
 	}
 
@@ -385,18 +424,20 @@ const featurePills = [
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		gap: 0.2rem;
+		gap: 0.25rem;
 		width: 100%;
-		min-height: 5.25rem;
+		min-height: 5.5rem;
+		height: 100%;
 		margin: 0;
-		padding: 0.85rem 0.9rem;
-		border-radius: 0.75rem;
-		border: 1px solid rgba(104, 112, 82, 0.22);
-		background: rgba(17, 21, 20, 0.85);
+		padding: 0.9rem 1rem;
+		border-radius: 0.85rem;
+		border: 1px solid rgba(41, 34, 47, 0.95);
+		background: rgba(16, 16, 20, 0.9);
 		color: inherit;
 		font: inherit;
 		text-align: left;
 		cursor: pointer;
+		box-sizing: border-box;
 		transition:
 			border-color 0.2s ease,
 			box-shadow 0.2s ease,
@@ -404,12 +445,13 @@ const featurePills = [
 	}
 
 	.pricing-showcase__plan:hover {
-		border-color: rgba(104, 112, 82, 0.45);
+		border-color: rgba(109, 40, 217, 0.45);
 	}
 
 	.pricing-showcase__plan.is-selected {
-		border-color: rgba(104, 112, 82, 0.45);
-		background: rgba(104, 112, 82, 0.14);
+		border-color: rgba(109, 40, 217, 0.55);
+		background: rgba(109, 40, 217, 0.14);
+		box-shadow: inset 0 0 0 1px rgba(109, 40, 217, 0.2);
 	}
 
 	.pricing-showcase__plan--featured {
@@ -451,10 +493,13 @@ const featurePills = [
 	}
 
 	.pricing-showcase__plan-sub {
+		display: block;
+		min-height: 1.1em;
 		font-size: 0.74rem;
 		font-weight: 600;
 		color: var(--color-faint);
 		text-align: left;
+		line-height: 1.3;
 	}
 
 	.pricing-showcase__cart {
@@ -486,8 +531,8 @@ const featurePills = [
 		min-height: auto;
 		padding: 0.55rem 0.65rem;
 		border-radius: 0.6rem;
-		border: 1px solid rgba(104, 112, 82, 0.14);
-		background: rgba(17, 21, 20, 0.75);
+		border: 1px solid rgba(109, 40, 217, 0.14);
+		background: rgba(16, 16, 20, 0.75);
 		color: var(--color-muted);
 		font-size: 0.72rem;
 		font-weight: 600;
@@ -514,8 +559,8 @@ const featurePills = [
 		gap: 0.65rem;
 		padding: 0.75rem 0.85rem;
 		border-radius: 0.7rem;
-		border: 1px solid rgba(104, 112, 82, 0.14);
-		background: rgba(17, 21, 20, 0.55);
+		border: 1px solid rgba(109, 40, 217, 0.14);
+		background: rgba(16, 16, 20, 0.55);
 	}
 
 	.pricing-showcase__guarantee-icon {
@@ -525,8 +570,8 @@ const featurePills = [
 		width: 2rem;
 		height: 2rem;
 		border-radius: 999px;
-		background: rgba(104, 112, 82, 0.12);
-		border: 1px solid rgba(104, 112, 82, 0.3);
+		background: rgba(109, 40, 217, 0.12);
+		border: 1px solid rgba(109, 40, 217, 0.3);
 		color: var(--color-mint);
 	}
 
@@ -571,14 +616,14 @@ const featurePills = [
 	}
 
 	@media (min-width: 901px) and (max-width: 1040px) {
-		.pricing-showcase__plans {
-			grid-template-columns: 1fr;
+		.pricing-showcase {
+			grid-template-columns: minmax(0, 1fr) minmax(260px, 0.95fr);
 		}
 	}
 
 	.pricing-showcase__thumb.is-active,
 	.pricing-showcase__thumb:hover {
-		border-color: rgba(104, 112, 82, 0.45);
+		border-color: rgba(109, 40, 217, 0.45);
 	}
 
 	@media (max-width: 480px) {

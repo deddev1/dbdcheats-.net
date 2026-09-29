@@ -1,5 +1,5 @@
 import { siteConfig } from './site';
-import { zomboidImages } from './zomboid';
+import { dbdImages } from './dbd';
 import { englishPaths, sitemapPageIds, type PageId } from './i18n/routing';
 import { pageSitemapMeta } from './sitemap-meta';
 
@@ -28,58 +28,58 @@ const img = (path: string, title: string, caption: string): SitemapImage => ({
 /** Sitemap image assignments for indexable pages only (see sitemapPageIds in routing.ts). */
 const sitemapImagesByPageId: Partial<Record<PageId, SitemapImage[]>> = {
 	home: [
-		img(zomboidImages.hero, 'Project Zomboid Cheats', 'Project Zomboid Cheats homepage hero'),
-		img(zomboidImages.espWallhack, 'Project Zomboid ESP', 'Project Zomboid ESP wallhack overlay'),
-		img(zomboidImages.aimbotCombat, 'Project Zomboid Aimbot', 'Project Zomboid Aimbot combat preview'),
+		img(dbdImages.hero, 'Dead by Daylight Cheats', 'Dead by Daylight Cheats homepage hero'),
+		img(dbdImages.espWallhack, 'Dead by Daylight ESP', 'Dead by Daylight ESP wallhack overlay'),
+		img(dbdImages.aimbotCombat, 'Dead by Daylight Aimbot', 'Dead by Daylight Aimbot combat preview'),
 	],
 	hacks: [
-		img(zomboidImages.battleRoyaleCombat, 'Project Zomboid Cheats', 'Project Zomboid cheats survival run fight preview'),
-		img(zomboidImages.espWallhack, 'Project Zomboid Cheats ESP', 'Project Zomboid wallhack ESP on zombies, survivors, and special infected'),
+		img(dbdImages.battleRoyaleCombat, 'Dead by Daylight Cheats', 'Dead by Daylight cheats survivor trial fight preview'),
+		img(dbdImages.espWallhack, 'Dead by Daylight Cheats ESP', 'Dead by Daylight wallhack ESP on killers and survivors'),
 	],
-	'project-zomboid-esp': [
-		img(zomboidImages.espWallhack, 'Project Zomboid ESP', 'Project Zomboid ESP wallhack overlay'),
-		img(zomboidImages.playerEsp, 'Project Zomboid Zombie ESP', 'Project Zomboid Zombie ESP markers'),
+	'dbd-esp': [
+		img(dbdImages.espWallhack, 'Dead by Daylight ESP', 'Dead by Daylight ESP wallhack overlay'),
+		img(dbdImages.playerEsp, 'Dead by Daylight Killer ESP', 'Dead by Daylight Killer ESP markers'),
 	],
-	'project-zomboid-aimbot': [
-		img(zomboidImages.aimbotCombat, 'Project Zomboid Aimbot', 'Project Zomboid Aimbot combat preview'),
-		img(zomboidImages.squadFight, 'Project Zomboid Aimbot group fight', 'Project Zomboid Aimbot in squad combat'),
+	'dbd-aimbot': [
+		img(dbdImages.aimbotCombat, 'Dead by Daylight Aimbot', 'Dead by Daylight Aimbot combat preview'),
+		img(dbdImages.squadFight, 'Dead by Daylight Aimbot group fight', 'Dead by Daylight Aimbot in squad combat'),
 	],
 	wallhack: [
-		img(zomboidImages.espWallhack, 'Project Zomboid Wallhack', 'Project Zomboid wallhack ESP view'),
-		img(zomboidImages.cover, 'Project Zomboid Wallhack overlay', 'Project Zomboid ESP boxes through terrain'),
+		img(dbdImages.espWallhack, 'Dead by Daylight Wallhack', 'Dead by Daylight wallhack ESP view'),
+		img(dbdImages.cover, 'Dead by Daylight Wallhack overlay', 'Dead by Daylight ESP boxes through terrain'),
 	],
 	radar: [
-		img(zomboidImages.radarHack, 'Project Zomboid Radar Hack', 'Project Zomboid radar hack minimap overlay'),
-		img(zomboidImages.rebootFight, 'Project Zomboid Radar Hack overlay', 'Project Zomboid 2D radar for flank detection'),
+		img(dbdImages.radarHack, 'Dead by Daylight Radar Hack', 'Dead by Daylight radar hack minimap overlay'),
+		img(dbdImages.rebootFight, 'Dead by Daylight Radar Hack overlay', 'Dead by Daylight 2D radar for flank detection'),
 	],
 	features: [
-		img(zomboidImages.loadoutBuilder, 'Project Zomboid Cheats Features', 'Project Zomboid Cheats feature overview'),
-		img(zomboidImages.cheatsPackage, 'Project Zomboid Cheats menu', 'Project Zomboid Cheats in-client controls'),
+		img(dbdImages.loadoutBuilder, 'Dead by Daylight Cheats Features', 'Dead by Daylight Cheats feature overview'),
+		img(dbdImages.cheatsPackage, 'Dead by Daylight Cheats menu', 'Dead by Daylight Cheats in-client controls'),
 	],
 	pricing: [
-		img(zomboidImages.cover, 'Project Zomboid Cheats Pricing', 'Project Zomboid Cheats license plans'),
-		img(zomboidImages.cheatsPackage, 'Project Zomboid Cheats package', 'Project Zomboid Cheats product package'),
+		img(dbdImages.cover, 'Dead by Daylight Cheats Pricing', 'Dead by Daylight Cheats license plans'),
+		img(dbdImages.cheatsPackage, 'Dead by Daylight Cheats package', 'Dead by Daylight Cheats product package'),
 	],
 	setup: [
-		img(zomboidImages.squadFight, 'Project Zomboid Cheats Setup', 'Project Zomboid Cheats installation guide'),
+		img(dbdImages.squadFight, 'Dead by Daylight Cheats Setup', 'Dead by Daylight Cheats installation guide'),
 	],
 	updates: [
-		img(zomboidImages.headerArt, 'Project Zomboid Cheats Updates', 'Project Zomboid Cheats patch status'),
+		img(dbdImages.headerArt, 'Dead by Daylight Cheats Updates', 'Dead by Daylight Cheats patch status'),
 	],
 	faq: [
-		img(zomboidImages.loadoutBuilder, 'Project Zomboid Cheats FAQ', 'Project Zomboid Cheats frequently asked questions'),
+		img(dbdImages.loadoutBuilder, 'Dead by Daylight Cheats FAQ', 'Dead by Daylight Cheats frequently asked questions'),
 	],
 	support: [
-		img(zomboidImages.headerArt, 'Project Zomboid Cheats Support', 'Project Zomboid Cheats help center'),
+		img(dbdImages.headerArt, 'Dead by Daylight Cheats Support', 'Dead by Daylight Cheats help center'),
 	],
 	privacy: [
-		img(zomboidImages.cover, 'Project Zomboid Cheats Privacy Policy', 'Project Zomboid Cheats privacy policy'),
+		img(dbdImages.cover, 'Dead by Daylight Cheats Privacy Policy', 'Dead by Daylight Cheats privacy policy'),
 	],
 	refund: [
-		img(zomboidImages.cover, 'Project Zomboid Cheats Refund Policy', 'Project Zomboid Cheats refund policy'),
+		img(dbdImages.cover, 'Dead by Daylight Cheats Refund Policy', 'Dead by Daylight Cheats refund policy'),
 	],
 	terms: [
-		img(zomboidImages.squadFight, 'Project Zomboid Cheats Terms', 'Project Zomboid Cheats terms of use'),
+		img(dbdImages.squadFight, 'Dead by Daylight Cheats Terms', 'Dead by Daylight Cheats terms of use'),
 	],
 };
 
@@ -89,7 +89,7 @@ for (const pageId of sitemapPageIds) {
 	}
 }
 
-/** Canonical English sitemap entries — core project-zomboid-cheats URLs only. */
+/** Canonical English sitemap entries — core dbd-cheats URLs only. */
 export const pageSitemapEntries: PageSitemapEntry[] = sitemapPageIds.map((pageId) => {
 	const meta = pageSitemapMeta[pageId];
 	return {
@@ -102,7 +102,7 @@ export const pageSitemapEntries: PageSitemapEntry[] = sitemapPageIds.map((pageId
 });
 
 /** Unique keyword images for the dedicated image sitemap. */
-export const imageSitemapEntries: SitemapImage[] = zomboidImages.sitemap.map((entry) =>
+export const imageSitemapEntries: SitemapImage[] = dbdImages.sitemap.map((entry) =>
 	img(entry.src, entry.title, entry.caption),
 );
 

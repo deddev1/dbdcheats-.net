@@ -8,19 +8,19 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.resolve(ROOT, '..', 'amansand');
 
 const UI_REPLACEMENTS = [
-	['Warzone Cheats', 'Project Zomboid Cheats'],
-	['Warzone cheats', 'Project Zomboid cheats'],
-	['Warzone Cheats', 'Project Zomboid Cheats'],
-	['Call of Duty: Warzone', 'Project Zomboid'],
-	['Call of Duty Warzone', 'Project Zomboid'],
-	['Call of Duty', 'Project Zomboid'],
-	['Warzone PC', 'Project Zomboid PC'],
-	['for Warzone', 'for Project Zomboid'],
-	['Warzone ', 'Project Zomboid '],
+	['Warzone Cheats', 'Dead by Daylight Cheats'],
+	['Warzone cheats', 'Dead by Daylight cheats'],
+	['Warzone Cheats', 'Dead by Daylight Cheats'],
+	['Call of Duty: Warzone', 'Dead by Daylight'],
+	['Call of Duty Warzone', 'Dead by Daylight'],
+	['Call of Duty', 'Dead by Daylight'],
+	['Warzone PC', 'Dead by Daylight PC'],
+	['for Warzone', 'for Dead by Daylight'],
+	['Warzone ', 'Dead by Daylight '],
 	['warzone ', 'rust '],
 	['Ricochet maintenance', 'anti-cheat maintenance'],
-	['Ricochet anti-cheat', 'Project Zomboid anti-cheat (EAC)'],
-	['Ricochet', 'Project Zomboid anti-cheat (EAC)'],
+	['Ricochet anti-cheat', 'Dead by Daylight anti-cheat (EAC)'],
+	['Ricochet', 'Dead by Daylight anti-cheat (EAC)'],
 	['operatorEsp', 'playerEsp'],
 	['gulagFight', 'rebootFight'],
 	['alMazrah', 'battleRoyaleIsland'],
@@ -28,14 +28,14 @@ const UI_REPLACEMENTS = [
 	['operator', 'player'],
 	['Operators', 'Players'],
 	['Operator', 'Player'],
-	['Al Mazrah', 'Project Zomboid'],
-	['Verdansk', 'Project Zomboid'],
-	['Resurgence', 'loot objectives'],
+	['Al Mazrah', 'Dead by Daylight'],
+	['Verdansk', 'Dead by Daylight'],
+	['Resurgence', 'generator objectives'],
 	['gulag', 'control point'],
-	['warzonescheats.net', 'projectzomboidcheats.com'],
-	['Trucos Warzone', 'Trucos Project Zomboid'],
-	['Triches Warzone', 'Triches Project Zomboid'],
-	['Cheats Warzone', 'Cheats Project Zomboid'],
+	['warzonescheats.net', 'dbdcheat.net'],
+	['Trucos Warzone', 'Trucos Dead by Daylight'],
+	['Triches Warzone', 'Triches Dead by Daylight'],
+	['Cheats Warzone', 'Cheats Dead by Daylight'],
 ];
 
 function apply(content) {
@@ -55,8 +55,8 @@ for (const file of ['ui-strings-part1.mjs', 'ui-strings-part2.mjs']) {
 // Fix pages-en eac key
 let pagesEn = await readFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), 'utf8');
 pagesEn = pagesEn.replace(/\teac: \{/, "\t'eac-bypass': {");
-pagesEn = pagesEn.replace(/Project Zomboid Warzone/g, 'Project Zomboid');
-pagesEn = pagesEn.replace(/for Project Zomboid Warzone/g, 'for Project Zomboid');
+pagesEn = pagesEn.replace(/Dead by Daylight Warzone/g, 'Dead by Daylight');
+pagesEn = pagesEn.replace(/for Dead by Daylight Warzone/g, 'for Dead by Daylight');
 await writeFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), pagesEn);
 
 // Fix pages-i18n

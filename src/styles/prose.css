@@ -5,8 +5,8 @@
 .reviews-index__head {
 	padding: clamp(1.35rem, 3vw, 1.85rem);
 	border-radius: var(--radius-card);
-	border: 1px solid rgba(104, 112, 82, 0.16);
-	background: linear-gradient(145deg, rgba(23, 27, 26, 0.94) 0%, rgba(17, 21, 20, 0.9) 100%);
+	border: 1px solid rgba(109, 40, 217, 0.16);
+	background: linear-gradient(145deg, rgba(22, 11, 32, 0.94) 0%, rgba(16, 16, 20, 0.9) 100%);
 	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
 }
 
@@ -15,16 +15,16 @@
 	padding: clamp(1.25rem, 3vw, 1.65rem);
 	margin-bottom: 0.25rem;
 	border-radius: var(--radius-card);
-	border: 1px solid rgba(104, 112, 82, 0.14);
-	background: linear-gradient(145deg, rgba(23, 27, 26, 0.92) 0%, rgba(17, 21, 20, 0.88) 100%);
+	border: 1px solid rgba(109, 40, 217, 0.14);
+	background: linear-gradient(145deg, rgba(22, 11, 32, 0.92) 0%, rgba(16, 16, 20, 0.88) 100%);
 }
 
 .post__section,
 .guide-post__section {
 	padding: clamp(1.1rem, 2.5vw, 1.35rem) clamp(1.15rem, 2.5vw, 1.45rem);
 	border-radius: 0.95rem;
-	border: 1px solid rgba(104, 112, 82, 0.14);
-	background: rgba(23, 27, 26, 0.72);
+	border: 1px solid rgba(109, 40, 217, 0.14);
+	background: rgba(22, 11, 32, 0.72);
 }
 
 .post__section h2,
@@ -51,7 +51,7 @@
 	bottom: 0.15em;
 	width: 3px;
 	border-radius: 999px;
-	background: linear-gradient(180deg, #d2ae76 0%, #687052 100%);
+	background: linear-gradient(180deg, #6D28D9 0%, #6D28D9 100%);
 }
 
 .post__hero,

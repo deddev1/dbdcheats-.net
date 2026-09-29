@@ -9,8 +9,8 @@ import {
 /** Canonical page identifiers shared across all locales. */
 export type PageId =
 	| 'home'
-	| 'project-zomboid-esp'
-	| 'project-zomboid-aimbot'
+	| 'dbd-esp'
+	| 'dbd-aimbot'
 	| 'features'
 	| 'pricing'
 	| 'setup'
@@ -37,26 +37,26 @@ export type PageId =
 /** English (official) paths — served at site root without /en/ prefix. */
 export const englishPaths: Record<PageId, string> = {
 	home: '/',
-	'project-zomboid-esp': '/project-zomboid-esp/',
-	'project-zomboid-aimbot': '/project-zomboid-aimbot/',
+	'dbd-esp': '/dbd-esp/',
+	'dbd-aimbot': '/dbd-aimbot/',
 	features: '/features/',
 	pricing: '/pricing/',
 	setup: '/setup/',
 	updates: '/updates/',
 	faq: '/faq/',
 	support: '/support/',
-	undetected: '/project-zomboid-cheats/',
-	wallhack: '/project-zomboid-wallhack/',
-	radar: '/project-zomboid-radar/',
-	'eac-bypass': '/project-zomboid-cheats/',
-	'cheats-2026': '/project-zomboid-cheats/',
-	hacks: '/project-zomboid-cheats/',
+	undetected: '/dbd-cheats/',
+	wallhack: '/dbd-wallhack/',
+	radar: '/dbd-radar/',
+	'eac-bypass': '/dbd-cheats/',
+	'cheats-2026': '/dbd-cheats/',
+	hacks: '/dbd-cheats/',
 	'cheat-download': '/pricing/',
 	'mod-menu': '/features/',
-	'soft-aim': '/project-zomboid-aimbot/',
-	'best-cheats': '/project-zomboid-cheats/',
-	'aimbot-hack': '/project-zomboid-aimbot/',
-	'esp-hack': '/project-zomboid-esp/',
+	'soft-aim': '/dbd-aimbot/',
+	'best-cheats': '/dbd-cheats/',
+	'aimbot-hack': '/dbd-aimbot/',
+	'esp-hack': '/dbd-esp/',
 	'unlock-all': '/features/',
 	privacy: '/privacy-policy/',
 	refund: '/refund-policy/',
@@ -64,14 +64,14 @@ export const englishPaths: Record<PageId, string> = {
 };
 
 /**
- * Core English pages for sitemap.xml — focused project-zomboid-cheats URLs only.
+ * Core English pages for sitemap.xml — focused dbd-cheats URLs only.
  * Thin keyword-duplicate landings redirect to these canonical pages.
  */
 export const sitemapPageIds: PageId[] = [
 	'home',
 	'hacks',
-	'project-zomboid-esp',
-	'project-zomboid-aimbot',
+	'dbd-esp',
+	'dbd-aimbot',
 	'wallhack',
 	'radar',
 	'features',
@@ -94,9 +94,9 @@ export const canonicalPageAlias: Partial<Record<PageId, PageId>> = {
 	'cheat-download': 'pricing',
 	'mod-menu': 'features',
 	'unlock-all': 'features',
-	'soft-aim': 'project-zomboid-aimbot',
-	'aimbot-hack': 'project-zomboid-aimbot',
-	'esp-hack': 'project-zomboid-esp',
+	'soft-aim': 'dbd-aimbot',
+	'aimbot-hack': 'dbd-aimbot',
+	'esp-hack': 'dbd-esp',
 };
 
 export function getCanonicalPageId(pageId: PageId): PageId {
@@ -117,8 +117,8 @@ export const localeSitemapPageIds: PageId[] = sitemapPageIds.filter((id) => id !
  */
 const shortLocalizedSlug: Record<PageId, string> = {
 	home: '',
-	'project-zomboid-esp': 'esp',
-	'project-zomboid-aimbot': 'aimbot',
+	'dbd-esp': 'esp',
+	'dbd-aimbot': 'aimbot',
 	features: 'features',
 	pricing: 'pricing',
 	setup: 'setup',
@@ -172,8 +172,8 @@ export function getBreadcrumbLabelForPage(
 		updates: labels.updates,
 		faq: labels.faq,
 		hacks: labels.cheats ?? 'Cheats',
-		'project-zomboid-esp': labels.esp,
-		'project-zomboid-aimbot': labels.aimbot,
+		'dbd-esp': labels.esp,
+		'dbd-aimbot': labels.aimbot,
 		support: 'Support',
 		undetected: 'Undetected',
 		wallhack: 'Wallhack',
@@ -201,7 +201,7 @@ export function getBreadcrumbLabelForPage(
 		if (after.length > 0 && after.length <= 36) return after;
 	}
 
-	const brandPrefix = 'Project Zomboid Cheats ';
+	const brandPrefix = 'Dead by Daylight Cheats ';
 	if (fallbackHeading.startsWith(brandPrefix)) {
 		const rest = fallbackHeading.slice(brandPrefix.length);
 		const restDash = rest.indexOf(' — ');

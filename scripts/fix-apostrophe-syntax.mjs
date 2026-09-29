@@ -15,9 +15,9 @@ for (const rel of files) {
 	const file = join(root, rel);
 	let content = readFileSync(file, 'utf8');
 	content = content
-		.replace(/The Indie Stone['\u2019]s/g, 'The Indie Stone')
-		.replace(/project-zomboid:/g, 'game:')
-		.replace(/EXT\.project-zomboid/g, 'EXT.game');
+		.replace(/Behaviour Interactive['\u2019]s/g, 'Behaviour Interactive')
+		.replace(/dbd:/g, 'game:')
+		.replace(/EXT\.dbd/g, 'EXT.game');
 	writeFileSync(file, content);
 	console.log('Patched', rel);
 }

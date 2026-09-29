@@ -21,8 +21,8 @@ const { locale } = Astro.props;
 const ui = blogUi[locale];
 const posts = getAllPostsForLocale(locale);
 const featured = getFeaturedPosts(locale, 3);
-const gameGuides = getPostsByCategory(locale, 'Project Zomboid Game Guides');
-const productPosts = posts.filter((post) => post.category !== 'Project Zomboid Game Guides');
+const gameGuides = getPostsByCategory(locale, 'Dead by Daylight Game Guides');
+const productPosts = posts.filter((post) => post.category !== 'Dead by Daylight Game Guides');
 const canonicalPath = getBlogBasePath(locale);
 const canonicalURL = absoluteBlogUrl(locale);
 const homeHref = getLocalizedPath('home', locale);
@@ -58,7 +58,7 @@ const articleListSchema = {
 	<Navbar locale={locale} />
 	<main class="blog">
 		<header class="blog__hero">
-			<p class="blog__eyebrow">Project Zomboid cheats guides</p>
+			<p class="blog__eyebrow">Dead by Daylight cheats guides</p>
 			<h1>{ui.blogH1}</h1>
 			<p class="blog__intro">{ui.blogIntro}</p>
 		</header>
@@ -92,7 +92,7 @@ const articleListSchema = {
 
 		<section class="blog__section" aria-labelledby="blog-product-posts">
 			<h2 id="blog-product-posts" class="blog__section-title">
-				Project Zomboid cheats guides
+				Dead by Daylight cheats guides
 			</h2>
 			<p class="blog__section-intro">
 				ESP, wallhack, radar, aimbot, setup, pricing, undetected anti-cheat notes, and vendor comparisons for
@@ -128,11 +128,11 @@ const articleListSchema = {
 			gameGuides.length > 0 && (
 				<section class="blog__section" aria-labelledby="blog-game-guides">
 					<h2 id="blog-game-guides" class="blog__section-title">
-						Knox County game guides
+						The Fog game guides
 					</h2>
 					<p class="blog__section-intro">
-						Survival tips, loot runs, zombie types, and patch notes — with links to the official Project
-						Zomboid Wiki and The Indie Stone.
+						Survivor tips, generator routes, killer roster, and patch notes — with links to the official Dead by
+						Daylight Wiki and Behaviour Interactive.
 					</p>
 					<div class="blog__list">
 						{gameGuides.map((post) => (
@@ -174,7 +174,7 @@ const articleListSchema = {
 	}
 	.blog__eyebrow {
 		margin: 0 0 0.5rem;
-		color: #D2AE76;
+		color: #6D28D9;
 		font-weight: 700;
 		letter-spacing: 0.08em;
 		text-transform: uppercase;
@@ -217,8 +217,8 @@ const articleListSchema = {
 		gap: 1.25rem;
 		padding: 1rem;
 		border-radius: 1rem;
-		border: 1px solid rgba(104, 112, 82, 0.22);
-		background: linear-gradient(145deg, rgba(23, 27, 26, 0.94) 0%, rgba(17, 21, 20, 0.92) 100%);
+		border: 1px solid rgba(109, 40, 217, 0.22);
+		background: linear-gradient(145deg, rgba(22, 11, 32, 0.94) 0%, rgba(16, 16, 20, 0.92) 100%);
 		text-decoration: none;
 		color: inherit;
 		transition:
@@ -228,7 +228,7 @@ const articleListSchema = {
 	}
 
 	.blog__feature-card:hover {
-		border-color: rgba(210, 174, 118, 0.38);
+		border-color: rgba(168, 85, 247, 0.38);
 		transform: translateY(-2px);
 		box-shadow: 0 14px 32px rgba(0, 0, 0, 0.24);
 	}
@@ -254,8 +254,8 @@ const articleListSchema = {
 		height: 100%;
 		padding: 0.9rem;
 		border-radius: 0.95rem;
-		border: 1px solid rgba(104, 112, 82, 0.16);
-		background: linear-gradient(145deg, rgba(23, 27, 26, 0.92) 0%, rgba(17, 21, 20, 0.88) 100%);
+		border: 1px solid rgba(109, 40, 217, 0.16);
+		background: linear-gradient(145deg, rgba(22, 11, 32, 0.92) 0%, rgba(16, 16, 20, 0.88) 100%);
 		text-decoration: none;
 		color: inherit;
 		transition:
@@ -265,7 +265,7 @@ const articleListSchema = {
 	}
 
 	.blog__card a:hover {
-		border-color: rgba(210, 174, 118, 0.35);
+		border-color: rgba(168, 85, 247, 0.35);
 		transform: translateY(-2px);
 		box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
 	}
@@ -290,7 +290,7 @@ const articleListSchema = {
 	}
 	.blog__cat {
 		display: inline-block;
-		color: #D2AE76;
+		color: #6D28D9;
 		font-size: 0.72rem;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -305,7 +305,7 @@ const articleListSchema = {
 		font-weight: 600;
 	}
 	.blog__more {
-		color: #D2AE76;
+		color: #6D28D9;
 	}
 	@media (max-width: 760px) {
 		.blog__feature-card {

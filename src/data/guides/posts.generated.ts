@@ -178,7 +178,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Use player ESP with distance caps so you can scout raids without flooding the screen on large maps.",
 						"Align stealth and toggle keys with your role. Aggressive players need tighter aim FOV and faster target switching; loot-focused players should widen ESP range and shrink combat overlays.",
-						"Armor penetration and medical supplies matter more than raw DPS in most mid-range fights. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
+						"Armor penetration and chests and totems matter more than raw DPS in most mid-range fights. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
 					]
 				},
 				{
@@ -450,7 +450,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Rotate cheat profiles between scav and PMC loadouts; heavy overlays on every raid increase report risk.",
 						"High-stakes Escape from Tarkov lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Time raids around quest hotspots and boss horde spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Time raids around quest hotspots and boss killer spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -978,7 +978,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Build hotkey profiles that disable overlays during clips or streams, and swap configs when anti-cheat updates ship.",
 						"High-stakes Call of Duty: Warzone lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Track gas movement and self-revive inventory during horde clusters; placement beats ego challs. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Track gas movement and self-revive inventory during hook zones; placement beats ego challs. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -1242,7 +1242,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Rotate cheat profiles between scav and PMC loadouts; heavy overlays on every raid increase report risk.",
 						"High-stakes Escape from Tarkov lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Time raids around quest hotspots and boss horde spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Time raids around quest hotspots and boss killer spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -1416,7 +1416,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Most The Isle cheat packages focus on information first: resource and crate ESP, player base radar, threat markers, item pickup filters, and optional aim assist for PvP. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around growth stages, ecosystem balance, and pack hunting.",
 						"Treat loot and player ESP as your starting preset, not a permanent loadout. The best configs expose just enough data to make decisions without cluttering the screen during hectic fights.",
-						"Because The Isle revolves around horde spawn as a dinosaur, hunt or graze to grow, and survive apex predators and rival packs, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
+						"Because The Isle revolves around killer spawn as a dinosaur, hunt or graze to grow, and survive apex predators and rival packs, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
 					]
 				},
 				{
@@ -1482,7 +1482,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Most The Isle cheat packages focus on information first: resource and crate ESP, player base radar, threat markers, item pickup filters, and optional aim assist for PvP. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around growth stages, ecosystem balance, and pack hunting.",
 						"Treat stealth and toggle keys as your starting preset, not a permanent loadout. The best configs expose just enough data to make decisions without cluttering the screen during hectic fights.",
-						"Because The Isle revolves around horde spawn as a dinosaur, hunt or graze to grow, and survive apex predators and rival packs, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
+						"Because The Isle revolves around killer spawn as a dinosaur, hunt or graze to grow, and survive apex predators and rival packs, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
 					]
 				},
 				{
@@ -1704,7 +1704,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Rotate cheat profiles between scav and PMC loadouts; heavy overlays on every raid increase report risk.",
 						"High-stakes Escape from Tarkov lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Time raids around quest hotspots and boss horde spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Time raids around quest hotspots and boss killer spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -1944,7 +1944,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Most The Isle cheat packages focus on information first: resource and crate ESP, player base radar, threat markers, item pickup filters, and optional aim assist for PvP. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around growth stages, ecosystem balance, and pack hunting.",
 						"Treat anti-cheat awareness as your starting preset, not a permanent loadout. The best configs expose just enough data to make decisions without cluttering the screen during hectic fights.",
-						"Because The Isle revolves around horde spawn as a dinosaur, hunt or graze to grow, and survive apex predators and rival packs, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
+						"Because The Isle revolves around killer spawn as a dinosaur, hunt or graze to grow, and survive apex predators and rival packs, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
 					]
 				},
 				{
@@ -2026,7 +2026,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Use player ESP with distance caps so you can scout raids without flooding the screen on large maps.",
 						"Align radar and overlay config with your role. Aggressive players need tighter aim FOV and faster target switching; loot-focused players should widen ESP range and shrink combat overlays.",
-						"Armor penetration and medical supplies matter more than raw DPS in most mid-range fights. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
+						"Armor penetration and chests and totems matter more than raw DPS in most mid-range fights. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
 					]
 				},
 				{
@@ -2092,7 +2092,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Tune overlay opacity, distance filters, and aim smoothing so features stay readable under pressure.",
 						"Align loot and player ESP with your role. Aggressive players need tighter aim FOV and faster target switching; loot-focused players should widen ESP range and shrink combat overlays.",
-						"Objective time and rehorde spawn stagger win close matches on most maps. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
+						"Objective time and rekiller spawn stagger win close matches on most maps. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
 					]
 				},
 				{
@@ -2126,7 +2126,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 			title: "Mecha BREAK Cheats Guide: Radar And Overlay Config",
 			metaDescription: "A practical Mecha BREAK cheats guide covering ESP, aimbot, wallhack, and radar setup, with tips for radar and overlay config, anti-cheat checks, and safer configuration.",
 			h1: "Mecha BREAK cheats guide",
-			intro: "Mecha BREAK is a mech-based competitive shooter where mech loadouts, stamina cooldowns, and arena positioning. This cheats guide explains which features matter most — player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators — and how to configure them without turning every match into a report magnet.",
+			intro: "Mecha BREAK is a mech-based competitive shooter where mech loadouts, status cooldowns, and arena positioning. This cheats guide explains which features matter most — player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators — and how to configure them without turning every match into a report magnet.",
 			keywords: [
 				"Mecha BREAK",
 				"Mecha BREAK cheats",
@@ -2140,7 +2140,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 				{
 					h2: "Core cheat features for Mecha BREAK",
 					paragraphs: [
-						"Most Mecha BREAK cheat packages focus on information first: player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around mech loadouts, stamina cooldowns, and arena positioning.",
+						"Most Mecha BREAK cheat packages focus on information first: player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around mech loadouts, status cooldowns, and arena positioning.",
 						"Treat radar and overlay config as your starting preset, not a permanent loadout. The best configs expose just enough data to make decisions without cluttering the screen during hectic fights.",
 						"Because Mecha BREAK revolves around pilot distinct mechs, use abilities on cooldown cycles, and control objective zones, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
 					]
@@ -2562,7 +2562,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Rotate cheat profiles between scav and PMC loadouts; heavy overlays on every raid increase report risk.",
 						"High-stakes Escape from Tarkov lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Time raids around quest hotspots and boss horde spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Time raids around quest hotspots and boss killer spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -2694,7 +2694,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Swap profiles between tank, aircraft, and infantry roles; each needs different overlay density.",
 						"High-stakes Call of Duty lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Pre-aim common angles and use horde spawn knowledge to control mid-map fights. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Pre-aim common angles and use killer spawn knowledge to control mid-map fights. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -2918,7 +2918,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 			title: "Mecha BREAK Cheats Guide: Radar And Overlay Config",
 			metaDescription: "A practical Mecha BREAK cheats guide covering ESP, aimbot, wallhack, and radar setup, with tips for radar and overlay config, anti-cheat checks, and safer configuration.",
 			h1: "Mecha BREAK cheats guide",
-			intro: "Mecha BREAK is a mech-based competitive shooter where mech loadouts, stamina cooldowns, and arena positioning. This cheats guide explains which features matter most — player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators — and how to configure them without turning every match into a report magnet.",
+			intro: "Mecha BREAK is a mech-based competitive shooter where mech loadouts, status cooldowns, and arena positioning. This cheats guide explains which features matter most — player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators — and how to configure them without turning every match into a report magnet.",
 			keywords: [
 				"Mecha BREAK",
 				"Mecha BREAK cheats",
@@ -2932,7 +2932,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 				{
 					h2: "Core cheat features for Mecha BREAK",
 					paragraphs: [
-						"Most Mecha BREAK cheat packages focus on information first: player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around mech loadouts, stamina cooldowns, and arena positioning.",
+						"Most Mecha BREAK cheat packages focus on information first: player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around mech loadouts, status cooldowns, and arena positioning.",
 						"Treat radar and overlay config as your starting preset, not a permanent loadout. The best configs expose just enough data to make decisions without cluttering the screen during hectic fights.",
 						"Because Mecha BREAK revolves around pilot distinct mechs, use abilities on cooldown cycles, and control objective zones, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
 					]
@@ -3090,7 +3090,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Rotate cheat profiles between scav and PMC loadouts; heavy overlays on every raid increase report risk.",
 						"High-stakes Escape from Tarkov lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Time raids around quest hotspots and boss horde spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Time raids around quest hotspots and boss killer spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -3354,7 +3354,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Rotate cheat profiles between scav and PMC loadouts; heavy overlays on every raid increase report risk.",
 						"High-stakes Escape from Tarkov lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Time raids around quest hotspots and boss horde spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Time raids around quest hotspots and boss killer spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -3684,7 +3684,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Rotate cheat profiles between scav and PMC loadouts; heavy overlays on every raid increase report risk.",
 						"High-stakes Escape from Tarkov lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Time raids around quest hotspots and boss horde spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Time raids around quest hotspots and boss killer spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -4080,7 +4080,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Save separate profiles for farming, base defense, and PvP outings; toggle combat features only when needed.",
 						"High-stakes Once Human lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Plan territory horde defenses around resource nodes your guild actually needs. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Plan territory hook defenses around resource nodes your guild actually needs. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -4270,7 +4270,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Tune overlay opacity, distance filters, and aim smoothing so features stay readable under pressure.",
 						"Align radar and overlay config with your role. Aggressive players need tighter aim FOV and faster target switching; loot-focused players should widen ESP range and shrink combat overlays.",
-						"Objective time and rehorde spawn stagger win close matches on most maps. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
+						"Objective time and rekiller spawn stagger win close matches on most maps. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
 					]
 				},
 				{
@@ -4344,7 +4344,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Save separate profiles for farming, base defense, and PvP outings; toggle combat features only when needed.",
 						"High-stakes Once Human lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Plan territory horde defenses around resource nodes your guild actually needs. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Plan territory hook defenses around resource nodes your guild actually needs. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -4798,7 +4798,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Tune overlay opacity, distance filters, and aim smoothing so features stay readable under pressure.",
 						"Align PvP cheat profiles with your role. Aggressive players need tighter aim FOV and faster target switching; loot-focused players should widen ESP range and shrink combat overlays.",
-						"Objective time and rehorde spawn stagger win close matches on most maps. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
+						"Objective time and rekiller spawn stagger win close matches on most maps. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
 					]
 				},
 				{
@@ -4832,7 +4832,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 			title: "Mecha BREAK Cheats Guide: Stealth And Toggle Keys",
 			metaDescription: "A practical Mecha BREAK cheats guide covering ESP, aimbot, wallhack, and radar setup, with tips for stealth and toggle keys, anti-cheat checks, and safer configuration.",
 			h1: "Mecha BREAK cheats guide",
-			intro: "Mecha BREAK is a mech-based competitive shooter where mech loadouts, stamina cooldowns, and arena positioning. This cheats guide explains which features matter most — player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators — and how to configure them without turning every match into a report magnet.",
+			intro: "Mecha BREAK is a mech-based competitive shooter where mech loadouts, status cooldowns, and arena positioning. This cheats guide explains which features matter most — player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators — and how to configure them without turning every match into a report magnet.",
 			keywords: [
 				"Mecha BREAK",
 				"Mecha BREAK cheats",
@@ -4846,7 +4846,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 				{
 					h2: "Core cheat features for Mecha BREAK",
 					paragraphs: [
-						"Most Mecha BREAK cheat packages focus on information first: player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around mech loadouts, stamina cooldowns, and arena positioning.",
+						"Most Mecha BREAK cheat packages focus on information first: player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around mech loadouts, status cooldowns, and arena positioning.",
 						"Treat stealth and toggle keys as your starting preset, not a permanent loadout. The best configs expose just enough data to make decisions without cluttering the screen during hectic fights.",
 						"Because Mecha BREAK revolves around pilot distinct mechs, use abilities on cooldown cycles, and control objective zones, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
 					]
@@ -4898,7 +4898,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 			title: "Mecha BREAK Cheats Guide: Radar And Overlay Config",
 			metaDescription: "A practical Mecha BREAK cheats guide covering ESP, aimbot, wallhack, and radar setup, with tips for radar and overlay config, anti-cheat checks, and safer configuration.",
 			h1: "Mecha BREAK cheats guide",
-			intro: "Mecha BREAK is a mech-based competitive shooter where mech loadouts, stamina cooldowns, and arena positioning. This cheats guide explains which features matter most — player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators — and how to configure them without turning every match into a report magnet.",
+			intro: "Mecha BREAK is a mech-based competitive shooter where mech loadouts, status cooldowns, and arena positioning. This cheats guide explains which features matter most — player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators — and how to configure them without turning every match into a report magnet.",
 			keywords: [
 				"Mecha BREAK",
 				"Mecha BREAK cheats",
@@ -4912,7 +4912,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 				{
 					h2: "Core cheat features for Mecha BREAK",
 					paragraphs: [
-						"Most Mecha BREAK cheat packages focus on information first: player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around mech loadouts, stamina cooldowns, and arena positioning.",
+						"Most Mecha BREAK cheat packages focus on information first: player ESP, loot markers, configurable aim assist, 2D radar, hotkey toggles, and patch-status indicators. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around mech loadouts, status cooldowns, and arena positioning.",
 						"Treat radar and overlay config as your starting preset, not a permanent loadout. The best configs expose just enough data to make decisions without cluttering the screen during hectic fights.",
 						"Because Mecha BREAK revolves around pilot distinct mechs, use abilities on cooldown cycles, and control objective zones, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
 					]
@@ -5128,7 +5128,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Tune overlay opacity, distance filters, and aim smoothing so features stay readable under pressure.",
 						"Align ESP and wallhack setup with your role. Aggressive players need tighter aim FOV and faster target switching; loot-focused players should widen ESP range and shrink combat overlays.",
-						"Objective time and rehorde spawn stagger win close matches on most maps. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
+						"Objective time and rekiller spawn stagger win close matches on most maps. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
 					]
 				},
 				{
@@ -5334,7 +5334,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Rotate cheat profiles between scav and PMC loadouts; heavy overlays on every raid increase report risk.",
 						"High-stakes Escape from Tarkov lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Time raids around quest hotspots and boss horde spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Time raids around quest hotspots and boss killer spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -5442,7 +5442,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Most The Isle cheat packages focus on information first: resource and crate ESP, player base radar, threat markers, item pickup filters, and optional aim assist for PvP. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around growth stages, ecosystem balance, and pack hunting.",
 						"Treat anti-cheat awareness as your starting preset, not a permanent loadout. The best configs expose just enough data to make decisions without cluttering the screen during hectic fights.",
-						"Because The Isle revolves around horde spawn as a dinosaur, hunt or graze to grow, and survive apex predators and rival packs, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
+						"Because The Isle revolves around killer spawn as a dinosaur, hunt or graze to grow, and survive apex predators and rival packs, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
 					]
 				},
 				{
@@ -5598,7 +5598,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Build hotkey profiles that disable overlays during clips or streams, and swap configs when anti-cheat updates ship.",
 						"High-stakes Call of Duty: Warzone lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Track gas movement and self-revive inventory during horde clusters; placement beats ego challs. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Track gas movement and self-revive inventory during hook zones; placement beats ego challs. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -6498,7 +6498,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Most The Isle cheat packages focus on information first: resource and crate ESP, player base radar, threat markers, item pickup filters, and optional aim assist for PvP. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around growth stages, ecosystem balance, and pack hunting.",
 						"Treat radar and overlay config as your starting preset, not a permanent loadout. The best configs expose just enough data to make decisions without cluttering the screen during hectic fights.",
-						"Because The Isle revolves around horde spawn as a dinosaur, hunt or graze to grow, and survive apex predators and rival packs, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
+						"Because The Isle revolves around killer spawn as a dinosaur, hunt or graze to grow, and survive apex predators and rival packs, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
 					]
 				},
 				{
@@ -6588,7 +6588,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Rotate cheat profiles between scav and PMC loadouts; heavy overlays on every raid increase report risk.",
 						"High-stakes Escape from Tarkov lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Time raids around quest hotspots and boss horde spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Time raids around quest hotspots and boss killer spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -6630,7 +6630,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Most The Isle cheat packages focus on information first: resource and crate ESP, player base radar, threat markers, item pickup filters, and optional aim assist for PvP. Used together, these tools shorten the gap between spotting a threat and acting on it — especially in modes built around growth stages, ecosystem balance, and pack hunting.",
 						"Treat loot and player ESP as your starting preset, not a permanent loadout. The best configs expose just enough data to make decisions without cluttering the screen during hectic fights.",
-						"Because The Isle revolves around horde spawn as a dinosaur, hunt or graze to grow, and survive apex predators and rival packs, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
+						"Because The Isle revolves around killer spawn as a dinosaur, hunt or graze to grow, and survive apex predators and rival packs, cheat value comes from timing — knowing when to toggle overlays on, when to lean on aim assist, and when to play clean to avoid spectator reports."
 					]
 				},
 				{
@@ -8560,7 +8560,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Tune overlay opacity, distance filters, and aim smoothing so features stay readable under pressure.",
 						"Align loot and player ESP with your role. Aggressive players need tighter aim FOV and faster target switching; loot-focused players should widen ESP range and shrink combat overlays.",
-						"Objective time and rehorde spawn stagger win close matches on most maps. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
+						"Objective time and rekiller spawn stagger win close matches on most maps. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
 					]
 				},
 				{
@@ -8758,7 +8758,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Tune overlay opacity, distance filters, and aim smoothing so features stay readable under pressure.",
 						"Align ESP and wallhack setup with your role. Aggressive players need tighter aim FOV and faster target switching; loot-focused players should widen ESP range and shrink combat overlays.",
-						"Objective time and rehorde spawn stagger win close matches on most maps. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
+						"Objective time and rekiller spawn stagger win close matches on most maps. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
 					]
 				},
 				{
@@ -8832,7 +8832,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Swap profiles between tank, aircraft, and infantry roles; each needs different overlay density.",
 						"High-stakes Call of Duty lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Pre-aim common angles and use horde spawn knowledge to control mid-map fights. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Pre-aim common angles and use killer spawn knowledge to control mid-map fights. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -9220,7 +9220,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Use player ESP with distance caps so you can scout raids without flooding the screen on large maps.",
 						"Align anti-cheat awareness with your role. Aggressive players need tighter aim FOV and faster target switching; loot-focused players should widen ESP range and shrink combat overlays.",
-						"Armor penetration and medical supplies matter more than raw DPS in most mid-range fights. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
+						"Armor penetration and chests and totems matter more than raw DPS in most mid-range fights. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
 					]
 				},
 				{
@@ -9484,7 +9484,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Use player ESP with distance caps so you can scout raids without flooding the screen on large maps.",
 						"Align patch-day cheat checks with your role. Aggressive players need tighter aim FOV and faster target switching; loot-focused players should widen ESP range and shrink combat overlays.",
-						"Armor penetration and medical supplies matter more than raw DPS in most mid-range fights. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
+						"Armor penetration and chests and totems matter more than raw DPS in most mid-range fights. The same idea applies to cheats — filter noise, highlight high-value targets, and let radar handle off-screen pressure so ESP stays readable."
 					]
 				},
 				{
@@ -10152,7 +10152,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Swap profiles between tank, aircraft, and infantry roles; each needs different overlay density.",
 						"High-stakes Call of Duty lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Pre-aim common angles and use horde spawn knowledge to control mid-map fights. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Pre-aim common angles and use killer spawn knowledge to control mid-map fights. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{
@@ -10218,7 +10218,7 @@ export const externalGuidePosts: ExternalGuidePost[] = [
 					paragraphs: [
 						"Rotate cheat profiles between scav and PMC loadouts; heavy overlays on every raid increase report risk.",
 						"High-stakes Escape from Tarkov lobbies punish obvious configs. Lower aim smoothing spikes, avoid tracking through hard cover, and disable snaplines when streaming or recording.",
-						"Time raids around quest hotspots and boss horde spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
+						"Time raids around quest hotspots and boss killer spawns, but rotate routes when server traffic spikes. Pair that in-game discipline with cheat discipline: if a feature feels too visible, turn it off for a week and rely on radar plus ESP until patches settle."
 					]
 				},
 				{

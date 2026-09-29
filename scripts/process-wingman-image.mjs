@@ -7,14 +7,14 @@ import sharp from 'sharp';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const OUT = join(ROOT, 'public', 'images', 'zomboid-wingman.webp');
-const ARCHIVE = join(ROOT, 'public', 'images', 'zomboid-wingman-source.jpg');
+const OUT = join(ROOT, 'public', 'images', 'dbd-wingman.webp');
+const ARCHIVE = join(ROOT, 'public', 'images', 'dbd-wingman-source.jpg');
 
 const CURSOR_ASSETS = join(
 	process.env.USERPROFILE ?? '',
 	'.cursor',
 	'projects',
-	'c-Users-3Tee-System-Downloads-projectzomboid-cheats-com-main',
+	'c-Users-3Tee-System-Downloads-projectzomboid-cheats-com',
 	'assets',
 );
 
@@ -26,8 +26,9 @@ function findCursorAsset(pattern) {
 
 const SOURCE_CANDIDATES = [
 	ARCHIVE,
+	findCursorAsset(/a8404989-d022-44fe-96fe-a49e17fe9bbe/),
+	findCursorAsset(/727270d6-6e26-4f94-b917/),
 	findCursorAsset(/images__5_/),
-	findCursorAsset(/ChatGPT_Image_Sep_7/),
 ].filter(Boolean);
 
 const input = SOURCE_CANDIDATES.find((p) => existsSync(p));

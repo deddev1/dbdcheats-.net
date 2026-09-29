@@ -6,26 +6,26 @@ import { siteConfig } from '../data/site';
 import {
 	absoluteGuideUrl,
 	getMixedExternalGuides,
-	getNativeZomboidGuides,
+	getNativeDbdGuides,
 	guidesBasePath,
 } from '../data/guides/helpers';
-import ZomboidAuthorityLinks from './ZomboidAuthorityLinks.astro';
+import DbdAuthorityLinks from './DbdAuthorityLinks.astro';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale } from '../data/i18n/locales';
 
 const locale = defaultLocale;
-const nativeGuides = getNativeZomboidGuides();
+const nativeGuides = getNativeDbdGuides();
 const externalGuides = getMixedExternalGuides();
 const homeHref = getLocalizedPath('home', locale);
 
 function nativeGuideLabel(title: string): string {
-	const trimmed = title.replace(/^Project Zomboid\s+/i, '').trim();
+	const trimmed = title.replace(/^Dead by Daylight\s+/i, '').trim();
 	return trimmed.length <= 38 ? trimmed : `${trimmed.slice(0, 35).trimEnd()}…`;
 }
 
-const title = 'Project Zomboid Guides Hub | Survival, Loot & Cheats Tips';
+const title = 'Dead by Daylight Guides Hub | Survival, Loot & Cheats Tips';
 const description =
-	'Native Project Zomboid guides covering survival basics, Knox County loot routes, zombie types, game modes, patch notes, and cheat feature walkthroughs.';
+	'Native Dead by Daylight guides covering survivor basics, generator and totem routes, killer roster, game modes, patch notes, and cheat feature walkthroughs.';
 
 const canonicalURL = absoluteGuideUrl();
 
@@ -54,17 +54,17 @@ const extraGraph = [
 	<main class="guides">
 		<header class="guides__hero">
 			<p class="guides__eyebrow">Guides hub</p>
-			<h1>Project Zomboid guides</h1>
+			<h1>Dead by Daylight guides</h1>
 			<p class="guides__intro">
-				Survival walkthroughs, loot routes, zombie types, and patch-day checklists — everything on this hub is
-				written for Project Zomboid players.
+				Survivor walkthroughs, loot routes, killer roster, and patch-day checklists — everything on this hub is
+				written for Dead by Daylight players.
 			</p>
 		</header>
 
 		<section class="guides__section guides__section--native" aria-labelledby="native-guides-title">
 			<h2 id="native-guides-title" class="guides__section-title">All guides</h2>
 			<p class="guides__section-intro">
-				Start with new-player progression, then dive into loot farming, zombie behavior, game modes, and how to
+				Start with new-player progression, then dive into generator routes, killer roster, game modes, and how to
 				read official patch notes.
 			</p>
 			<div class="guides__grid">
@@ -80,7 +80,7 @@ const extraGraph = [
 						decoding="async"
 					/>
 					<div class="guides__card-body">
-						<span class="guides__cat">Project Zomboid</span>
+						<span class="guides__cat">Dead by Daylight</span>
 						<h3 class="guides__card-title">
 							<a href={post.canonicalPath}>{nativeGuideLabel(post.translation.title)}</a>
 						</h3>
@@ -91,7 +91,7 @@ const extraGraph = [
 		}
 			</div>
 
-			<ZomboidAuthorityLinks headingLevel="h3" />
+			<DbdAuthorityLinks headingLevel="h3" />
 		</section>
 
 		{
@@ -142,7 +142,7 @@ const extraGraph = [
 
 	.guides__eyebrow {
 		margin: 0 0 0.5rem;
-		color: #d2ae76;
+		color: #6D28D9;
 		font-size: 0.75rem;
 		font-weight: 700;
 		letter-spacing: 0.08em;
@@ -169,7 +169,7 @@ const extraGraph = [
 
 	.guides__section--external {
 		padding-top: 2rem;
-		border-top: 1px solid rgba(104, 112, 82, 0.22);
+		border-top: 1px solid rgba(109, 40, 217, 0.22);
 	}
 
 	.guides__section-title {
@@ -195,8 +195,8 @@ const extraGraph = [
 		display: flex;
 		flex-direction: column;
 		border-radius: 0.95rem;
-		border: 1px solid rgba(104, 112, 82, 0.18);
-		background: linear-gradient(145deg, rgba(23, 27, 26, 0.92) 0%, rgba(17, 21, 20, 0.88) 100%);
+		border: 1px solid rgba(109, 40, 217, 0.18);
+		background: linear-gradient(145deg, rgba(22, 11, 32, 0.92) 0%, rgba(16, 16, 20, 0.88) 100%);
 		overflow: hidden;
 		color: inherit;
 		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
@@ -207,7 +207,7 @@ const extraGraph = [
 	}
 
 	.guides__card:hover {
-		border-color: rgba(210, 174, 118, 0.4);
+		border-color: rgba(168, 85, 247, 0.4);
 		transform: translateY(-2px);
 		box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
 	}
@@ -225,7 +225,7 @@ const extraGraph = [
 	}
 
 	.guides__cat {
-		color: #d2ae76;
+		color: #6D28D9;
 		font-size: 0.68rem;
 		font-weight: 800;
 		letter-spacing: 0.06em;
@@ -246,7 +246,7 @@ const extraGraph = [
 	}
 
 	.guides__card-title a:hover {
-		color: #d2ae76;
+		color: #6D28D9;
 	}
 
 	.guides__card-body p:not(.guides__card-title) {

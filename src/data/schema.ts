@@ -8,97 +8,97 @@ export const pageFaqClusters: Partial<
 > = {
 	hacks: [
 		{
-			question: 'What are Project Zomboid cheats?',
+			question: 'What are Dead by Daylight cheats?',
 			answer:
-				'Project Zomboid cheats are Windows PC tools for Project Zomboid with ESP, wallhack, and aimbot controls. Project Zomboid Cheats licenses include anti-cheat maintenance updates and setup support.',
+				'Dead by Daylight cheats are Windows PC tools for Dead by Daylight with ESP, wallhack, and aimbot controls. Dead by Daylight Cheats licenses include anti-cheat maintenance updates and setup support.',
 		},
 		{
-			question: 'Are Project Zomboid cheats permanently undetected?',
+			question: 'Are Dead by Daylight cheats permanently undetected?',
 			answer:
 				'No package can promise that. We rebuild after anti-cheat and game patches and post status on Updates. Check there before you load in.',
 		},
 		{
-			question: 'What is included in the Project Zomboid Cheats package?',
+			question: 'What is included in the Dead by Daylight Cheats package?',
 			answer:
-				'Zombie ESP, medical supply markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
+				'Killer ESP, chest or totem markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
 		},
 	],
-	'project-zomboid-esp': [
+	'dbd-esp': [
 		{
-			question: 'What is a Project Zomboid wallhack?',
+			question: 'What is a Dead by Daylight wallhack?',
 			answer:
-				'A Project Zomboid wallhack is an ESP overlay that shows zombies, survivors, and loot through cover. Project Zomboid Cheats wallhack includes distance readouts, team colours, and toggleable categories for survival and Knox County looting.',
+				'A Dead by Daylight wallhack is an ESP overlay that shows killers, survivors, and totems through cover. Dead by Daylight Cheats wallhack includes distance readouts, team colours, and toggleable categories for trials and Fog map looping.',
 		},
 		{
-			question: 'Does Project Zomboid Cheats include a radar hack?',
+			question: 'Does Dead by Daylight Cheats include a radar hack?',
 			answer:
-				'Yes. Project Zomboid Cheats includes 2D radar-style overlays that highlight nearby threats outside your direct view — useful for reading flanks during team pushes.',
+				'Yes. Dead by Daylight Cheats includes 2D radar-style overlays that highlight nearby threats outside your direct view — useful for reading flanks during team pushes.',
 		},
 		{
-			question: 'Does this fit survival and Knox County loot runs?',
+			question: 'Does this fit survival and generator and totem routes?',
 			answer:
 				'Yes. ESP and radar help you read nearby enemies and loot; aimbot covers the firefight. Tuned for solo and team push play.',
 		},
 	],
-	'project-zomboid-aimbot': [
+	'dbd-aimbot': [
 		{
-			question: 'What is Project Zomboid aimbot?',
+			question: 'What is Dead by Daylight aimbot?',
 			answer:
-				'Project Zomboid aimbot is configurable aim assist with smoothness, FOV, and head priority controls. It ships bundled with ESP and radar in the Project Zomboid Cheats license for Windows PC.',
+				'Dead by Daylight aimbot is configurable aim assist with smoothness, FOV, and head priority controls. It ships bundled with ESP and radar in the Dead by Daylight Cheats license for Windows PC.',
 		},
 		{
-			question: 'Can I use Project Zomboid aimbot with a controller?',
+			question: 'Can I use Dead by Daylight aimbot with a controller?',
 			answer:
-				'Yes. Project Zomboid Cheats supports controller play on Windows PC. Tune FOV and smoothness per weapon profile after setup.',
+				'Yes. Dead by Daylight Cheats supports controller play on Windows PC. Tune FOV and smoothness per weapon profile after setup.',
 		},
 		{
-			question: 'Are Project Zomboid cheats permanently undetected?',
+			question: 'Are Dead by Daylight cheats permanently undetected?',
 			answer:
 				'No package can promise that. We rebuild after anti-cheat and game patches and post status on Updates. Check there before you load in.',
 		},
 	],
 	pricing: [
 		{
-			question: 'How are Project Zomboid Cheats licenses delivered?',
+			question: 'How are Dead by Daylight Cheats licenses delivered?',
 			answer:
 				'Digitally after payment confirmation. Timing can vary by payment method — keep your order confirmation if you contact support.',
 		},
 		{
 			question: 'What does the $35/month plan include?',
 			answer:
-				'The monthly license includes ESP, wallhack overlays, radar, and aimbot controls with anti-cheat maintenance updates for Project Zomboid on Windows PC.',
+				'The monthly license includes ESP, wallhack overlays, radar, and aimbot controls with anti-cheat maintenance updates for Dead by Daylight on Windows PC.',
 		},
 		{
 			question: 'Is the $150 lifetime license worth it?',
 			answer:
-				'Lifetime pays off if you play Project Zomboid across multiple seasons. It includes the same feature stack as monthly with long-term maintenance after patches.',
+				'Lifetime pays off if you play Dead by Daylight across multiple seasons. It includes the same feature stack as monthly with long-term maintenance after patches.',
 		},
 	],
 	features: [
 		{
-			question: 'What is included in Project Zomboid Cheats?',
+			question: 'What is included in Dead by Daylight Cheats?',
 			answer:
-				'Zombie ESP, medical supply markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
+				'Killer ESP, chest or totem markers, radar cues, and configurable aimbot in one license. See Features, ESP, and Aimbot for control detail.',
 		},
 		{
-			question: 'Does Project Zomboid Cheats work on Windows PC?',
+			question: 'Does Dead by Daylight Cheats work on Windows PC?',
 			answer:
-				'Yes — Project Zomboid Cheats is built for Project Zomboid on Windows 10 and 11 with in-client toggles for ESP, radar, and aimbot.',
+				'Yes — Dead by Daylight Cheats is built for Dead by Daylight on Windows 10 and 11 with in-client toggles for ESP, radar, and aimbot.',
 		},
 		{
-			question: 'How does anti-cheat affect Project Zomboid Cheats?',
+			question: 'How does anti-cheat affect Dead by Daylight Cheats?',
 			answer:
-				'Anti-cheat monitors Project Zomboid on Windows PC. Project Zomboid Cheats publishes maintenance notes after patches that may require a rebuild. Read the maintenance guide page for how updates are handled.',
+				'Anti-cheat monitors Dead by Daylight on Windows PC. Dead by Daylight Cheats publishes maintenance notes after patches that may require a rebuild. Read the maintenance guide page for how updates are handled.',
 		},
 	],
 	updates: [
 		{
-			question: 'When should I check Project Zomboid Cheats updates?',
+			question: 'When should I check Dead by Daylight Cheats updates?',
 			answer:
-				'Check the Updates page before launching after any Project Zomboid patch or anti-cheat maintenance from The Indie Stone. Patch-day queues are when outdated ESP, aimbot, or radar builds matter most.',
+				'Check the Updates page before launching after any Dead by Daylight patch or anti-cheat maintenance from Behaviour Interactive. Patch-day queues are when outdated ESP, aimbot, or radar builds matter most.',
 		},
 		{
-			question: 'What happens after a Project Zomboid patch?',
+			question: 'What happens after a Dead by Daylight patch?',
 			answer:
 				'We review ESP wallhack, radar, and aimbot modules against the new build, publish status on this page, and ship rebuilt packages to active monthly and lifetime licenses.',
 		},

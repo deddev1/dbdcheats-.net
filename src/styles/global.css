@@ -5,16 +5,27 @@
 @import "./prose.css";
 
 /*
- * Display font: desktop only. Mobile uses the system stack so Syne never
- * competes with LCP (font file ~35KB) and FCP stays instant.
+ * Display + body fonts: desktop only. Mobile keeps a fast system stack so
+ * webfonts never compete with LCP.
  */
 @media (min-width: 761px) {
 	@font-face {
-		font-family: "Syne Variable";
+		font-family: "Oswald Variable";
 		font-style: normal;
 		font-display: optional;
-		font-weight: 400 800;
-		src: url("@fontsource-variable/syne/files/syne-latin-wght-normal.woff2") format("woff2-variations");
+		font-weight: 400 700;
+		src: url("@fontsource-variable/oswald/files/oswald-latin-wght-normal.woff2") format("woff2-variations");
+		unicode-range:
+			U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+			U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+
+	@font-face {
+		font-family: "DM Sans Variable";
+		font-style: normal;
+		font-display: optional;
+		font-weight: 400 700;
+		src: url("@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2") format("woff2-variations");
 		unicode-range:
 			U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
 			U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -22,41 +33,44 @@
 }
 
 @theme {
-	/* Mobile-first: distinctive system stack; Syne layered on at ≥761px */
-	--font-display: ui-rounded, "Segoe UI Variable Display", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
-	--font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+	/* Mobile-first system stack; Oswald + DM Sans layered on at ≥761px */
+	--font-display: "Segoe UI Variable Display", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+	--font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 
-	/* Project Zomboid survival palette */
-	--color-midnight: #090b0b;
-	--color-surface: #111514;
-	--color-surface-raised: #171b1a;
-	--color-surface-muted: #171b1a;
-	--color-surface-elevated: #202523;
-	--color-border: #2b302b;
-	--color-border-strong: rgba(104, 112, 82, 0.45);
+	/* Dead by Daylight — black fog + deep violet + sparse blood red */
+	--color-midnight: #07070a;
+	--color-surface: #101014;
+	--color-surface-raised: #160b20;
+	--color-surface-muted: #101014;
+	--color-surface-elevated: #1a1024;
+	--color-border: #29222f;
+	--color-border-strong: rgba(109, 40, 217, 0.4);
 
-	--color-teal: #687052;
-	--color-plum: #687052;
-	--color-fuchsia: #858e63;
-	--color-violet: #b58a58;
-	--color-orchid: #d2ae76;
-	--color-cyan: #d2ae76;
-	--color-mint: #858e63;
-	--color-bright: #d2ae76;
-	--color-warm: #b58a58;
-	--color-danger: #8e4038;
+	--color-teal: #6d28d9;
+	--color-plum: #6e1018;
+	--color-fuchsia: #9333ea;
+	--color-violet: #6d28d9;
+	--color-orchid: #6d28d9;
+	--color-cyan: #a855f7;
+	--color-mint: #4ade80;
+	--color-bright: #9333ea;
+	--color-warm: #a51d2d;
+	--color-blood: #6e1018;
+	--color-danger: #a51d2d;
+	--color-success: #4ade80;
 
-	--color-ink: #ffffff;
-	--color-body: #ffffff;
-	--color-muted: #d6d6d0;
-	--color-faint: #b0b0a8;
+	--color-ink: #f2eff5;
+	--color-body: #f2eff5;
+	--color-muted: #a7a1ad;
+	--color-faint: #77727d;
 
-	--color-button: #687052;
-	--color-button-hover: #858e63;
+	--color-button: #6d28d9;
+	--color-button-hover: #9333ea;
 
-	--shadow-soft: 0 10px 28px rgba(0, 0, 0, 0.32);
-	--gradient-brand: linear-gradient(135deg, #687052 0%, #b58a58 55%, #d2ae76 100%);
-	--gradient-brand-x: linear-gradient(90deg, #858e63 0%, #d2ae76 100%);
+	--shadow-soft: 0 10px 28px rgba(0, 0, 0, 0.36);
+	--gradient-brand: linear-gradient(135deg, #6d28d9 0%, #9333ea 100%);
+	--gradient-brand-x: linear-gradient(90deg, #6d28d9 0%, #9333ea 100%);
+	--gradient-hero: linear-gradient(180deg, #07070a 0%, #160b20 52%, #250d18 100%);
 
 	--page-max: 1180px;
 	--page-gutter: 1.5rem;
@@ -68,15 +82,18 @@
 
 /* Always emit core palette tokens for scoped component styles (e.g. footer). */
 :root {
-	--color-surface-raised: #171b1a;
-	--color-surface-elevated: #202523;
-	--color-warm: #b58a58;
-	--color-teal: #687052;
+	--color-surface-raised: #160b20;
+	--color-surface-elevated: #1a1024;
+	--color-warm: #a51d2d;
+	--color-blood: #6e1018;
+	--color-teal: #6d28d9;
+	--gradient-hero: linear-gradient(180deg, #07070a 0%, #160b20 52%, #250d18 100%);
 }
 
 @media (min-width: 761px) {
 	:root {
-		--font-display: "Syne Variable", ui-rounded, "Segoe UI Variable Display", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+		--font-display: "Oswald Variable", "Segoe UI Variable Display", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+		--font-sans: "DM Sans Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 	}
 }
 
@@ -122,7 +139,9 @@
 		min-height: 100dvh;
 		font-family: var(--font-sans);
 		color: var(--color-body);
-		background: var(--color-midnight);
+		background: var(--gradient-hero);
+		/* Fixed backgrounds cause severe scroll jank on iOS; desktop only. */
+		background-attachment: scroll;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		scrollbar-width: none;
@@ -130,11 +149,12 @@
 		overflow-x: hidden;
 		padding-left: env(safe-area-inset-left);
 		padding-right: env(safe-area-inset-right);
+		padding-bottom: env(safe-area-inset-bottom);
 	}
 
 	@media (min-width: 761px) {
 		body {
-			background: var(--color-midnight);
+			background-attachment: fixed;
 		}
 	}
 
@@ -154,8 +174,8 @@
 	}
 
 	::selection {
-		background: rgba(210, 174, 118, 0.35);
-		color: #090b0b;
+		background: rgba(109, 40, 217, 0.35);
+		color: #F2EFF5;
 	}
 
 	img {
@@ -237,15 +257,15 @@
 		padding: 0.85rem 1.85rem;
 		border-radius: 0.95rem;
 		border: 1px solid rgba(255, 255, 255, 0.22);
-		background: linear-gradient(180deg, #858e63 0%, #687052 100%);
+		background: linear-gradient(180deg, #9333EA 0%, #6D28D9 100%);
 		color: #ffffff;
 		font-size: 1rem;
 		font-weight: 800;
 		letter-spacing: 0.04em;
-		text-shadow: 0 1px 3px rgba(9, 11, 11, 0.55);
+		text-shadow: 0 1px 3px rgba(7, 7, 10, 0.55);
 		box-shadow:
 			0 1px 0 rgba(255, 255, 255, 0.28) inset,
-			0 8px 20px rgba(9, 11, 11, 0.28);
+			0 8px 20px rgba(7, 7, 10, 0.28);
 		transition:
 			transform 0.2s ease,
 			filter 0.2s ease,
@@ -295,9 +315,9 @@
 		background: linear-gradient(
 			105deg,
 			transparent 0%,
-			rgba(210, 174, 118, 0.14) 42%,
-			rgba(210, 174, 118, 0.28) 50%,
-			rgba(210, 174, 118, 0.14) 58%,
+			rgba(147, 51, 234, 0.12) 42%,
+			rgba(147, 51, 234, 0.22) 50%,
+			rgba(147, 51, 234, 0.12) 58%,
 			transparent 100%
 		);
 		transform: translateX(-170%) skewX(-18deg);
@@ -356,7 +376,7 @@
 			box-shadow:
 				0 1px 0 rgba(255, 255, 255, 0.3) inset,
 				0 0 0 1px rgba(255, 255, 255, 0.12),
-				0 10px 22px rgba(9, 11, 11, 0.32);
+				0 10px 22px rgba(7, 7, 10, 0.32);
 		}
 	}
 
@@ -393,10 +413,10 @@
 
 	.btn-buy:hover {
 		color: #ffffff;
-		background: linear-gradient(180deg, #d2ae76 0%, #858e63 100%);
+		background: linear-gradient(180deg, #6D28D9 0%, #9333EA 100%);
 		transform: translateY(-1px);
 		filter: brightness(1.03);
-		text-shadow: 0 1px 3px rgba(9, 11, 11, 0.45);
+		text-shadow: 0 1px 3px rgba(7, 7, 10, 0.45);
 	}
 
 	.btn-buy:active {
@@ -404,7 +424,7 @@
 	}
 
 	.surface-card {
-		background: linear-gradient(180deg, rgba(23, 27, 26, 0.98) 0%, rgba(17, 21, 20, 0.98) 100%);
+		background: linear-gradient(180deg, rgba(22, 11, 32, 0.98) 0%, rgba(16, 16, 20, 0.98) 100%);
 		border: 1px solid var(--color-border);
 		box-shadow: var(--shadow-soft);
 	}
@@ -454,9 +474,9 @@
 		pointer-events: none;
 		background: linear-gradient(
 			180deg,
-			rgba(210, 174, 118, 0.06) 0%,
-			transparent 36%,
-			rgba(9, 11, 11, 0.22) 100%
+			rgba(109, 40, 217, 0.04) 0%,
+			transparent 40%,
+			rgba(37, 13, 24, 0.35) 100%
 		);
 		mix-blend-mode: soft-light;
 	}

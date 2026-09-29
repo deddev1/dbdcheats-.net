@@ -12,7 +12,7 @@ function initInspiraRippleButtons(root: ParentNode = document) {
 			const x = event.clientX - rect.left - size / 2;
 			const y = event.clientY - rect.top - size / 2;
 			const duration = Number(button.dataset.rippleDuration) || 600;
-			const color = button.dataset.rippleColor || '#d2ae76';
+			const color = button.dataset.rippleColor || '#6D28D9';
 
 			const ripple = document.createElement('span');
 			ripple.className = 'inspira-ripple-btn__ripple';

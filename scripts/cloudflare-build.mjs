@@ -81,9 +81,9 @@ if (packageName === 'warframe-cheats') {
 	process.exit(1);
 }
 
-if (!existsSync('src/components/ZomboidAuthorityLinks.astro')) {
+if (!existsSync('src/components/DbdAuthorityLinks.astro')) {
 	console.error(
-		'[cloudflare-build] Missing src/components/ZomboidAuthorityLinks.astro — checkout latest main before building.',
+		'[cloudflare-build] Missing src/components/DbdAuthorityLinks.astro — checkout latest main before building.',
 	);
 	process.exit(1);
 }
@@ -134,7 +134,7 @@ writeFileSync(
 		{
 			builtAt: new Date().toISOString(),
 			commit: buildId,
-			site: 'https://projectzomboidcheats.com',
+			site: 'https://dbdcheat.net',
 		},
 		null,
 		2,

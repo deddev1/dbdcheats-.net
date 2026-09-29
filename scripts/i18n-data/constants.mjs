@@ -6,7 +6,7 @@ export const LOCALES = [
 ];
 
 export const PAGE_IDS = [
-	'home', 'project-zomboid-esp', 'project-zomboid-aimbot', 'features', 'pricing', 'setup',
+	'home', 'dbd-esp', 'dbd-aimbot', 'features', 'pricing', 'setup',
 	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'eac-bypass',
 	'cheats-2026', 'hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats',
 	'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
@@ -45,7 +45,7 @@ export type LocaleUi = {
 \t\theaderArt: string; cheatsPackage: string; rebootFight: string; battleRoyale: string; battleRoyaleIsland: string;
 \t};
 };
-export type PageId = 'home' | 'project-zomboid-esp' | 'project-zomboid-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
+export type PageId = 'home' | 'dbd-esp' | 'dbd-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'eac-bypass' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
 `;
 
 /** Clamp meta strings to SEO limits without ugly ellipsis. */
@@ -76,7 +76,7 @@ export function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy Project Zomboid Cheats/g, 'Buy Project Zomboid Cheats')
+		.replace(/Buy Dead by Daylight Cheats/g, 'Buy Dead by Daylight Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -98,8 +98,8 @@ export function section(h2, ...args) {
 
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
-	epic: '<a href="https://projectzomboid.com/" target="_blank" rel="noopener noreferrer">The Indie Stone</a>',
-	rust: '<a href="https://projectzomboid.com/" target="_blank" rel="noopener noreferrer">official Project Zomboid patch notes</a>',
-	status: '<a href="https://projectzomboid.com/blog/" target="_blank" rel="noopener noreferrer">Project Zomboid patch notes</a>',
-	eac: '<a href="https://projectzomboid.com/" target="_blank" rel="noopener noreferrer">Project Zomboid anti-cheat</a>',
+	epic: '<a href="https://deadbydaylight.com/" target="_blank" rel="noopener noreferrer">Behaviour Interactive</a>',
+	rust: '<a href="https://deadbydaylight.com/" target="_blank" rel="noopener noreferrer">official Dead by Daylight patch notes</a>',
+	status: '<a href="https://forum.deadbydaylight.com/en/categories/patch-notes" target="_blank" rel="noopener noreferrer">Dead by Daylight patch notes</a>',
+	eac: '<a href="https://deadbydaylight.com/" target="_blank" rel="noopener noreferrer">Dead by Daylight anti-cheat</a>',
 };

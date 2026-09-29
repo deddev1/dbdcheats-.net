@@ -3,49 +3,49 @@ import type { BlogPostDefinition } from './types';
 
 export const blogPosts: BlogPostDefinition[] = [
 	{
-		id: "project-zomboid-cheats-complete-guide",
+		id: "dbd-cheats-complete-guide",
 		imageKey: "battleRoyaleCombat",
 		published: "2026-07-31",
 		updated: "2026-08-01",
-		category: "Project Zomboid Cheats",
+		category: "Dead by Daylight Cheats",
 		featured: true,
 		translations: {
 		en: {
-		slug: "project-zomboid-cheats-complete-guide-2026",
-		title: "Project Zomboid Cheats 2026: Complete Undetected Guide",
-		metaDescription: "Complete Project Zomboid Cheats guide for PC and controllers — ESP boxes, soft aim, cloud DMA, and anti-cheat maintenance in 2026. Compare the full package and buy.",
-		h1: "Project Zomboid Cheats 2026: The Complete Undetected Guide",
-		intro: "Searching for Project Zomboid Cheats in 2026? This guide covers ESP wallhack, Aimbot, radar, undetected maintenance, and how Project Zomboid cheats searchers map to the same Windows PC package.",
-		keywords: ["Project Zomboid Cheats","undetected Project Zomboid Cheats","Project Zomboid cheats","esp","aimbot","eac"],
-		imageAlt: "Project Zomboid Cheats complete guide showing ESP wallhack and Aimbot for 2026",
+		slug: "dbd-cheats-complete-guide-2026",
+		title: "Dead by Daylight Cheats 2026: Complete Undetected Guide",
+		metaDescription: "Complete Dead by Daylight Cheats guide for PC and controllers — ESP boxes, soft aim, cloud DMA, and anti-cheat maintenance in 2026. Compare the full package and buy.",
+		h1: "Dead by Daylight Cheats 2026: The Complete Undetected Guide",
+		intro: "Searching for Dead by Daylight Cheats in 2026? This guide covers ESP wallhack, Aimbot, radar, undetected maintenance, and how Dead by Daylight cheats searchers map to the same Windows PC package.",
+		keywords: ["Dead by Daylight Cheats","undetected Dead by Daylight Cheats","Dead by Daylight cheats","esp","aimbot","eac"],
+		imageAlt: "Dead by Daylight Cheats complete guide showing ESP wallhack and Aimbot for 2026",
 		sections: [
 			{
-				h2: "What Project Zomboid Cheats actually include",
+				h2: "What Dead by Daylight Cheats actually include",
 				paragraphs: [
-					"Project Zomboid Cheats usually mean visibility plus combat assist: zombie ESP wallhack, medical supply markers, 2D radar threat cues, and configurable Aimbot. Buyers who type Project Zomboid cheats are looking for the same stack — different wording, same mission loop.",
-					"Official seasons and client updates publish through <a href=\"https://projectzomboid.com/\" target=\"_blank\" rel=\"noopener noreferrer\">The Indie Stone</a> and <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">official Project Zomboid patch notes</a>. Anti-cheat context lives on Project Zomboid anti-cheat. Our <a href=\"/project-zomboid-cheats/\">Project Zomboid Cheats pillar</a> is the commercial landing; this post is the long-form explainer.",
+					"Dead by Daylight Cheats usually mean visibility plus combat assist: killer ESP wallhack, chest or totem markers, 2D radar threat cues, and configurable Aimbot. Buyers who type Dead by Daylight cheats are looking for the same stack — different wording, same mission loop.",
+					"Official seasons and client updates publish through <a href=\"https://deadbydaylight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Behaviour Interactive</a> and <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">official Dead by Daylight patch notes</a>. Anti-cheat context lives on Dead by Daylight anti-cheat. Our <a href=\"/dbd-cheats/\">Dead by Daylight Cheats pillar</a> is the commercial landing; this post is the long-form explainer.",
 					"Pro Tip — One license, full loop: Prefer a maintained package over stacking single-feature downloads that break on every patch.",
 				],
 			},
 			{
 				h2: "ESP, wallhack, Aimbot, and radar roles",
 				paragraphs: [
-					"ESP/wallhack answers where squads and loot sit. Radar covers flanks outside FOV. Aimbot covers firefight consistency once you commit. Soft aim profiles help when you want smoother tracking — see <a href=\"/project-zomboid-aimbot/\">soft aim</a> and <a href=\"/project-zomboid-aimbot/\">Aimbot controls</a>.",
-					"Deep pages: <a href=\"/project-zomboid-esp/\">Project Zomboid ESP</a>, <a href=\"/project-zomboid-wallhack/\">wallhack</a>, <a href=\"/project-zomboid-radar/\">radar hack</a>, <a href=\"/project-zomboid-aimbot/\">aimbot hack</a>, and <a href=\"/project-zomboid-esp/\">ESP hack</a>.",
+					"ESP/wallhack answers where squads and loot sit. Radar covers flanks outside FOV. Aimbot covers firefight consistency once you commit. Soft aim profiles help when you want smoother tracking — see <a href=\"/dbd-aimbot/\">soft aim</a> and <a href=\"/dbd-aimbot/\">Aimbot controls</a>.",
+					"Deep pages: <a href=\"/dbd-esp/\">Dead by Daylight ESP</a>, <a href=\"/dbd-wallhack/\">wallhack</a>, <a href=\"/dbd-radar/\">radar hack</a>, <a href=\"/dbd-aimbot/\">aimbot hack</a>, and <a href=\"/dbd-esp/\">ESP hack</a>.",
 				],
 			},
 			{
-				h2: "Undetected Project Zomboid Cheats and anti-cheat patches",
+				h2: "Undetected Dead by Daylight Cheats and anti-cheat patches",
 				paragraphs: [
-					"Undetected Project Zomboid Cheats require rebuilds after Project Zomboid anti-cheat and major Project Zomboid updates. No vendor can promise permanent undetected status — check <a href=\"/updates/\">Updates</a> before you queue.",
-					"On patch mornings confirm <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">Project Zomboid patch notes</a>, then read our <a href=\"/project-zomboid-cheats/\">anti-cheat bypass guide</a> and <a href=\"/blog/undetected-project-zomboid-cheats-eac/\">undetected anti-cheat notes</a>.",
-					"Try This Today: Open the hacks pillar, skim Features, compare Pricing ($35 monthly / $150 lifetime), and bookmark Updates for the next Project Zomboid patch.",
+					"Undetected Dead by Daylight Cheats require rebuilds after Dead by Daylight anti-cheat and major Dead by Daylight updates. No vendor can promise permanent undetected status — check <a href=\"/updates/\">Updates</a> before you queue.",
+					"On patch mornings confirm <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight patch notes</a>, then read our <a href=\"/dbd-cheats/\">anti-cheat bypass guide</a> and <a href=\"/blog/undetected-dbd-cheats-eac/\">undetected anti-cheat notes</a>.",
+					"Try This Today: Open the hacks pillar, skim Features, compare Pricing ($35 monthly / $150 lifetime), and bookmark Updates for the next Dead by Daylight patch.",
 				],
 			},
 			{
 				h2: "Next steps — pricing, setup, and cheats pages",
 				paragraphs: [
-					"Ready to buy? Start at the <a href=\"/project-zomboid-cheats/\">Project Zomboid Cheats pillar page</a>, then <a href=\"/pricing/\">Pricing</a> and <a href=\"/setup/\">Setup</a>. Prefer cheats wording? Read <a href=\"/project-zomboid-cheats/\">Project Zomboid cheats 2026</a> and <a href=\"/blog/project-zomboid-cheats-buyers-guide/\">cheats buyers guide</a>.",
+					"Ready to buy? Start at the <a href=\"/dbd-cheats/\">Dead by Daylight Cheats pillar page</a>, then <a href=\"/pricing/\">Pricing</a> and <a href=\"/setup/\">Setup</a>. Prefer cheats wording? Read <a href=\"/dbd-cheats/\">Dead by Daylight cheats 2026</a> and <a href=\"/blog/dbd-cheats-buyers-guide/\">cheats buyers guide</a>.",
 					"Support: include your order ID on the <a href=\"/support/\">Support</a> page after checkout.",
 				],
 			}
@@ -54,41 +54,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-cheats-buyers-guide",
+		id: "dbd-cheats-buyers-guide",
 		imageKey: "cheatsPackage",
 		published: "2026-07-30",
 		updated: "2026-08-01",
-		category: "Project Zomboid Cheats",
+		category: "Dead by Daylight Cheats",
 		featured: true,
 		translations: {
 		en: {
-		slug: "project-zomboid-cheats-buyers-guide",
-		title: "Project Zomboid Cheats Buyers Guide: What to Check",
-		metaDescription: "Project Zomboid cheats buyers guide for PC and controllers — ESP boxes, soft aim, cloud DMA, pricing, and anti-cheat status. Compare before checkout.",
-		h1: "Project Zomboid Cheats Buyers Guide: What Matters in 2026",
-		intro: "Shopping for Project Zomboid cheats? Use this checklist for ESP wallhack, Aimbot, radar, anti-cheat maintenance, and license length — then cross-check the Project Zomboid Cheats pillar before checkout.",
-		keywords: ["Project Zomboid cheats","best Project Zomboid cheats","Project Zomboid Cheats","buyers guide","undetected"],
-		imageAlt: "Project Zomboid cheats buyers guide checklist for ESP Aimbot and pricing",
+		slug: "dbd-cheats-buyers-guide",
+		title: "Dead by Daylight Cheats Buyers Guide: What to Check",
+		metaDescription: "Dead by Daylight cheats buyers guide for PC and controllers — ESP boxes, soft aim, cloud DMA, pricing, and anti-cheat status. Compare before checkout.",
+		h1: "Dead by Daylight Cheats Buyers Guide: What Matters in 2026",
+		intro: "Shopping for Dead by Daylight cheats? Use this checklist for ESP wallhack, Aimbot, radar, anti-cheat maintenance, and license length — then cross-check the Dead by Daylight Cheats pillar before checkout.",
+		keywords: ["Dead by Daylight cheats","best Dead by Daylight cheats","Dead by Daylight Cheats","buyers guide","undetected"],
+		imageAlt: "Dead by Daylight cheats buyers guide checklist for ESP Aimbot and pricing",
 		sections: [
 			{
 				h2: "Buyer checklist before you pay",
 				paragraphs: [
 					"Confirm Windows PC support, anti-cheat maintenance cadence, ESP + Aimbot + radar in one license, clear pricing, and a live Updates log. Skip tools that only ship a wallhack with no rebuild notes.",
-					"Primary commercial pages: <a href=\"/project-zomboid-cheats/\">best Project Zomboid cheats</a>, <a href=\"/project-zomboid-cheats/\">cheats 2026</a>, and <a href=\"/project-zomboid-cheats/\">Project Zomboid Cheats</a> (hacks is the main brand keyword).",
+					"Primary commercial pages: <a href=\"/dbd-cheats/\">best Dead by Daylight cheats</a>, <a href=\"/dbd-cheats/\">cheats 2026</a>, and <a href=\"/dbd-cheats/\">Dead by Daylight Cheats</a> (hacks is the main brand keyword).",
 				],
 			},
 			{
 				h2: "Hacks vs cheats wording",
 				paragraphs: [
-					"Project Zomboid Cheats and Project Zomboid cheats describe the same product category for most searchers. We lead with hacks on projectzomboidcheats.com while keeping cheats pages for buyers who use that query.",
-					"Balance and anti-cheat reality still come from <a href=\"https://projectzomboid.com/\" target=\"_blank\" rel=\"noopener noreferrer\">The Indie Stone</a>. Product rebuild timing is on our <a href=\"/updates/\">Updates</a> page.",
+					"Dead by Daylight Cheats and Dead by Daylight cheats describe the same product category for most searchers. We lead with hacks on dbdcheat.net while keeping cheats pages for buyers who use that query.",
+					"Balance and anti-cheat reality still come from <a href=\"https://deadbydaylight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Behaviour Interactive</a>. Product rebuild timing is on our <a href=\"/updates/\">Updates</a> page.",
 				],
 			},
 			{
 				h2: "Feature pages worth opening",
 				paragraphs: [
-					"Open <a href=\"/project-zomboid-esp/\">ESP</a>, <a href=\"/project-zomboid-aimbot/\">Aimbot</a>, <a href=\"/features/\">Features</a>, and <a href=\"/pricing/\">Pricing</a> before you buy. Delivery and activation steps live on <a href=\"/setup/\">Setup</a>.",
-					"Related reading: <a href=\"/blog/project-zomboid-cheats-complete-guide-2026/\">hacks complete guide</a> and <a href=\"/blog/project-zomboid-cheats-2026-whats-new/\">cheats 2026 what's new</a>.",
+					"Open <a href=\"/dbd-esp/\">ESP</a>, <a href=\"/dbd-aimbot/\">Aimbot</a>, <a href=\"/features/\">Features</a>, and <a href=\"/pricing/\">Pricing</a> before you buy. Delivery and activation steps live on <a href=\"/setup/\">Setup</a>.",
+					"Related reading: <a href=\"/blog/dbd-cheats-complete-guide-2026/\">hacks complete guide</a> and <a href=\"/blog/dbd-cheats-2026-whats-new/\">cheats 2026 what's new</a>.",
 					"Try This Today: Write your must-have list (ESP categories, Aimbot smoothness, lifetime vs monthly), then compare against Features once.",
 				],
 			}
@@ -97,41 +97,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-cheats-2026-whats-new",
-		imageKey: "headerArt",
+		id: "dbd-cheats-2026-whats-new",
+		imageKey: "hero",
 		published: "2026-07-28",
 		updated: "2026-08-01",
-		category: "Project Zomboid Cheats",
+		category: "Dead by Daylight Cheats",
 		featured: false,
 		translations: {
 		en: {
-		slug: "project-zomboid-cheats-2026-whats-new",
-		title: "Project Zomboid Cheats 2026: What Changed This Year",
-		metaDescription: "Project Zomboid cheats 2026 overview — ESP boxes, soft aim, and cloud DMA for PC and controllers with anti-cheat maintenance. Pair with the hacks pillar before buying.",
-		h1: "Project Zomboid Cheats 2026: What Buyers Need Now",
-		intro: "Project Zomboid cheats 2026 searches spike every season. Here is what still matters: maintained ESP wallhack, Aimbot profiles, radar awareness, and rebuilds after Project Zomboid anti-cheat patches.",
-		keywords: ["Project Zomboid cheats 2026","Project Zomboid Cheats","eac","esp","aimbot"],
-		imageAlt: "Project Zomboid cheats 2026 overview for undetected ESP and Aimbot buyers",
+		slug: "dbd-cheats-2026-whats-new",
+		title: "Dead by Daylight Cheats 2026: What Changed This Year",
+		metaDescription: "Dead by Daylight cheats 2026 overview — ESP boxes, soft aim, and cloud DMA for PC and controllers with anti-cheat maintenance. Pair with the hacks pillar before buying.",
+		h1: "Dead by Daylight Cheats 2026: What Buyers Need Now",
+		intro: "Dead by Daylight cheats 2026 searches spike every season. Here is what still matters: maintained ESP wallhack, Aimbot profiles, radar awareness, and rebuilds after Dead by Daylight anti-cheat patches.",
+		keywords: ["Dead by Daylight cheats 2026","Dead by Daylight Cheats","eac","esp","aimbot"],
+		imageAlt: "Dead by Daylight cheats 2026 overview for undetected ESP and Aimbot buyers",
 		sections: [
 			{
 				h2: "Why 2026 buyers still need maintenance",
 				paragraphs: [
 					"map zone updates, weapons, and anti-cheat updates still break stale tools. A 2026-ready package publishes rebuild notes — not a frozen prior-year build.",
-					"Track official messaging on <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">official Project Zomboid patch notes</a>, then confirm product status on <a href=\"/updates/\">Updates</a> and <a href=\"/project-zomboid-cheats/\">the cheats 2026 landing</a>.",
+					"Track official messaging on <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">official Dead by Daylight patch notes</a>, then confirm product status on <a href=\"/updates/\">Updates</a> and <a href=\"/dbd-cheats/\">the cheats 2026 landing</a>.",
 				],
 			},
 			{
 				h2: "Keyword map: cheats 2026 ↔ hacks",
 				paragraphs: [
-					"Use the <a href=\"/project-zomboid-cheats/\">Project Zomboid cheats 2026 guide</a> for cheats-year intent and the <a href=\"/project-zomboid-cheats/\">Project Zomboid Cheats pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.",
-					"Also see <a href=\"/blog/project-zomboid-cheats-complete-guide-2026/\">hacks guide</a> and <a href=\"/project-zomboid-cheats/\">undetected status</a>.",
+					"Use the <a href=\"/dbd-cheats/\">Dead by Daylight cheats 2026 guide</a> for cheats-year intent and the <a href=\"/dbd-cheats/\">Dead by Daylight Cheats pillar page</a> for the primary hacks intent. Both point to the same ESP + Aimbot + radar stack.",
+					"Also see <a href=\"/blog/dbd-cheats-complete-guide-2026/\">hacks guide</a> and <a href=\"/dbd-cheats/\">undetected status</a>.",
 				],
 			},
 			{
 				h2: "Pricing and setup for new buyers",
 				paragraphs: [
 					"Monthly ($35) and lifetime ($150) plans share features. After checkout, follow <a href=\"/setup/\">Setup</a>. Questions go to <a href=\"/support/\">Support</a> with your order ID.",
-					"Try This Today: Skim Features, open Pricing, and bookmark Updates before the next Project Zomboid patch window.",
+					"Try This Today: Skim Features, open Pricing, and bookmark Updates before the next Dead by Daylight patch window.",
 				],
 			}
 		],
@@ -139,7 +139,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-aimbot-settings-guide",
+		id: "dbd-aimbot-settings-guide",
 		imageKey: "aimbotCombat",
 		published: "2026-07-26",
 		updated: "2026-08-01",
@@ -147,33 +147,33 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "project-zomboid-aimbot-settings-guide",
-		title: "Project Zomboid Aimbot Settings: Smooth FOV Guide",
-		metaDescription: "Project Zomboid aimbot settings for PC and controllers — soft aim, FOV, head priority, and per-weapon profiles. Tune assist, then review the hacks pages.",
-		h1: "Project Zomboid Aimbot Settings: Smoothness, FOV & Soft Aim",
-		intro: "Configure Project Zomboid Aimbot without snapping every fight. This guide covers smoothness, FOV, head priority, per-weapon profiles, and how Aimbot fits into Project Zomboid Cheats packages.",
-		keywords: ["project zomboid aimbot","aimbot settings","soft aim","Project Zomboid Cheats","fov"],
-		imageAlt: "Project Zomboid Aimbot settings guide for smoothness FOV and head priority",
+		slug: "dbd-aimbot-settings-guide",
+		title: "Dead by Daylight Aimbot Settings: Smooth FOV Guide",
+		metaDescription: "Dead by Daylight aimbot settings for PC and controllers — soft aim, FOV, head priority, and per-weapon profiles. Tune assist, then review the hacks pages.",
+		h1: "Dead by Daylight Aimbot Settings: Smoothness, FOV & Soft Aim",
+		intro: "Configure Dead by Daylight Aimbot without snapping every fight. This guide covers smoothness, FOV, head priority, per-weapon profiles, and how Aimbot fits into Dead by Daylight Cheats packages.",
+		keywords: ["dead by daylight aimbot","aimbot settings","soft aim","Dead by Daylight Cheats","fov"],
+		imageAlt: "Dead by Daylight Aimbot settings guide for smoothness FOV and head priority",
 		sections: [
 			{
 				h2: "Start conservative, then tune",
 				paragraphs: [
-					"Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in multiplayer servers peeks. Hotkeys let you disable Aimbot mid-session.",
-					"Full control list: <a href=\"/project-zomboid-aimbot/\">Project Zomboid Aimbot</a>, <a href=\"/project-zomboid-aimbot/\">aimbot hack</a>, and <a href=\"/project-zomboid-aimbot/\">soft aim</a>.",
+					"Begin with moderate FOV and higher smoothness. Instant-snap configs look unnatural and are harder to control in public lobbies peeks. Hotkeys let you disable Aimbot mid-session.",
+					"Full control list: <a href=\"/dbd-aimbot/\">Dead by Daylight Aimbot</a>, <a href=\"/dbd-aimbot/\">aimbot hack</a>, and <a href=\"/dbd-aimbot/\">soft aim</a>.",
 				],
 			},
 			{
 				h2: "Pair Aimbot with ESP and radar",
 				paragraphs: [
-					"Aimbot alone does not solve rotations. Pair with <a href=\"/project-zomboid-esp/\">ESP</a> and <a href=\"/project-zomboid-radar/\">radar</a> inside the <a href=\"/project-zomboid-cheats/\">Project Zomboid Cheats</a> package.",
-					"Weapon balance shifts on <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">official Project Zomboid patch notes</a> — revisit FOV after combat patches.",
+					"Aimbot alone does not solve rotations. Pair with <a href=\"/dbd-esp/\">ESP</a> and <a href=\"/dbd-radar/\">radar</a> inside the <a href=\"/dbd-cheats/\">Dead by Daylight Cheats</a> package.",
+					"Weapon balance shifts on <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">official Dead by Daylight patch notes</a> — revisit FOV after combat patches.",
 				],
 			},
 			{
 				h2: "anti-cheat notes and next steps",
 				paragraphs: [
-					"After Project Zomboid anti-cheat patches, confirm Aimbot modules on <a href=\"/updates/\">Updates</a>. Background: <a href=\"/project-zomboid-cheats/\">anti-cheat guide</a>.",
-					"Try This Today: Create separate pistol and shotgun profiles, play five games, then adjust only one slider per session.",
+					"After Dead by Daylight anti-cheat patches, confirm Aimbot modules on <a href=\"/updates/\">Updates</a>. Background: <a href=\"/dbd-cheats/\">anti-cheat guide</a>.",
+					"Try This Today: Create separate flashlight and toolbox profiles, play five games, then adjust only one slider per session.",
 				],
 			}
 		],
@@ -181,7 +181,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-esp-wallhack-explained",
+		id: "dbd-esp-wallhack-explained",
 		imageKey: "espWallhack",
 		published: "2026-07-24",
 		updated: "2026-08-01",
@@ -189,32 +189,32 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "project-zomboid-esp-wallhack-explained",
-		title: "Project Zomboid ESP & Wallhack Explained Clearly",
-		metaDescription: "Project Zomboid ESP and wallhack explained — enemy boxes, medical supply markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.",
-		h1: "Project Zomboid ESP and Wallhack Explained",
-		intro: "Project Zomboid ESP (wallhack) shows enemies, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into Project Zomboid Cheats and Project Zomboid cheats packages.",
-		keywords: ["project zomboid esp","project zomboid wallhack","esp hack","Project Zomboid Cheats","resource esp"],
-		imageAlt: "Project Zomboid ESP wallhack explained with player and loot overlays",
+		slug: "dbd-esp-wallhack-explained",
+		title: "Dead by Daylight ESP & Wallhack Explained Clearly",
+		metaDescription: "Dead by Daylight ESP and wallhack explained — enemy boxes, chest or totem markers, and distance readouts for PC and controllers. Learn overlays on the hacks pages.",
+		h1: "Dead by Daylight ESP and Wallhack Explained",
+		intro: "Dead by Daylight ESP (wallhack) shows enemies, loot, and threats through terrain. Here is how overlays work, what to toggle, and how ESP fits into Dead by Daylight Cheats and Dead by Daylight cheats packages.",
+		keywords: ["dead by daylight esp","dead by daylight wallhack","esp hack","Dead by Daylight Cheats","resource esp"],
+		imageAlt: "Dead by Daylight ESP wallhack explained with player and loot overlays",
 		sections: [
 			{
 				h2: "ESP categories that matter in missions",
 				paragraphs: [
-					"Toggle enemy outlines, loot/chest pins, special infected cues, and distance readouts. Too many overlays create noise — keep session-critical categories on during rotations.",
-					"Landings: <a href=\"/project-zomboid-esp/\">Project Zomboid ESP</a>, <a href=\"/project-zomboid-wallhack/\">wallhack</a>, <a href=\"/project-zomboid-esp/\">ESP hack</a>.",
+					"Toggle enemy outlines, loot/chest pins, killers cues, and distance readouts. Too many overlays create noise — keep session-critical categories on during rotations.",
+					"Landings: <a href=\"/dbd-esp/\">Dead by Daylight ESP</a>, <a href=\"/dbd-wallhack/\">wallhack</a>, <a href=\"/dbd-esp/\">ESP hack</a>.",
 				],
 			},
 			{
 				h2: "Wallhack vs radar vs Aimbot",
 				paragraphs: [
-					"Wallhack/ESP is line-of-sight information through walls. Radar covers off-screen flanks. Aimbot is combat assist. The <a href=\"/project-zomboid-cheats/\">hacks pillar</a> bundles all three.",
-					"Map and loot systems evolve with <a href=\"https://projectzomboid.com/\" target=\"_blank\" rel=\"noopener noreferrer\">The Indie Stone</a> seasons — toggleable categories stay useful when map zones rotate.",
+					"Wallhack/ESP is line-of-sight information through walls. Radar covers off-screen flanks. Aimbot is combat assist. The <a href=\"/dbd-cheats/\">hacks pillar</a> bundles all three.",
+					"Map and loot systems evolve with <a href=\"https://deadbydaylight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Behaviour Interactive</a> seasons — toggleable categories stay useful when map zones rotate.",
 				],
 			},
 			{
 				h2: "Undetected ESP maintenance",
 				paragraphs: [
-					"ESP modules rebuild with the package after anti-cheat patches. Check <a href=\"/updates/\">Updates</a> and <a href=\"/project-zomboid-cheats/\">undetected status</a> before game sessions.",
+					"ESP modules rebuild with the package after anti-cheat patches. Check <a href=\"/updates/\">Updates</a> and <a href=\"/dbd-cheats/\">undetected status</a> before game sessions.",
 					"Try This Today: Enable player + player ESP only for ten games, then add radar range once your eyes adjust.",
 				],
 			}
@@ -223,7 +223,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "undetected-project-zomboid-cheats-eac",
+		id: "undetected-dbd-cheats-eac",
 		imageKey: "rebootFight",
 		published: "2026-07-22",
 		updated: "2026-08-01",
@@ -231,32 +231,32 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "undetected-project-zomboid-cheats-eac",
-		title: "Undetected Project Zomboid Cheats & anti-cheat Reality",
-		metaDescription: "Undetected Project Zomboid Cheats and anti-cheat reality — ESP boxes, soft aim, and cloud DMA rebuilds for PC and controllers. Check Updates before queueing post-patch.",
-		h1: "Undetected Project Zomboid Cheats and Project Zomboid anti-cheat Reality",
-		intro: "Undetected Project Zomboid Cheats mean active anti-cheat maintenance — not a forever guarantee. Learn the patch-day workflow, where to check status, and how hacks/cheats pages fit together.",
-		keywords: ["undetected Project Zomboid Cheats","eac","Project Zomboid Cheats","Project Zomboid cheats","maintenance"],
-		imageAlt: "Undetected Project Zomboid Cheats and Project Zomboid anti-cheat maintenance workflow",
+		slug: "undetected-dbd-cheats-eac",
+		title: "Undetected Dead by Daylight Cheats & anti-cheat Reality",
+		metaDescription: "Undetected Dead by Daylight Cheats and anti-cheat reality — ESP boxes, soft aim, and cloud DMA rebuilds for PC and controllers. Check Updates before queueing post-patch.",
+		h1: "Undetected Dead by Daylight Cheats and Dead by Daylight anti-cheat Reality",
+		intro: "Undetected Dead by Daylight Cheats mean active anti-cheat maintenance — not a forever guarantee. Learn the patch-day workflow, where to check status, and how hacks/cheats pages fit together.",
+		keywords: ["undetected Dead by Daylight Cheats","eac","Dead by Daylight Cheats","Dead by Daylight cheats","maintenance"],
+		imageAlt: "Undetected Dead by Daylight Cheats and Dead by Daylight anti-cheat maintenance workflow",
 		sections: [
 			{
 				h2: "What undetected really means",
 				paragraphs: [
-					"Undetected Project Zomboid Cheats are rebuilt when Project Zomboid anti-cheat or Project Zomboid client patches change detection surface. Permanent undetected claims are marketing fiction.",
-					"Status pages: <a href=\"/updates/\">Updates</a>, <a href=\"/project-zomboid-cheats/\">undetected guide</a>, <a href=\"/project-zomboid-cheats/\">anti-cheat bypass</a>.",
+					"Undetected Dead by Daylight Cheats are rebuilt when Dead by Daylight anti-cheat or Dead by Daylight client patches change detection surface. Permanent undetected claims are marketing fiction.",
+					"Status pages: <a href=\"/updates/\">Updates</a>, <a href=\"/dbd-cheats/\">undetected guide</a>, <a href=\"/dbd-cheats/\">anti-cheat bypass</a>.",
 				],
 			},
 			{
 				h2: "Patch-day workflow",
 				paragraphs: [
-					"Check <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">Project Zomboid patch notes</a> for server status, wait for our Updates note, then launch. If services are degraded, do not assume the hack failed.",
-					"Commercial entry points: <a href=\"/project-zomboid-cheats/\">Project Zomboid Cheats</a> and <a href=\"/project-zomboid-cheats/\">Project Zomboid cheats 2026</a>.",
+					"Check <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight patch notes</a> for server status, wait for our Updates note, then launch. If services are degraded, do not assume the hack failed.",
+					"Commercial entry points: <a href=\"/dbd-cheats/\">Dead by Daylight Cheats</a> and <a href=\"/dbd-cheats/\">Dead by Daylight cheats 2026</a>.",
 				],
 			},
 			{
 				h2: "Responsible use and support",
 				paragraphs: [
-					"Using hacks/cheats can violate The Indie Stone terms — you assume ban risk. For license or delivery issues, contact <a href=\"/support/\">Support</a> with your order ID.",
+					"Using hacks/cheats can violate Behaviour Interactive terms — you assume ban risk. For license or delivery issues, contact <a href=\"/support/\">Support</a> with your order ID.",
 					"Try This Today: Bookmark Updates and the hacks pillar. Before your next session after a patch, verify build status first.",
 				],
 			}
@@ -265,7 +265,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-cheats-vs-cheatvault",
+		id: "dbd-cheats-vs-cheatvault",
 		imageKey: "cheatsPackage",
 		published: "2026-07-15",
 		updated: "2026-08-01",
@@ -273,36 +273,36 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "project-zomboid-cheats-vs-cheatvault-comparison",
-		title: "Project Zomboid Cheats vs CheatVault: Honest 2026 Comparison",
-		metaDescription: "Project Zomboid Cheats vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, anti-cheat detection history, and which package fits serious survival players in 2026.",
-		h1: "Project Zomboid Cheats vs CheatVault: Honest Comparison",
-		intro: "I ran both CheatVault and Project Zomboid Cheats through the same game session last season. Here is the straight comparison — price, features, patch-day behavior, and where each one actually wins.",
-		keywords: ["Project Zomboid Cheats vs cheatvault","cheatvault comparison","Project Zomboid cheats","esp","eac","pricing"],
-		imageAlt: "Project Zomboid Cheats vs CheatVault feature and pricing comparison for 2026",
+		slug: "dbd-cheats-vs-cheatvault-comparison",
+		title: "Dead by Daylight Cheats vs CheatVault: Honest 2026 Comparison",
+		metaDescription: "Dead by Daylight Cheats vs CheatVault compared — pricing, ESP boxes, soft aim, cloud DMA, anti-cheat detection history, and which package fits serious survival players in 2026.",
+		h1: "Dead by Daylight Cheats vs CheatVault: Honest Comparison",
+		intro: "I ran both CheatVault and Dead by Daylight Cheats through the same game session last season. Here is the straight comparison — price, features, patch-day behavior, and where each one actually wins.",
+		keywords: ["Dead by Daylight Cheats vs cheatvault","cheatvault comparison","Dead by Daylight cheats","esp","eac","pricing"],
+		imageAlt: "Dead by Daylight Cheats vs CheatVault feature and pricing comparison for 2026",
 		sections: [
 			{
 				h2: "Why I compared these two in the first place",
 				paragraphs: [
-					"CheatVault shows up in almost every Project Zomboid cheat thread alongside Project Zomboid Cheats. Both promise ESP, aim assist, and undetected status. Both list monthly and lifetime tiers. On paper they look identical — which is exactly why buyers get burned picking the wrong one.",
-					"I kept CheatVault for about six weeks in Build 41, then switched to Project Zomboid Cheats for the back half of the year. Same PC, same sens, mostly multiplayer servers and co-op squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.",
-					"Fair warning: neither tool makes you invincible. Project Zomboid anti-cheat still updates. Your account still carries ban risk. This comparison is about which package maintained better and which features I actually used in co-op — not which one guarantees wins.",
+					"CheatVault shows up in almost every Dead by Daylight cheat thread alongside Dead by Daylight Cheats. Both promise ESP, aim assist, and undetected status. Both list monthly and lifetime tiers. On paper they look identical — which is exactly why buyers get burned picking the wrong one.",
+					"I kept CheatVault for about six weeks in Build 41, then switched to Dead by Daylight Cheats for the back half of the year. Same PC, same sens, mostly public lobbies and co-op squads. This is not a sponsored post — just what I noticed when I stopped reading feature bullets and started tracking patch days.",
+					"Fair warning: neither tool makes you invincible. Dead by Daylight anti-cheat still updates. Your account still carries ban risk. This comparison is about which package maintained better and which features I actually used in co-op — not which one guarantees wins.",
 				],
 			},
 			{
 				h2: "Price breakdown — monthly, lifetime, and hidden costs",
 				paragraphs: [
-					"Project Zomboid Cheats lists $35/month and $150 lifetime on the <a href=\"/pricing/\">pricing page</a>. CheatVault was $42/month and $189 lifetime when I subscribed — prices shift, but CheatVault has consistently sat 15–20% higher in the tiers I saw.",
-					"CheatVault's lifetime looks cheaper than three years of monthly until you factor downtime. I lost nine days total waiting on CheatVault rebuilds after two anti-cheat patches. Project Zomboid Cheats had two patch windows where I waited roughly 24–36 hours each. If you play daily, downtime has a real cost even if the sub fee is lower.",
-					"Both deliver digitally. Neither includes hardware. If you want cloud DMA on Project Zomboid Cheats, you already own or plan to buy compatible hardware — same story for CheatVault's DMA tier, which is a separate upsell above their standard sub.",
+					"Dead by Daylight Cheats lists $35/month and $150 lifetime on the <a href=\"/pricing/\">pricing page</a>. CheatVault was $42/month and $189 lifetime when I subscribed — prices shift, but CheatVault has consistently sat 15–20% higher in the tiers I saw.",
+					"CheatVault's lifetime looks cheaper than three years of monthly until you factor downtime. I lost nine days total waiting on CheatVault rebuilds after two anti-cheat patches. Dead by Daylight Cheats had two patch windows where I waited roughly 24–36 hours each. If you play daily, downtime has a real cost even if the sub fee is lower.",
+					"Both deliver digitally. Neither includes hardware. If you want cloud DMA on Dead by Daylight Cheats, you already own or plan to buy compatible hardware — same story for CheatVault's DMA tier, which is a separate upsell above their standard sub.",
 				],
 			},
 			{
 				h2: "Feature table — ESP, soft aim, radar, and cloud DMA",
 				paragraphs: [
-					"<table><thead><tr><th>Feature</th><th>Project Zomboid Cheats</th><th>CheatVault</th></tr></thead><tbody><tr><td>Zombie ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>",
-					"Project Zomboid Cheats wins on toggles and profile flexibility. I run ESP boxes + medical supply markers in early game, then drop loot categories after first rifle. CheatVault's overlay felt busier — fine if you want everything on, noisy if you play long survival sessions and need clean screen space.",
-					"Soft aim mattered more than I expected in multiplayer servers. Project Zomboid Cheats let me run a low-FOV M16 rifle profile and a separate shotgun profile for close-quarters fights. CheatVault's single-profile setup worked, but I was constantly retuning mid-session.",
+					"<table><thead><tr><th>Feature</th><th>Dead by Daylight Cheats</th><th>CheatVault</th></tr></thead><tbody><tr><td>Killer & survivor ESP boxes</td><td>Yes, toggleable categories</td><td>Yes, fewer colour options</td></tr><tr><td>Loot / chest markers</td><td>Yes + distance readouts</td><td>Yes, no distance on loot</td></tr><tr><td>2D radar</td><td>Yes, configurable range</td><td>Yes, fixed size</td></tr><tr><td>Soft aim / Aimbot profiles</td><td>Per-weapon slots</td><td>Global + one profile</td></tr><tr><td>Controller support</td><td>Supported</td><td>Listed, awkward menu UX</td></tr><tr><td>Cloud DMA option</td><td>Included path in package</td><td>Premium tier add-on</td></tr><tr><td>In-client mod menu</td><td>Yes</td><td>Yes, heavier overlay</td></tr></tbody></table>",
+					"Dead by Daylight Cheats wins on toggles and profile flexibility. I run ESP boxes + chest or totem markers in early game, then drop loot categories after first rifle. CheatVault's overlay felt busier — fine if you want everything on, noisy if you play long survival sessions and need clean screen space.",
+					"Soft aim mattered more than I expected in public lobbies. Dead by Daylight Cheats let me run a low-FOV M16 rifle profile and a separate shotgun profile for close-quarters fights. CheatVault's single-profile setup worked, but I was constantly retuning mid-session.",
 				],
 			},
 			{
@@ -310,13 +310,13 @@ export const blogPosts: BlogPostDefinition[] = [
 				paragraphs: [
 					"Both brands had public downtime after major anti-cheat updates in 2026 — anyone claiming zero detection events is lying. The difference is communication and rebuild speed.",
 					"CheatVault's Discord would go quiet for 48–72 hours after big patches. No ETA, just \"working on it.\" I know two players in my stack who got flagged during a CheatVault lag window between patch and rebuild — could've been coincidence, but it shook my confidence.",
-					"Project Zomboid Cheats posts on the <a href=\"/updates/\">Updates page</a> within hours on patch mornings. Last major anti-cheat update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href=\"/blog/undetected-project-zomboid-cheats-eac/\">anti-cheat reality guide</a> for the workflow I use before queueing.",
+					"Dead by Daylight Cheats posts on the <a href=\"/updates/\">Updates page</a> within hours on patch mornings. Last major anti-cheat update I tracked: status note same day, rebuild live roughly 30 hours later. Still annoying, but predictable. See also our <a href=\"/blog/undetected-dbd-cheats-eac/\">anti-cheat reality guide</a> for the workflow I use before queueing.",
 				],
 			},
 			{
 				h2: "Where CheatVault still wins",
 				paragraphs: [
-					"Credit where it's due: CheatVault's Discord community is larger. More clip sharing, more config screenshots. If you learn best from crowd-sourced settings, that social layer helps — Project Zomboid Cheats support answered faster for me, but the community volume is smaller.",
+					"Credit where it's due: CheatVault's Discord community is larger. More clip sharing, more config screenshots. If you learn best from crowd-sourced settings, that social layer helps — Dead by Daylight Cheats support answered faster for me, but the community volume is smaller.",
 					"CheatVault also bundles a standalone replay-style overlay tool in their premium tier. I did not use it much, but content creators might value the extra capture layer.",
 					"If you only play once or twice a week and just want basic ESP without caring about patch ETAs, CheatVault's feature floor is fine. Casual cadence hides downtime pain.",
 				],
@@ -324,9 +324,9 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Verdict — who should pick which",
 				paragraphs: [
-					"Pick Project Zomboid Cheats if you play multiplayer servers multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.",
+					"Pick Dead by Daylight Cheats if you play public lobbies multiple times a week, want per-weapon soft aim profiles, care about cloud DMA without a second upsell, and want a public Updates log before you launch after patches.",
 					"Pick CheatVault if community size matters more than rebuild transparency, you want the premium capture extras, and you do not mind paying slightly more for a similar core stack.",
-					"Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href=\"/features/\">Features</a> and CheatVault's list side by side, then check both Updates channels before the next Project Zomboid patch. For the full Project Zomboid Cheats stack overview, start at <a href=\"/project-zomboid-cheats/\">Project Zomboid Cheats</a>.",
+					"Try This Today: Write down your must-haves (ESP categories, radar size, controller, DMA). Open <a href=\"/features/\">Features</a> and CheatVault's list side by side, then check both Updates channels before the next Dead by Daylight patch. For the full Dead by Daylight Cheats stack overview, start at <a href=\"/dbd-cheats/\">Dead by Daylight Cheats</a>.",
 				],
 			}
 		],
@@ -342,60 +342,60 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "voidcheats-vs-project-zomboid-cheats-two-week-test",
+		slug: "voidcheats-vs-dbd-cheats-two-week-test",
 		title: "I Tried VoidCheats for 2 Weeks Before Switching",
-		metaDescription: "VoidCheats vs Project Zomboid Cheats — a two-week test of ESP, soft aim, controller support, anti-cheat downtime, and pricing before switching packages in 2026.",
-		h1: "I Tried VoidCheats for 2 Weeks Before Switching to Project Zomboid Cheats",
-		intro: "VoidCheats was the popular pick in my squad's Discord. I gave it fourteen days — same hardware, same gameplay modes — then moved to Project Zomboid Cheats. This is what actually differed.",
-		keywords: ["voidcheats vs Project Zomboid Cheats","voidcheats review","Project Zomboid cheats comparison","soft aim","esp boxes"],
-		imageAlt: "VoidCheats vs Project Zomboid Cheats two week comparison test for Project Zomboid cheats",
+		metaDescription: "VoidCheats vs Dead by Daylight Cheats — a two-week test of ESP, soft aim, controller support, anti-cheat downtime, and pricing before switching packages in 2026.",
+		h1: "I Tried VoidCheats for 2 Weeks Before Switching to Dead by Daylight Cheats",
+		intro: "VoidCheats was the popular pick in my squad's Discord. I gave it fourteen days — same hardware, same gameplay modes — then moved to Dead by Daylight Cheats. This is what actually differed.",
+		keywords: ["voidcheats vs Dead by Daylight Cheats","voidcheats review","Dead by Daylight cheats comparison","soft aim","esp boxes"],
+		imageAlt: "VoidCheats vs Dead by Daylight Cheats two week comparison test for Dead by Daylight cheats",
 		sections: [
 			{
 				h2: "Week one — setup, first impressions, and the menu learning curve",
 				paragraphs: [
-					"VoidCheats delivery was fast — key in email within twenty minutes. Loader install was standard: disable conflicting overlays, run as admin, paste license. Took about twenty-five minutes my first time, same ballpark as Project Zomboid Cheats later.",
+					"VoidCheats delivery was fast — key in email within twenty minutes. Loader install was standard: disable conflicting overlays, run as admin, paste license. Took about twenty-five minutes my first time, same ballpark as Dead by Daylight Cheats later.",
 					"VoidCheats's menu looked cleaner on screenshots. In game, I spent two evenings just mapping toggles. ESP categories are nested one level deeper than I liked. Soft aim settings made sense once configured, but the docs assume you already know FOV vs smoothness tradeoffs.",
-					"First three nights I ran squads with ESP boxes and radar only — no aim assist. VoidCheats visibility was good. Enemy outlines readable at mid range. Player ESP existed but felt an afterthought compared to zombie ESP. I died plenty; the tool did its info job fine.",
+					"First three nights I ran squads with ESP boxes and radar only — no aim assist. VoidCheats visibility was good. Enemy outlines readable at mid range. Player ESP existed but felt an afterthought compared to killer ESP. I died plenty; the tool did its info job fine.",
 				],
 			},
 			{
 				h2: "Soft aim, weapons, and controller testing",
 				paragraphs: [
-					"Week one weekend I enabled soft aim with a conservative FOV. Worked on pistol and shotgun in multiplayer servers. Sniping felt off — VoidCheats uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.",
-					"I play controller two nights a week. VoidCheats lists controller support; menu navigation with a pad was clunky. Project Zomboid Cheats later felt similar on pad menus honestly — neither is perfect — but VoidCheats had no suggested controller baseline in docs. I wasted time guessing.",
+					"Week one weekend I enabled soft aim with a conservative FOV. Worked on flashlight and toolbox in public lobbies. Sniping felt off — VoidCheats uses one bone-priority stack unless you manually swap configs between matches. Doable, not great for my play style.",
+					"I play controller two nights a week. VoidCheats lists controller support; menu navigation with a pad was clunky. Dead by Daylight Cheats later felt similar on pad menus honestly — neither is perfect — but VoidCheats had no suggested controller baseline in docs. I wasted time guessing.",
 					"M16 rifle tracking at 40–50m was the benchmark test. VoidCheats smooth aim was slightly snappier out of box. Snappier sounds good until you watch replay clips and notice the robotic corrections. I tuned smoothness up; kills stabilized but so did obviousness in sandbox practice testing with friends.",
 				],
 			},
 			{
 				h2: "The patch that ended my VoidCheats trial",
 				paragraphs: [
-					"Day eleven hit a Project Zomboid + anti-cheat patch. Standard for any cheat user. VoidCheats status channel said \"investigating.\" No ETA. I skipped multiplayer for two days waiting — squad moved on without me.",
-					"Day thirteen a rebuild dropped. Loaded in, played two public servers, crashed once, relaunched fine. Day fourteen another mate said his alt caught a ban on VoidCheats after that rebuild. Unverified story, but combined with downtime it was my cue to bail.",
-					"I switched to Project Zomboid Cheats lifetime partly because of the <a href=\"/updates/\">Updates</a> cadence — I wanted patch notes in writing, not Discord rumor. Not saying VoidCheats is a scam; plenty of players still run it. It just did not match my tolerance for silent patch windows.",
+					"Day eleven hit a Dead by Daylight + anti-cheat patch. Standard for any cheat user. VoidCheats status channel said \"investigating.\" No ETA. I skipped multiplayer for two days waiting — squad moved on without me.",
+					"Day thirteen a rebuild dropped. Loaded in, played two public lobbies, crashed once, relaunched fine. Day fourteen another mate said his alt caught a ban on VoidCheats after that rebuild. Unverified story, but combined with downtime it was my cue to bail.",
+					"I switched to Dead by Daylight Cheats lifetime partly because of the <a href=\"/updates/\">Updates</a> cadence — I wanted patch notes in writing, not Discord rumor. Not saying VoidCheats is a scam; plenty of players still run it. It just did not match my tolerance for silent patch windows.",
 				],
 			},
 			{
 				h2: "Side-by-side after switching — what improved",
 				paragraphs: [
-					"Project Zomboid Cheats ESP let me toggle loot and container markers independently — huge for off-zombie horde spawn routes without cluttering endgame. Radar range slider fixed my \"radar too small on 1080p\" complaint from VoidCheats's fixed widget.",
-					"Per-weapon soft aim profiles meant I stopped retuning between pistol and shotgun fights. Cloud DMA path was optional for my setup; I stayed on standard loader, but having DMA documented in one package beat VoidCheats's \"ask sales\" flow.",
-					"Support reply time: VoidCheats ticket answered in ~5 hours once. Project Zomboid Cheats support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.",
+					"Dead by Daylight Cheats ESP let me toggle totem and chest markers independently — huge for off-killer chase spawn routes without cluttering endgame. Radar range slider fixed my \"radar too small on 1080p\" complaint from VoidCheats's fixed widget.",
+					"Per-weapon soft aim profiles meant I stopped retuning between flashlight and toolbox fights. Cloud DMA path was optional for my setup; I stayed on standard loader, but having DMA documented in one package beat VoidCheats's \"ask sales\" flow.",
+					"Support reply time: VoidCheats ticket answered in ~5 hours once. Dead by Daylight Cheats support replied in ~2 hours when I asked about controller baseline settings. Small sample, but matched what I needed during setup week.",
 				],
 			},
 			{
 				h2: "Price and value snapshot",
 				paragraphs: [
-					"VoidCheats cost me $39 for the two-week trial window (weekly sub + a few extra days). Project Zomboid Cheats monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.",
-					"Feature-per-dollar favors Project Zomboid Cheats for my use: combined ESP + radar + soft aim + rebuild notes in one license. VoidCheats's brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.",
-					"Compare plans yourself on <a href=\"/pricing/\">Pricing</a> and read the <a href=\"/blog/project-zomboid-cheats-vs-cheatvault-comparison/\">CheatVault comparison</a> if you are still shopping three-wide.",
+					"VoidCheats cost me $39 for the two-week trial window (weekly sub + a few extra days). Dead by Daylight Cheats monthly is $35; lifetime $150. If you hop tools every month, weekly pricing adds up fast.",
+					"Feature-per-dollar favors Dead by Daylight Cheats for my use: combined ESP + radar + soft aim + rebuild notes in one license. VoidCheats's brand is strong on social proof — I am not arguing that — but I pay for uptime and toggles more than banners.",
+					"Compare plans yourself on <a href=\"/pricing/\">Pricing</a> and read the <a href=\"/blog/dbd-cheats-vs-cheatvault-comparison/\">CheatVault comparison</a> if you are still shopping three-wide.",
 				],
 			},
 			{
 				h2: "Would I recommend VoidCheats to anyone?",
 				paragraphs: [
 					"Yes, with caveats. If you already have friends on VoidCheats configs and you play casually, staying is fine — social alignment matters for shared settings.",
-					"If you are patch-sensitive, play daily, or want granular ESP and weapon profiles, Project Zomboid Cheats fit me better after the two-week test. Your mileage varies; run your own patch-day checklist.",
-					"Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href=\"/project-zomboid-cheats/\">Project Zomboid Cheats</a> and <a href=\"/setup/\">Setup</a> before checkout.",
+					"If you are patch-sensitive, play daily, or want granular ESP and weapon profiles, Dead by Daylight Cheats fit me better after the two-week test. Your mileage varies; run your own patch-day checklist.",
+					"Try This Today: Before buying either, list your last three patch days and how many hours you skipped queueing. If downtime frustrates you, prioritize vendors with public Updates pages — then open <a href=\"/dbd-cheats/\">Dead by Daylight Cheats</a> and <a href=\"/setup/\">Setup</a> before checkout.",
 				],
 			}
 		],
@@ -403,7 +403,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-cheats-vs-ghostware",
+		id: "dbd-cheats-vs-ghostware",
 		imageKey: "espWallhack",
 		published: "2026-07-05",
 		updated: "2026-08-01",
@@ -411,60 +411,60 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "project-zomboid-cheats-vs-ghostware-features-pricing",
-		title: "Project Zomboid Cheats vs GhostWare: Features & Pricing",
-		metaDescription: "Project Zomboid Cheats vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, anti-cheat history, and honest pros/cons for 2026 buyers.",
-		h1: "Project Zomboid Cheats vs GhostWare: Features, Pricing, and Detection Notes",
-		intro: "GhostWare markets hard on \"stealth\" branding. Project Zomboid Cheats markets on the full full cheat stack. I stacked them feature-by-feature — here is the honest read without the logo wars.",
-		keywords: ["ghostware vs Project Zomboid Cheats","ghostware project-zomboid","cheat comparison","esp boxes","cloud dma"],
-		imageAlt: "Project Zomboid Cheats vs GhostWare features pricing and anti-cheat comparison",
+		slug: "dbd-cheats-vs-ghostware-features-pricing",
+		title: "Dead by Daylight Cheats vs GhostWare: Features & Pricing",
+		metaDescription: "Dead by Daylight Cheats vs GhostWare — feature tables, soft aim, ESP boxes, cloud DMA, controller support, anti-cheat history, and honest pros/cons for 2026 buyers.",
+		h1: "Dead by Daylight Cheats vs GhostWare: Features, Pricing, and Detection Notes",
+		intro: "GhostWare markets hard on \"stealth\" branding. Dead by Daylight Cheats markets on the full full cheat stack. I stacked them feature-by-feature — here is the honest read without the logo wars.",
+		keywords: ["ghostware vs Dead by Daylight Cheats","ghostware dbd","cheat comparison","esp boxes","cloud dma"],
+		imageAlt: "Dead by Daylight Cheats vs GhostWare features pricing and anti-cheat comparison",
 		sections: [
 			{
 				h2: "Two different philosophies — minimal vs full-stack",
 				paragraphs: [
-					"GhostWare sells a slimmer Project Zomboid module: ESP-focused with light aim assist, fewer toggles, lower price entry. Project Zomboid Cheats bundles ESP wallhack, radar, soft aim profiles, controller paths, and cloud DMA documentation in one undetected license.",
-					"Neither approach is wrong. Minimal tools break less surface area in theory. Full-stack tools win when you want one menu for survival nights — visibility, flanks, and firefight assist without swapping executables.",
-					"I used GhostWare for ten days on an alt account while keeping Project Zomboid Cheats on main. Same monitor, same sens, different gameplay modes to spread risk. Take ban risk seriously on any tool.",
+					"GhostWare sells a slimmer Dead by Daylight module: ESP-focused with light aim assist, fewer toggles, lower price entry. Dead by Daylight Cheats bundles ESP wallhack, radar, soft aim profiles, controller paths, and cloud DMA documentation in one undetected license.",
+					"Neither approach is wrong. Minimal tools break less surface area in theory. Full-stack tools win when you want one menu for ranked nights — visibility, flanks, and firefight assist without swapping executables.",
+					"I used GhostWare for ten days on an alt account while keeping Dead by Daylight Cheats on main. Same monitor, same sens, different gameplay modes to spread risk. Take ban risk seriously on any tool.",
 				],
 			},
 			{
 				h2: "Feature and pricing comparison table",
 				paragraphs: [
-					"<table><thead><tr><th></th><th>Project Zomboid Cheats</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Zombie ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href=\"/updates/\">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>",
-					"GhostWare is cheaper on sticker price. Project Zomboid Cheats includes radar and richer player ESP — features I use every session. If you only want enemy boxes in public servers, GhostWare's entry tier covers that.",
-					"Lifetime math: GhostWare $120 vs Project Zomboid Cheats $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.",
+					"<table><thead><tr><th></th><th>Dead by Daylight Cheats</th><th>GhostWare</th></tr></thead><tbody><tr><td>Monthly price</td><td>$35</td><td>$28</td></tr><tr><td>Lifetime price</td><td>$150</td><td>$120</td></tr><tr><td>Killer & survivor ESP boxes</td><td>Yes</td><td>Yes</td></tr><tr><td>Loot / chest ESP</td><td>Yes</td><td>Limited</td></tr><tr><td>2D radar</td><td>Yes</td><td>No</td></tr><tr><td>Soft aim profiles</td><td>Multiple weapon slots</td><td>Basic assist</td></tr><tr><td>Controller support</td><td>Yes</td><td>Partial</td></tr><tr><td>Cloud DMA path</td><td>Documented</td><td>Not offered</td></tr><tr><td>Public Updates log</td><td><a href=\"/updates/\">Yes — public updates log</a></td><td>Discord only</td></tr></tbody></table>",
+					"GhostWare is cheaper on sticker price. Dead by Daylight Cheats includes radar and richer player ESP — features I use every session. If you only want enemy boxes in public lobbies, GhostWare's entry tier covers that.",
+					"Lifetime math: GhostWare $120 vs Dead by Daylight Cheats $150. The $30 gap closes if you value radar and rebuild transparency. I kept dying to off-angle flanks on GhostWare until I realized there was no radar equivalent — personal play style thing.",
 				],
 			},
 			{
 				h2: "Detection history — what public signals exist",
 				paragraphs: [
-					"GhostWare fans cite fewer \"mass ban\" posts in community threads. That is anecdotal — smaller user bases generate fewer posts by default. Project Zomboid Cheats had a visible rebuild cycle after the last major anti-cheat push; GhostWare's Discord announced an update two days later.",
+					"GhostWare fans cite fewer \"mass ban\" posts in community threads. That is anecdotal — smaller user bases generate fewer posts by default. Dead by Daylight Cheats had a visible rebuild cycle after the last major anti-cheat push; GhostWare's Discord announced an update two days later.",
 					"No vendor publishes audited detection rates. Treat claims as marketing. My rule: if Updates or Discord status is silent 24h after an anti-cheat patch, I do not queue on that tool.",
-					"Project Zomboid Cheats documents maintenance on <a href=\"/project-zomboid-cheats/\">anti-cheat bypass workflow</a> and the <a href=\"/project-zomboid-cheats/\">undetected guide</a>. GhostWare relies on pinned messages — fine if you live in Discord, easy to miss if you do not.",
+					"Dead by Daylight Cheats documents maintenance on <a href=\"/dbd-cheats/\">anti-cheat bypass workflow</a> and the <a href=\"/dbd-cheats/\">undetected guide</a>. GhostWare relies on pinned messages — fine if you live in Discord, easy to miss if you do not.",
 				],
 			},
 			{
-				h2: "Gameplay feel — multiplayer servers and co-op squads",
+				h2: "Gameplay feel — public lobbies and co-op squads",
 				paragraphs: [
-					"GhostWare ESP boxes were crisp — arguably cleaner outline rendering on low settings PCs. Project Zomboid Cheats boxes offer more colour and distance data; busier but more informative in squad comms (\"220m west\" calls).",
-					"Soft aim on GhostWare felt like light magnetism — enough for shotgun tracking, not enough for consistent rifle shots at range. Project Zomboid Cheats soft aim took tuning time but held M16 rifle fights better once profiles were set.",
-					"Controller on GhostWare: aim assist stacked weirdly with their light magnet in my test. Project Zomboid Cheats suggested baseline FOV values in support docs; less guesswork.",
+					"GhostWare ESP boxes were crisp — arguably cleaner outline rendering on low settings PCs. Dead by Daylight Cheats boxes offer more colour and distance data; busier but more informative in squad comms (\"220m west\" calls).",
+					"Soft aim on GhostWare felt like light magnetism — enough for shotgun tracking, not enough for consistent rifle shots at range. Dead by Daylight Cheats soft aim took tuning time but held M16 rifle fights better once profiles were set.",
+					"Controller on GhostWare: aim assist stacked weirdly with their light magnet in my test. Dead by Daylight Cheats suggested baseline FOV values in support docs; less guesswork.",
 				],
 			},
 			{
 				h2: "Pros and cons summary",
 				paragraphs: [
-					"<strong>Project Zomboid Cheats pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.",
+					"<strong>Dead by Daylight Cheats pros:</strong> full ESP + radar + soft aim stack, per-weapon profiles, cloud DMA path, public Updates page, controller docs. <strong>Cons:</strong> higher price, menu takes ~20 minutes to learn, radar size could use more presets.",
 					"<strong>GhostWare pros:</strong> lower entry price, clean minimal ESP, quick to launch, smaller feature surface. <strong>Cons:</strong> no radar, limited player ESP, patch status mostly in Discord, no DMA option, lighter aim tools.",
-					"Neither replaces game sense. Pair either with fundamentals — see our <a href=\"/blog/project-zomboid-cheats-complete-guide-2026/\">multiplayer servers aggression guide</a> and <a href=\"/blog/project-zomboid-cheats-complete-guide-2026/\">complete hacks guide</a>.",
+					"Neither replaces game sense. Pair either with fundamentals — see our <a href=\"/blog/dbd-cheats-complete-guide-2026/\">public lobbies aggression guide</a> and <a href=\"/blog/dbd-cheats-complete-guide-2026/\">complete hacks guide</a>.",
 				],
 			},
 			{
 				h2: "Which one should you buy?",
 				paragraphs: [
-					"Choose GhostWare if budget is tight, you only need Zombie ESP in casual public servers, and you are comfortable tracking patch status in Discord.",
-					"Choose Project Zomboid Cheats if you want radar for flanks, medical supply markers for faster horde spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Project Zomboid patch.",
-					"Try This Today: Decide whether radar and player ESP are must-haves or nice-to-haves. If must-have, open <a href=\"/project-zomboid-esp/\">ESP</a>, <a href=\"/project-zomboid-radar/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.",
+					"Choose GhostWare if budget is tight, you only need Killer ESP in casual public lobbies, and you are comfortable tracking patch status in Discord.",
+					"Choose Dead by Daylight Cheats if you want radar for flanks, chest or totem markers for faster killer spawns, configurable soft aim, optional cloud DMA, and a single Updates URL to check after every Dead by Daylight patch.",
+					"Try This Today: Decide whether radar and player ESP are must-haves or nice-to-haves. If must-have, open <a href=\"/dbd-esp/\">ESP</a>, <a href=\"/dbd-radar/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>. If skipping radar saves you money and matches your style, GhostWare stays in the conversation — just do not skip patch-day checks on either tool.",
 				],
 			}
 		],
@@ -472,49 +472,49 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-survival-beginners-guide",
+		id: "dbd-survivor-beginners-guide",
 		imageKey: "battleRoyaleCombat",
 		published: "2026-06-18",
 		updated: "2026-08-01",
-		category: "Project Zomboid Game Guides",
+		category: "Dead by Daylight Game Guides",
 		featured: true,
 		translations: {
 		en: {
-		slug: "project-zomboid-survival-beginners-guide",
-		title: "Project Zomboid Survival Guide for Beginners",
-		metaDescription: "Project Zomboid survival basics — hunger, thirst, infection, safe houses, and your first week in Knox County. Official sources and a practical checklist.",
-		h1: "Project Zomboid Survival: A Practical Beginner Guide",
-		intro: "Survival in Project Zomboid is about managing needs, noise, and infection before you chase rare loot. This guide covers what actually kills new survivors and how to set up a sustainable first week.",
-		keywords: ["Project Zomboid survival","beginner guide","Knox County","first week survival"],
-		imageAlt: "Project Zomboid survival beginner guide for hunger thirst and safe house setup",
+		slug: "dbd-survivor-beginners-guide",
+		title: "Dead by Daylight Survivor Guide for Beginners",
+		metaDescription: "Dead by Daylight survivor basics — generators, loops, hooks, exit gates, and your first matches in The Fog. Official sources and a practical checklist.",
+		h1: "Dead by Daylight Survivor: A Practical Beginner Guide",
+		intro: "Survivor play in Dead by Daylight is about generators, loops, and saving teammates before the exit gates open. This guide covers what actually ends new survivor matches and how to build better habits fast.",
+		keywords: ["Dead by Daylight survivor","beginner guide","The Fog","first matches"],
+		imageAlt: "Dead by Daylight survivor beginner guide for generators loops and exit gates",
 		sections: [
 			{
-				h2: "What survival mode demands",
+				h2: "What survivor trials demand",
 				paragraphs: [
-					"Every day you need food, water, rest, and a plan for injury and infection. <a href=\"https://pzwiki.net/wiki/Survivor_Mode\" target=\"_blank\" rel=\"noopener noreferrer\">Survivor mode</a> and <a href=\"https://pzwiki.net/wiki/Apocalypse\" target=\"_blank\" rel=\"noopener noreferrer\">Apocalypse difficulty</a> raise zombie damage and need decay — learn the basics on Builder or Survivor first.",
-					"Cross-check mechanics on the <a href=\"https://pzwiki.net/wiki/Main_Page\" target=\"_blank\" rel=\"noopener noreferrer\">PZ Wiki</a> and <a href=\"https://projectzomboid.com/game-guide\" target=\"_blank\" rel=\"noopener noreferrer\">official Project Zomboid game guide</a> before you assume a route is still safe after a patch.",
-					"Pro Tip — Noise is a resource: sprinting, breaking windows, and gunfire pull hordes. Walk when you can and fight only when you must.",
+					"You need generator progress, safe loops, and a plan for being hooked. <a href=\"https://deadbydaylight.fandom.com/wiki/Survivor\" target=\"_blank\" rel=\"noopener noreferrer\">Survivor role</a> and <a href=\"https://deadbydaylight.fandom.com/wiki/Rank\" target=\"_blank\" rel=\"noopener noreferrer\">ranked matches</a> punish free mistakes — learn basics in custom or casual matches first.",
+					"Cross-check mechanics on the <a href=\"https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight Wiki</a> and <a href=\"https://deadbydaylight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Dead by Daylight game guide</a> before you assume a loop tile is still safe after a patch.",
+					"Pro Tip — Noise is information: rushing gens, breaking pallets early, and failing skill checks tell the killer where you are. Work quietly when you can.",
 				],
 			},
 			{
-				h2: "Your first safe house",
+				h2: "Your first exit-gate plan",
 				paragraphs: [
-					"Pick a two-story building with one choke-point stairwell. Sheet rope on the upper floor gives an escape route. Barricade ground-floor doors and windows before you loot the neighborhood.",
-					"Store food and water upstairs. Keep a weapon on your hotbar, bandages in your inventory, and a backup exit planned before you sleep.",
+					"Finish enough generators before you commit to gates. Keep at least one teammate alive for the open, and leave a pallet or window between you and the chase path.",
+					"Carry a medkit or flashlight when you can. Know which gate you will open and where you will hide if the killer camps the other side.",
 				],
 			},
 			{
-				h2: "Skills and tools worth prioritizing",
+				h2: "Perks and items worth prioritizing",
 				paragraphs: [
-					"Fitness and strength help combat and carry weight. Carpentry unlocks barricades and rain collectors. Foraging and farming extend food supply once canned goods run low.",
-					"Our <a href=\"/project-zomboid-esp/\">ESP guide</a> explains how visibility overlays help when you are learning building layouts in multiplayer servers.",
+					"Start with exhaustion, healing, and information perks before exotic builds. Toolboxes speed gens; medkits extend chase value; flashlights create save windows.",
+					"Our <a href=\"/dbd-esp/\">ESP guide</a> explains how visibility overlays help when you are learning map tiles in public lobbies. Perk details live on the <a href=\"https://deadbydaylight.fandom.com/wiki/Perks\" target=\"_blank\" rel=\"noopener noreferrer\">perk pages</a>.",
 				],
 			},
 			{
-				h2: "Checklist before day seven",
+				h2: "Checklist before ranked nights",
 				paragraphs: [
-					"Confirm the latest <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">official PC update notes</a> if you are on a new build. You want: secured base, water source, two days of food, bandages, and a melee backup weapon.",
-					"Try This Today: Play one in-game day without firing a gun. Note every time noise pulled zombies — that list is your survival homework.",
+					"Confirm the latest <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">official PC update notes</a> if you are on a new build. You want: solid gen efficiency, one safe loop habit, and a clear unhook plan.",
+					"Try This Today: Play one match where you never drop a pallet unless the killer is in chase with you. Note every wasted tile — that list is your homework.",
 				],
 			}
 		],
@@ -522,48 +522,48 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-loot-farming-guide",
+		id: "dbd-totem-generator-guide",
 		imageKey: "playerEsp",
 		published: "2026-06-12",
 		updated: "2026-08-01",
-		category: "Project Zomboid Game Guides",
+		category: "Dead by Daylight Game Guides",
 		featured: true,
 		translations: {
 		en: {
-		slug: "project-zomboid-loot-farming-guide",
-		title: "Project Zomboid Loot Farming Guide",
-		metaDescription: "Project Zomboid loot routes in Muldraugh, West Point, and Riverside — weapons, food, medical supplies, and safe extraction tips with PZ Wiki links.",
-		h1: "Project Zomboid Loot Farming: Muldraugh, West Point & Riverside",
-		intro: "Knox County towns each offer different loot density and zombie pressure. Here is how to plan efficient loot runs without getting trapped by a wandering horde.",
-		keywords: ["Project Zomboid loot","Muldraugh","West Point","Riverside","Knox County"],
-		imageAlt: "Project Zomboid loot farming guide for Muldraugh West Point and Riverside",
+		slug: "dbd-totem-generator-guide",
+		title: "Dead by Daylight Generator & Totem Route Guide",
+		metaDescription: "Dead by Daylight generator and totem routes on MacMillan Estate, Autohaven Wreckers, and Coldwind Farm — chest paths, dull totems, and safe exit tips with Wiki links.",
+		h1: "Dead by Daylight Generators & Totems: MacMillan, Coldwind & Autohaven",
+		intro: "Dead by Daylight maps each offer different tile density and killer pressure. Here is how to plan efficient generator and totem routes without getting trapped mid-chase.",
+		keywords: ["Dead by Daylight generators","MacMillan Estate","Coldwind Farm","Autohaven Wreckers","totems"],
+		imageAlt: "Dead by Daylight generator and totem route guide for MacMillan Coldwind and Autohaven",
 		sections: [
 			{
-				h2: "Know your starting towns",
+				h2: "Know your starting maps",
 				paragraphs: [
-					"<a href=\"https://pzwiki.net/wiki/Knox_Country\" target=\"_blank\" rel=\"noopener noreferrer\">Knox County</a> spans Muldraugh, West Point, Riverside, Rosewood, and more. Muldraugh is dense suburban loot; West Point has strong gun shops; Riverside offers warehouse and dock loot. The <a href=\"https://pzwiki.net/wiki/Main_Page\" target=\"_blank\" rel=\"noopener noreferrer\">PZ Wiki</a> town pages list key POIs.",
-					"<a href=\"https://projectzomboid.com/game-guide\" target=\"_blank\" rel=\"noopener noreferrer\">official Project Zomboid game guide</a> explains spawn points. Check <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">official PC update notes</a> after major builds — loot tables and zombie populations can shift.",
+					"<a href=\"https://deadbydaylight.fandom.com/wiki/Realms\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight realms</a> include MacMillan Estate, Coldwind Farm, Autohaven Wreckers, and more. MacMillan tiles reward strong shack loops; Coldwind has open sightlines; Autohaven mixes junk piles and tight buildings. The <a href=\"https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight Wiki</a> realm pages list key tiles.",
+					"<a href=\"https://deadbydaylight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Dead by Daylight game guide</a> covers core objectives. Check <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">official PC update notes</a> after major builds — map offerings and balance can shift.",
 				],
 			},
 			{
 				h2: "Route planning that works",
 				paragraphs: [
-					"Hit one loot type per trip: guns, food, or medical. Clear rooms methodically, close doors behind you, and leave before weight slows your escape.",
-					"Residential kitchens and convenience stores are early food sources. Police stations and gun stores are high reward but loud — bring a vehicle exit when possible.",
+					"Hit one objective type per rotate: generators, dull totems, or chests. Clear a tile methodically, leave a loop path behind you, and do not commit to a dead zone with no pallet.",
+					"Early gens near strong structures buy chase value later. Save corner gens for when teammates can take pressure.",
 				],
 			},
 			{
-				h2: "Why visibility helps on loot runs",
+				h2: "Why visibility helps on generator routes",
 				paragraphs: [
-					"Large buildings hide zombies around corners. Our <a href=\"/project-zomboid-esp/\">ESP overview</a> explains how enemy and loot overlays shorten search time.",
-					"Pair that with the <a href=\"/project-zomboid-radar/\">radar guide</a> for flank awareness when hordes drift toward your position.",
+					"Large buildings hide killers around corners. Our <a href=\"/dbd-esp/\">ESP overview</a> explains how enemy and totem overlays shorten search time.",
+					"Pair that with the <a href=\"/dbd-radar/\">radar guide</a> for flank awareness when the killer drifts toward your position.",
 				],
 			},
 			{
-				h2: "Practical loot session",
+				h2: "Practical route session",
 				paragraphs: [
-					"Pick one town and one goal per session. Loot, return to base, sort inventory, heal. Check <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">Project Zomboid forums</a> if a community thread reports a hotfix to spawn rates.",
-					"Try This Today: Map three buildings near your safe house. Loot only those three, then log what you still need before expanding the route.",
+					"Pick one map and one goal per custom lobby. Repair, cleanse, sort item value, reset. Check <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight forums</a> if a community thread reports a hotfix to map tiles.",
+					"Try This Today: Map three generators near your strongest loop. Work only those three, then note which totem or chest still matters before expanding.",
 				],
 			}
 		],
@@ -571,48 +571,48 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-zombie-types-guide",
+		id: "dbd-killer-roster-guide",
 		imageKey: "squadFight",
 		published: "2026-05-28",
 		updated: "2026-08-01",
-		category: "Project Zomboid Game Guides",
+		category: "Dead by Daylight Game Guides",
 		featured: false,
 		translations: {
 		en: {
-		slug: "project-zomboid-zombie-types-guide",
-		title: "Project Zomboid Zombie Types Explained",
-		metaDescription: "Project Zomboid zombie types explained — walkers, crawlers, sprinters, and special infected behavior. Sandbox settings and PZ Wiki references.",
-		h1: "Project Zomboid Zombie Types: Walkers, Crawlers & Sprinters",
-		intro: "Not every zombie in Knox County behaves the same. Sandbox settings and population types change how dangerous a loot run becomes — here is what to expect and how to respond.",
-		keywords: ["Project Zomboid zombie types","walkers","sprinters","crawlers","special infected"],
-		imageAlt: "Project Zomboid zombie types guide for walkers crawlers sprinters and special infected",
+		slug: "dbd-killer-roster-guide",
+		title: "Dead by Daylight Killer Roster Explained",
+		metaDescription: "Dead by Daylight killers explained — M1 pressure, mobility, stealth, and power reads. Ranked habits and Dead by Daylight Wiki references.",
+		h1: "Dead by Daylight Killers: Pressure, Mobility & Stealth",
+		intro: "Not every killer in The Fog pressures the same way. Power kits and map tiles change how dangerous a generator route becomes — here is what to expect and how to respond.",
+		keywords: ["Dead by Daylight killers","killer roster","M1 killers","mobility killers","stealth"],
+		imageAlt: "Dead by Daylight killer roster guide for pressure mobility and stealth",
 		sections: [
 			{
-				h2: "Standard walkers — slow but relentless",
+				h2: "M1 pressure killers",
 				paragraphs: [
-					"Most zombies shamble at walking speed. They are manageable one-on-one but deadly in groups because they block exits and amplify noise. Read basics on the <a href=\"https://pzwiki.net/wiki/Zombie\" target=\"_blank\" rel=\"noopener noreferrer\">PZ Wiki zombie page</a>.",
-					"Kiting walkers into narrow doorways lets you fight one at a time — a core skill before you loot gun stores or malls.",
+					"Many <a href=\"https://deadbydaylight.fandom.com/wiki/Killers\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight killers</a> win through basic attacks, mind games, and strong map control. They are manageable one-on-one if you respect pallets, but deadly when generators are split poorly.",
+					"Hold strong tiles, force vaults, and do not gift free hits in the open — a core skill before you take risky corner gens.",
 				],
 			},
 			{
-				h2: "Crawlers and prone threats",
+				h2: "Mobility and map pressure",
 				paragraphs: [
-					"Crawlers sit low and are easy to miss when you focus on standing targets. They trip players in tall grass and at door thresholds. Always clear downed bodies before you loot a room.",
-					"<a href=\"https://projectzomboid.com/\" target=\"_blank\" rel=\"noopener noreferrer\">The Indie Stone</a> patches occasionally adjust animation and hit detection — watch <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">official PC update notes</a> after major builds.",
+					"Mobility killers shrink safe windows between generators. They punish long rotates and force earlier unhooks. Always leave a teammate path before you commit to a far gen.",
+					"<a href=\"https://deadbydaylight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Behaviour Interactive</a> patches occasionally adjust power cooldowns and hit detection — watch <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">official PC update notes</a> after major builds.",
 				],
 			},
 			{
-				h2: "Sprinters and sandbox population settings",
+				h2: "Stealth and information killers",
 				paragraphs: [
-					"Sandbox lets you enable sprinters, randomize speed, or lock shamblers only. Sprinters punish open-field loot runs and make vehicles more valuable. The <a href=\"https://pzwiki.net/wiki/Sandbox\" target=\"_blank\" rel=\"noopener noreferrer\">Sandbox Wiki page</a> lists every population toggle.",
-					"Knowing zombie types helps you filter ESP categories — covered on our <a href=\"/project-zomboid-wallhack/\">wallhack page</a>.",
+					"Stealth kits punish loud generators and predictable loops. Information powers make totem and chest paths riskier. The <a href=\"https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight Wiki</a> killer pages list every power kit.",
+					"Knowing killer archetypes helps you filter ESP categories — covered on our <a href=\"/dbd-wallhack/\">wallhack page</a>.",
 				],
 			},
 			{
 				h2: "Use official references first",
 				paragraphs: [
-					"For mechanics and infection rules, <a href=\"https://pzwiki.net/wiki/Main_Page\" target=\"_blank\" rel=\"noopener noreferrer\">PZ Wiki</a> beats random summaries. For balance and build changes, trust <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">official PC update notes</a> from The Indie Stone.",
-					"Try This Today: Note which zombie type killed you last run. Adjust route, weapon, or sandbox setting to counter that one threat before expanding loot radius.",
+					"For power kits and perk interactions, <a href=\"https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight Wiki</a> beats random summaries. For balance and build changes, trust <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">official PC update notes</a> from Behaviour Interactive.",
+					"Try This Today: Note which killer ended your last match. Adjust route, perk, or loop habit to counter that one threat before expanding your ranked pool.",
 				],
 			}
 		],
@@ -620,48 +620,48 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-gameplay-modes-explained",
+		id: "dbd-game-modes-explained",
 		imageKey: "rebootFight",
 		published: "2026-05-14",
 		updated: "2026-08-01",
-		category: "Project Zomboid Game Guides",
+		category: "Dead by Daylight Game Guides",
 		featured: false,
 		translations: {
 		en: {
-		slug: "project-zomboid-gameplay-modes-explained",
-		title: "Project Zomboid Game Modes Explained",
-		metaDescription: "Project Zomboid game modes explained — Sandbox, Survivor, Builder, Apocalypse, and multiplayer servers. Links to official resources and PZ Wiki.",
-		h1: "Project Zomboid Game Modes: Sandbox, Survivor & Multiplayer",
-		intro: "Project Zomboid supports solo sandbox, curated scenarios, and multiplayer servers. This guide maps the modes you will pick at character creation and where to verify settings with official references.",
-		keywords: ["Project Zomboid game modes","Sandbox","Survivor","Apocalypse","multiplayer"],
-		imageAlt: "Project Zomboid game modes guide for Sandbox Survivor Apocalypse and multiplayer",
+		slug: "dbd-game-modes-explained",
+		title: "Dead by Daylight Game Modes Explained",
+		metaDescription: "Dead by Daylight game modes explained — survivor vs killer trials, ranked, customs, and public lobbies. Links to official resources and Dead by Daylight Wiki.",
+		h1: "Dead by Daylight Game Modes: Survivor, Killer & Ranked",
+		intro: "Dead by Daylight supports survivor trials, killer matches, customs, and ranked play. This guide maps the queues you will pick and where to verify rules with official references.",
+		keywords: ["Dead by Daylight game modes","survivor","killer","ranked","public lobbies"],
+		imageAlt: "Dead by Daylight game modes guide for survivor killer ranked and lobbies",
 		sections: [
 			{
-				h2: "Core single-player modes",
+				h2: "Core online roles",
 				paragraphs: [
-					"Apocalypse is the default survival experience — death is permanent and zombies respawn over time. Survivor eases early difficulty; Builder disables zombie aggression for base construction. The <a href=\"https://pzwiki.net/wiki/Game_modes\" target=\"_blank\" rel=\"noopener noreferrer\">PZ Wiki game modes page</a> compares each option.",
-					"<a href=\"https://projectzomboid.com/game-guide\" target=\"_blank\" rel=\"noopener noreferrer\">official Project Zomboid game guide</a> walks new players through character creation, traits, and occupation picks before you commit to a long run.",
+					"Survivor trials focus on generators, rescues, and exits. Killer matches focus on hooks, map pressure, and denying gates. The <a href=\"https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight Wiki</a> <a href=\"https://deadbydaylight.fandom.com/wiki/Game_Mode\" target=\"_blank\" rel=\"noopener noreferrer\">game mode pages</a> compare queue options.",
+					"<a href=\"https://deadbydaylight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Dead by Daylight game guide</a> walks new players through role basics before you commit to ranked nights.",
 				],
 			},
 			{
-				h2: "Sandbox customization",
+				h2: "Ranked and matchmaking",
 				paragraphs: [
-					"Sandbox mode exposes loot abundance, zombie speed, water shutoff timing, and infection mortality. Tweaking one slider can make Knox County feel like a new game. See the <a href=\"https://pzwiki.net/wiki/Sandbox\" target=\"_blank\" rel=\"noopener noreferrer\">Sandbox Wiki page</a> for common presets.",
-					"Radar and ESP are especially useful on hard sandbox settings — see <a href=\"/project-zomboid-radar/\">radar</a> and <a href=\"/project-zomboid-esp/\">ESP</a>.",
+					"Ranked play raises stake and consistency expectations. <a href=\"https://deadbydaylight.fandom.com/wiki/Rank\" target=\"_blank\" rel=\"noopener noreferrer\">ranked matches</a> punish free mistakes more than casual queues. See the <a href=\"https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight Wiki</a> for current rank structure.",
+					"Radar and ESP are especially useful when learning new killers and maps — see <a href=\"/dbd-radar/\">radar</a> and <a href=\"/dbd-esp/\">ESP</a>.",
 				],
 			},
 			{
-				h2: "Multiplayer and co-op servers",
+				h2: "Customs and public lobbies",
 				paragraphs: [
-					"Hosted servers and co-op let squads share base building and loot runs. Server admins set PvP rules, loot respawn, and zombie counts. Read <a href=\"https://pzwiki.net/wiki/Multiplayer\" target=\"_blank\" rel=\"noopener noreferrer\">multiplayer on the PZ Wiki</a> before joining a public server.",
-					"For squad callouts and flank awareness, our <a href=\"/blog/project-zomboid-survival-beginners-guide/\">survival guide</a> overlaps with several co-op strategies.",
+					"Custom lobbies let squads practice loops, generator routes, and power reads. Public lobbies mix skill levels quickly — read lobby rules before you queue.",
+					"For squad callouts and flank awareness, our <a href=\"/blog/dbd-survivor-beginners-guide/\">survivor guide</a> overlaps with several SWF strategies.",
 				],
 			},
 			{
-				h2: "Pick a mode that matches your goal",
+				h2: "Pick a queue that matches your goal",
 				paragraphs: [
-					"Learning mechanics? Builder or Survivor. Long-term challenge? Apocalypse sandbox with sprinters off until you are ready. Playing with friends? Find a stable multiplayer server with rules you agree on.",
-					"Try This Today: Write your top goal — base building, loot exploration, or PvP — then pick the mode that supports it before rolling a new character.",
+					"Learning mechanics? Customs or casual. Long-term challenge? Ranked with a focused perk set. Playing with friends? SWF lobbies with agreed roles.",
+					"Try This Today: Write your top goal — loop practice, killer reads, or ranked climb — then pick the queue that supports it before your next session.",
 				],
 			}
 		],
@@ -669,48 +669,48 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-patch-notes-guide",
+		id: "dbd-patch-notes-guide",
 		imageKey: "headerArt",
 		published: "2026-04-30",
 		updated: "2026-08-01",
-		category: "Project Zomboid Game Guides",
+		category: "Dead by Daylight Game Guides",
 		featured: false,
 		translations: {
 		en: {
-		slug: "project-zomboid-patch-notes-guide",
-		title: "How to Read Project Zomboid Patch Notes",
-		metaDescription: "How to read Project Zomboid patch notes from The Indie Stone — official sources, what to scan first, and how updates affect your loadout and tools.",
-		h1: "How to Read Project Zomboid Patch Notes Like a Player",
-		intro: "Patch day changes more than balance tweets suggest. Here is how to read official Project Zomboid update notes quickly and decide what actually matters for your account.",
-		keywords: ["Project Zomboid patch notes","Project Zomboid updates","The Indie Stone","PC update notes"],
-		imageAlt: "How to read Project Zomboid patch notes from official PC update notes",
+		slug: "dbd-patch-notes-guide",
+		title: "How to Read Dead by Daylight Patch Notes",
+		metaDescription: "How to read Dead by Daylight patch notes from Behaviour Interactive — official sources, what to scan first, and how updates affect your loadout and tools.",
+		h1: "How to Read Dead by Daylight Patch Notes Like a Player",
+		intro: "Patch day changes more than balance tweets suggest. Here is how to read official Dead by Daylight update notes quickly and decide what actually matters for your account.",
+		keywords: ["Dead by Daylight patch notes","Dead by Daylight updates","Behaviour Interactive","PC update notes"],
+		imageAlt: "How to read Dead by Daylight patch notes from official PC update notes",
 		sections: [
 			{
 				h2: "Official sources to bookmark",
 				paragraphs: [
-					"Start with <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">official PC update notes</a> on the <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">Project Zomboid forums</a>. Developer news also flows through <a href=\"https://projectzomboid.com/\" target=\"_blank\" rel=\"noopener noreferrer\">The Indie Stone</a> and the main <a href=\"https://projectzomboid.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Project Zomboid</a> site.",
-					"Community summaries are fine for speed, but always verify numbers and reworks against the primary post before you sell mods or change builds.",
+					"Start with <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">official PC update notes</a> on the <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight forums</a>. Developer news also flows through <a href=\"https://deadbydaylight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Behaviour Interactive</a> and the main <a href=\"https://deadbydaylight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight</a> site.",
+					"Community summaries are fine for speed, but always verify numbers and reworks against the primary post before you sell items or change perk builds.",
 				],
 			},
 			{
 				h2: "What to scan first on patch day",
 				paragraphs: [
-					"Read hotfix lines for crash fixes and known issues first. Then scan weapon and Project Zomboid changes, mission rewards, and drop table tweaks. Finally check UI and QoL notes.",
+					"Read hotfix lines for crash fixes and known issues first. Then scan killer and survivor perk changes, map offerings, and item tweaks. Finally check UI and QoL notes.",
 					"If you use third-party tools, check our <a href=\"/updates/\">Updates page</a> after reading official notes — maintenance windows do not always match patch publish time.",
 				],
 			},
 			{
 				h2: "Translate notes into loadout decisions",
 				paragraphs: [
-					"Ask: Did my main weapon change? Did a skill or trait get touched? Did a loot hotspot move? If all three are no, you can load in sooner.",
-					"Our <a href=\"/blog/undetected-project-zomboid-cheats-eac/\">anti-cheat maintenance notes</a> explain how patches can affect external tools separately from in-game balance.",
+					"Ask: Did my main killer change? Did a perk get touched? Did a map tile get reworked? If all three are no, you can queue in sooner.",
+					"Our <a href=\"/blog/undetected-dbd-cheats-eac/\">anti-cheat maintenance notes</a> explain how patches can affect external tools separately from in-game balance.",
 				],
 			},
 			{
 				h2: "Patch-day routine",
 				paragraphs: [
-					"Open <a href=\"https://projectzomboid.com/blog/\" target=\"_blank\" rel=\"noopener noreferrer\">official PC update notes</a>, skim hotfixes, test one familiar loot route, then revisit <a href=\"https://pzwiki.net/wiki/Main_Page\" target=\"_blank\" rel=\"noopener noreferrer\">PZ Wiki</a> pages for anything flagged as reworked.",
-					"Try This Today: Save the official update notes URL in your browser. After the next patch, highlight only the lines that mention gear you actually use.",
+					"Open <a href=\"https://forum.deadbydaylight.com/en/categories/patch-notes\" target=\"_blank\" rel=\"noopener noreferrer\">official PC update notes</a>, skim hotfixes, test one familiar generator route, then revisit <a href=\"https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight Wiki</a> pages for anything flagged as reworked.",
+					"Try This Today: Save the official update notes URL in your browser. After the next patch, highlight only the lines that mention perks or killers you actually use.",
 				],
 			}
 		],
@@ -718,48 +718,48 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-new-player-guide",
+		id: "dbd-new-player-guide",
 		imageKey: "cheatsPackage",
 		published: "2026-04-16",
 		updated: "2026-08-01",
-		category: "Project Zomboid Game Guides",
+		category: "Dead by Daylight Game Guides",
 		featured: true,
 		translations: {
 		en: {
-		slug: "project-zomboid-new-player-guide",
-		title: "Project Zomboid New Player Progression Guide",
-		metaDescription: "Project Zomboid new player guide for Knox County progression, traits, skills, and early survival goals — with links to the official game guide and PZ Wiki.",
-		h1: "Project Zomboid New Player Progression: Where to Go First",
-		intro: "Project Zomboid has a steep learning curve. This progression guide points new survivors toward official resources and sensible early goals without drowning in systems.",
-		keywords: ["Project Zomboid new player","Project Zomboid beginner guide","Knox County","Project Zomboid progression"],
-		imageAlt: "Project Zomboid new player progression guide for Knox County and early survival",
+		slug: "dbd-new-player-guide",
+		title: "Dead by Daylight New Player Progression Guide",
+		metaDescription: "Dead by Daylight new player guide for Fog progression, perks, killers, and early trial goals — with links to the official game guide and Dead by Daylight Wiki.",
+		h1: "Dead by Daylight New Player Progression: Where to Go First",
+		intro: "Dead by Daylight has a steep learning curve. This progression guide points new players toward official resources and sensible early goals without drowning in systems.",
+		keywords: ["Dead by Daylight new player","Dead by Daylight beginner guide","The Fog","Dead by Daylight progression"],
+		imageAlt: "Dead by Daylight new player progression guide for The Fog and early trials",
 		sections: [
 			{
 				h2: "Start with the in-game tutorial",
 				paragraphs: [
-					"<a href=\"https://projectzomboid.com/game-guide\" target=\"_blank\" rel=\"noopener noreferrer\">official Project Zomboid game guide</a> and the Rosewood tutorial scenario teach movement, inventory, combat, and crafting basics. The <a href=\"https://pzwiki.net/wiki/Main_Page\" target=\"_blank\" rel=\"noopener noreferrer\">PZ Wiki</a> <a href=\"https://pzwiki.net/wiki/Beginner\" target=\"_blank\" rel=\"noopener noreferrer\">beginner hub</a> is the best community-maintained supplement.",
-					"<a href=\"https://projectzomboid.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Project Zomboid</a> receives frequent updates — expect systems to unlock gradually as you explore rather than all at once.",
+					"<a href=\"https://deadbydaylight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official Dead by Daylight game guide</a> and bot lobbies teach movement, generators, and chase basics. The <a href=\"https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight Wiki</a> <a href=\"https://deadbydaylight.fandom.com/wiki/Beginner%27s_Guide\" target=\"_blank\" rel=\"noopener noreferrer\">beginner hub</a> is the best community-maintained supplement.",
+					"<a href=\"https://deadbydaylight.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Dead by Daylight</a> receives frequent updates — expect systems to unlock gradually as you prestige rather than all at once.",
 				],
 			},
 			{
-				h2: "Pick a spawn town and learn its layout",
+				h2: "Pick a map set and learn its tiles",
 				paragraphs: [
-					"Muldraugh, West Point, and Riverside each have different loot and zombie density. The <a href=\"https://pzwiki.net/wiki/Knox_Country\" target=\"_blank\" rel=\"noopener noreferrer\">Knox County Wiki page</a> maps major towns and roads.",
-					"Do not chase rare guns on day one — secure food, water, and a barricaded room first. Our <a href=\"/blog/project-zomboid-survival-beginners-guide/\">survival guide</a> covers the first week.",
+					"MacMillan Estate, Autohaven Wreckers, and Coldwind Farm each have different loop density and killer pressure. The <a href=\"https://deadbydaylight.fandom.com/wiki/Realms\" target=\"_blank\" rel=\"noopener noreferrer\">Realms Wiki page</a> maps major tiles.",
+					"Do not chase prestige cosmetics on day one — secure generator efficiency and one safe loop habit first. Our <a href=\"/blog/dbd-survivor-beginners-guide/\">survivor guide</a> covers early matches.",
 				],
 			},
 			{
-				h2: "Skills, traits, and occupations",
+				h2: "Perks, items, and offerings",
 				paragraphs: [
-					"Positive and negative traits shape your first month. Occupations like Fire Officer or Burglar give practical early bonuses. The <a href=\"https://pzwiki.net/wiki/Traits\" target=\"_blank\" rel=\"noopener noreferrer\">Traits Wiki page</a> lists every option.",
-					"Level carpentry for barricades, fitness for combat stamina, and foraging or farming before canned food runs out.",
+					"Teachable perks shape your first prestige path. Start with exhaustion, healing, and information before exotic tech. The <a href=\"https://deadbydaylight.fandom.com/wiki/Perks\" target=\"_blank\" rel=\"noopener noreferrer\">perk pages</a> list every option.",
+					"Level bloodpoints into meta teachables, then expand into killer-specific counters once you recognize power kits.",
 				],
 			},
 			{
 				h2: "When you are ready for more",
 				paragraphs: [
-					"Expand into neighboring towns after your safe house is stocked. Read our <a href=\"/blog/project-zomboid-loot-farming-guide/\">loot farming guide</a> and <a href=\"/blog/project-zomboid-gameplay-modes-explained/\">game modes explainer</a> when you want harder sandbox settings.",
-					"Try This Today: Complete one loot trip, one barricade upgrade, and one skill book session — three small wins beat reckless exploration.",
+					"Expand into ranked after your loops and unhooks feel stable. Read our <a href=\"/blog/dbd-totem-generator-guide/\">generator guide</a> and <a href=\"/blog/dbd-game-modes-explained/\">game modes explainer</a> when you want harder queues.",
+					"Try This Today: Complete one strong loop, one clean unhook, and one gen without a failed skill check — three small wins beat reckless altruism.",
 				],
 			}
 		],
@@ -767,41 +767,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-radar-cheats-guide",
+		id: "dbd-radar-cheats-guide",
 		imageKey: "playerEsp",
 		published: "2026-08-05",
 		updated: "2026-08-05",
-		category: "Project Zomboid Cheats",
+		category: "Dead by Daylight Cheats",
 		featured: false,
 		translations: {
 		en: {
-		slug: "project-zomboid-radar-cheats-guide",
-		title: "Project Zomboid Radar Cheats: 2D Threat Map Explained",
-		metaDescription: "Project Zomboid radar cheats guide — 2D threat map, zombie flanks, loot route awareness, and how radar pairs with ESP wallhack on Windows PC.",
-		h1: "Project Zomboid Radar Cheats: How the 2D Threat Map Works",
-		intro: "Radar cheats fill the gap ESP cannot — zombies and players behind you, off-screen horde movement, and flank warnings during Knox County loot runs. Here is how radar fits the Project Zomboid cheats stack.",
-		keywords: ["Project Zomboid radar cheats","Project Zomboid radar hack","Project Zomboid Cheats","esp","2d radar"],
-		imageAlt: "Project Zomboid radar cheats 2D threat map with zombie and loot markers",
+		slug: "dbd-radar-cheats-guide",
+		title: "Dead by Daylight Radar Cheats: 2D Threat Map Explained",
+		metaDescription: "Dead by Daylight radar cheats guide — 2D threat map, killer flanks, generator route awareness, and how radar pairs with ESP wallhack on Windows PC.",
+		h1: "Dead by Daylight Radar Cheats: How the 2D Threat Map Works",
+		intro: "Radar cheats fill the gap ESP cannot — killers and survivors behind you, off-screen chase movement, and flank warnings during generator and totem routes. Here is how radar fits the Dead by Daylight cheats stack.",
+		keywords: ["Dead by Daylight radar cheats","Dead by Daylight radar hack","Dead by Daylight Cheats","esp","2d radar"],
+		imageAlt: "Dead by Daylight radar cheats 2D threat map with killer survivor and totem markers",
 		sections: [
 			{
-				h2: "Why radar matters in Project Zomboid",
+				h2: "Why radar matters in Dead by Daylight",
 				paragraphs: [
-					"ESP wallhack shows what you are looking at. Radar shows what is circling behind the house, creeping from the tree line, or closing while you search a kitchen. In multiplayer, radar also flags survivors you would miss until footsteps are too late.",
-					"The Project Zomboid cheats package ships radar alongside ESP and aimbot — see the <a href=\"/project-zomboid-radar/\">radar page</a> and full <a href=\"/features/\">Features</a> list.",
+					"ESP wallhack shows what you are looking at. Radar shows what is circling behind the shack, creeping from the tree line, or closing while you repair a generator. In public lobbies, radar also flags survivors you would miss until footsteps are too late.",
+					"The Dead by Daylight cheats package ships radar alongside ESP and aimbot — see the <a href=\"/dbd-radar/\">radar page</a> and full <a href=\"/features/\">Features</a> list.",
 				],
 			},
 			{
 				h2: "Settings that actually help",
 				paragraphs: [
-					"Start with a medium range ring and zombie-only dots until you learn each town layout. Toggle loot markers off during combat — clutter kills readability. Pair radar blips with ESP boxes so you know elevation and line-of-sight before you commit.",
-					"Deep dives: <a href=\"/project-zomboid-esp/\">ESP</a>, <a href=\"/project-zomboid-wallhack/\">wallhack</a>, and <a href=\"/blog/project-zomboid-esp-wallhack-explained/\">ESP wallhack explained</a>.",
+					"Start with a medium range ring and killer-only dots until you learn each map layout. Toggle totem markers off during chase — clutter kills readability. Pair radar blips with ESP boxes so you know elevation and line-of-sight before you commit.",
+					"Deep dives: <a href=\"/dbd-esp/\">ESP</a>, <a href=\"/dbd-wallhack/\">wallhack</a>, and <a href=\"/blog/dbd-esp-wallhack-explained/\">ESP wallhack explained</a>.",
 				],
 			},
 			{
 				h2: "Radar after patches",
 				paragraphs: [
-					"Map updates and anti-cheat changes can shift radar accuracy. Check <a href=\"/updates/\">Updates</a> before long sessions — same workflow as <a href=\"/blog/undetected-project-zomboid-cheats-eac/\">undetected anti-cheat notes</a>.",
-					"Try This Today: Run one familiar Muldraugh block with radar only, then enable ESP. Notice which threats each tool catches first.",
+					"Map updates and anti-cheat changes can shift radar accuracy. Check <a href=\"/updates/\">Updates</a> before long sessions — same workflow as <a href=\"/blog/undetected-dbd-cheats-eac/\">undetected anti-cheat notes</a>.",
+					"Try This Today: Run one familiar MacMillan Estate block with radar only, then enable ESP. Notice which threats each tool catches first.",
 				],
 			}
 		],
@@ -809,21 +809,21 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-cheats-setup-windows",
+		id: "dbd-cheats-setup-windows",
 		imageKey: "headerArt",
 		published: "2026-08-03",
 		updated: "2026-08-05",
-		category: "Project Zomboid Cheats",
+		category: "Dead by Daylight Cheats",
 		featured: false,
 		translations: {
 		en: {
-		slug: "project-zomboid-cheats-setup-windows",
-		title: "Project Zomboid Cheats Setup on Windows 10 & 11",
-		metaDescription: "Project Zomboid cheats setup for Windows PC — download, activation, ESP and aimbot toggles, controller support, and first-launch checklist after checkout.",
-		h1: "Project Zomboid Cheats Setup: Windows PC Walkthrough",
-		intro: "After checkout you need a clean Windows setup — not guesswork. This walkthrough covers activation, feature toggles, and the first-session checklist for Project Zomboid cheats on Windows 10 and 11.",
-		keywords: ["Project Zomboid cheats setup","Project Zomboid Cheats","windows setup","esp","aimbot"],
-		imageAlt: "Project Zomboid cheats setup menu on Windows PC with ESP and aimbot toggles",
+		slug: "dbd-cheats-setup-windows",
+		title: "Dead by Daylight Cheats Setup on Windows 10 & 11",
+		metaDescription: "Dead by Daylight cheats setup for Windows PC — download, activation, ESP and aimbot toggles, controller support, and first-launch checklist after checkout.",
+		h1: "Dead by Daylight Cheats Setup: Windows PC Walkthrough",
+		intro: "After checkout you need a clean Windows setup — not guesswork. This walkthrough covers activation, feature toggles, and the first-session checklist for Dead by Daylight cheats on Windows 10 and 11.",
+		keywords: ["Dead by Daylight cheats setup","Dead by Daylight Cheats","windows setup","esp","aimbot"],
+		imageAlt: "Dead by Daylight cheats setup menu on Windows PC with ESP and aimbot toggles",
 		sections: [
 			{
 				h2: "Before you launch",
@@ -835,14 +835,14 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "First launch: ESP, aimbot, radar order",
 				paragraphs: [
-					"Enable radar first to learn threat direction, then zombie ESP categories one at a time. Add aimbot only after you confirm FPS and menu hotkeys feel stable. The <a href=\"/project-zomboid-aimbot/\">aimbot page</a> covers smoothness profiles.",
+					"Enable radar first to learn threat direction, then killer ESP categories one at a time. Add aimbot only after you confirm FPS and menu hotkeys feel stable. The <a href=\"/dbd-aimbot/\">aimbot page</a> covers smoothness profiles.",
 					"Compare feature depth on <a href=\"/features/\">Features</a> and pricing tiers on <a href=\"/pricing/\">Pricing</a> ($35 monthly / $150 lifetime).",
 				],
 			},
 			{
 				h2: "Patch-day habit",
 				paragraphs: [
-					"Project Zomboid updates can require cheat rebuilds. Open <a href=\"/updates/\">Updates</a> after every game patch before you queue multiplayer.",
+					"Dead by Daylight updates can require cheat rebuilds. Open <a href=\"/updates/\">Updates</a> after every game patch before you queue multiplayer.",
 					"Try This Today: Screenshot your toggle layout after a good session — restores settings fast if you reset the client.",
 				],
 			}
@@ -851,40 +851,40 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "project-zomboid-cheats-monthly-vs-lifetime",
+		id: "dbd-cheats-monthly-vs-lifetime",
 		imageKey: "cheatsPackage",
 		published: "2026-08-01",
 		updated: "2026-08-05",
-		category: "Project Zomboid Cheats",
+		category: "Dead by Daylight Cheats",
 		featured: false,
 		translations: {
 		en: {
-		slug: "project-zomboid-cheats-monthly-vs-lifetime",
-		title: "Project Zomboid Cheats: Monthly vs Lifetime — Which to Buy",
-		metaDescription: "Project Zomboid cheats pricing guide — $35 monthly vs $150 lifetime, break-even math, patch maintenance value, and when each license fits your play style.",
-		h1: "Project Zomboid Cheats Pricing: Monthly vs Lifetime",
-		intro: "Both Project Zomboid cheats plans include ESP, wallhack, radar, and aimbot. The difference is how long you plan to play and whether you want one payment or flexibility — here is an honest break-even view.",
-		keywords: ["Project Zomboid cheats pricing","Project Zomboid Cheats","monthly vs lifetime","best Project Zomboid cheats"],
-		imageAlt: "Project Zomboid cheats pricing comparison monthly versus lifetime license",
+		slug: "dbd-cheats-monthly-vs-lifetime",
+		title: "Dead by Daylight Cheats: Monthly vs Lifetime — Which to Buy",
+		metaDescription: "Dead by Daylight cheats pricing guide — $35 monthly vs $150 lifetime, break-even math, patch maintenance value, and when each license fits your play style.",
+		h1: "Dead by Daylight Cheats Pricing: Monthly vs Lifetime",
+		intro: "Both Dead by Daylight cheats plans include ESP, wallhack, radar, and aimbot. The difference is how long you plan to play and whether you want one payment or flexibility — here is an honest break-even view.",
+		keywords: ["Dead by Daylight cheats pricing","Dead by Daylight Cheats","monthly vs lifetime","best Dead by Daylight cheats"],
+		imageAlt: "Dead by Daylight cheats pricing comparison monthly versus lifetime license",
 		sections: [
 			{
 				h2: "What each plan includes",
 				paragraphs: [
 					"Monthly and lifetime licenses share the same feature stack on the <a href=\"/pricing/\">Pricing page</a> — ESP boxes, loot markers, 2D radar, aimbot profiles, and anti-cheat rebuilds when status is green on <a href=\"/updates/\">Updates</a>.",
-					"Neither plan removes ban risk. Read <a href=\"/terms/\">Terms</a> and the <a href=\"/blog/project-zomboid-cheats-buyers-guide/\">buyers guide</a> before checkout.",
+					"Neither plan removes ban risk. Read <a href=\"/terms/\">Terms</a> and the <a href=\"/blog/dbd-cheats-buyers-guide/\">buyers guide</a> before checkout.",
 				],
 			},
 			{
 				h2: "Break-even math",
 				paragraphs: [
-					"At $35/month, five months matches the $150 lifetime tier. If you expect a full year of Knox County runs, lifetime usually wins — unless you only need cheats for one season or a short co-op arc.",
-					"Monthly fits testers comparing vendors or players who pause between major patches. See <a href=\"/blog/project-zomboid-cheats-vs-cheatvault-comparison/\">CheatVault comparison</a> if you are still shopping.",
+					"At $35/month, five months matches the $150 lifetime tier. If you expect a full year of The Fog runs, lifetime usually wins — unless you only need cheats for one season or a short co-op arc.",
+					"Monthly fits testers comparing vendors or players who pause between major patches. See <a href=\"/blog/dbd-cheats-vs-cheatvault-comparison/\">CheatVault comparison</a> if you are still shopping.",
 				],
 			},
 			{
 				h2: "Checkout and next steps",
 				paragraphs: [
-					"Ready to buy? Start at the <a href=\"/project-zomboid-cheats/\">Project Zomboid Cheats pillar</a>, pick your plan, then follow <a href=\"/setup/\">Setup</a>.",
+					"Ready to buy? Start at the <a href=\"/dbd-cheats/\">Dead by Daylight Cheats pillar</a>, pick your plan, then follow <a href=\"/setup/\">Setup</a>.",
 					"Try This Today: Estimate your play months for the next year — if it is six or more, lifetime is the simpler choice.",
 				],
 			}

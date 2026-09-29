@@ -25,8 +25,10 @@
 .hero-cta__glow {
 	position: absolute;
 	inset: -40%;
-	background: radial-gradient(circle, rgba(210, 174, 118, 0.35) 0%, transparent 62%);
-	opacity: 0.55;
+	background:
+		radial-gradient(circle at 35% 40%, rgba(109, 40, 217, 0.18) 0%, transparent 55%),
+		radial-gradient(circle at 70% 60%, rgba(110, 16, 24, 0.16) 0%, transparent 58%);
+	opacity: 0.7;
 	pointer-events: none;
 	animation: hero-cta-pulse 3.2s ease-in-out infinite;
 }
@@ -37,12 +39,12 @@
 	border-radius: inherit;
 	background: conic-gradient(
 		from 0deg,
-		#687052,
-		#d2ae76,
-		#b58a58,
-		#858e63,
-		#d2ae76,
-		#687052
+		#6D28D9,
+		#9333EA,
+		#6D28D9,
+		#6E1018,
+		#6D28D9,
+		#9333EA
 	);
 	animation: hero-cta-spin 4.5s linear infinite;
 }
@@ -56,7 +58,7 @@
 	width: 100%;
 	padding: 0.78rem 1.15rem 0.78rem 1.25rem;
 	border-radius: 999px;
-	background: linear-gradient(145deg, rgba(14, 18, 16, 0.97) 0%, rgba(24, 30, 24, 0.94) 100%);
+	background: linear-gradient(145deg, rgba(7, 7, 10, 0.97) 0%, rgba(22, 11, 32, 0.94) 100%);
 	box-shadow:
 		0 1px 0 rgba(255, 255, 255, 0.08) inset,
 		0 10px 28px rgba(0, 0, 0, 0.38);
@@ -73,9 +75,9 @@
 	background: linear-gradient(
 		105deg,
 		transparent 0%,
-		rgba(210, 174, 118, 0.08) 40%,
-		rgba(255, 255, 255, 0.18) 50%,
-		rgba(210, 174, 118, 0.08) 60%,
+		rgba(147, 51, 234, 0.08) 40%,
+		rgba(255, 255, 255, 0.16) 50%,
+		rgba(147, 51, 234, 0.08) 60%,
 		transparent 100%
 	);
 	transform: skewX(-18deg);
@@ -102,7 +104,7 @@
 	font-weight: 600;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
-	color: #d2ae76;
+	color: #6D28D9;
 	line-height: 1.2;
 }
 
@@ -114,7 +116,7 @@
 	width: 2.15rem;
 	height: 2.15rem;
 	border-radius: 999px;
-	background: linear-gradient(135deg, #858e63 0%, #687052 100%);
+	background: linear-gradient(135deg, #9333EA 0%, #6D28D9 100%);
 	color: #fff;
 	box-shadow: 0 4px 12px rgba(0, 0,  0, 0.35);
 	transition: transform 0.22s ease;

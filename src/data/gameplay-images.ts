@@ -1,6 +1,6 @@
-/** Supabase-hosted Project Zomboid gameplay & cheat UI images. */
+/** Supabase-hosted Dead by Daylight cheat gameplay screenshots. */
 export const SUPABASE_GAMEPLAY_BASE =
-	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/zomby';
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/dbd';
 
 export type GameplayImage = {
 	src: string;
@@ -8,40 +8,78 @@ export type GameplayImage = {
 	title: string;
 };
 
+const shot = (file: string): string => `${SUPABASE_GAMEPLAY_BASE}/${file}`;
+
+const hero: GameplayImage = {
+	src: '/images/dbd-cheats-hero.webp',
+	alt: 'Dead by Daylight cheat gameplay — ESP survivor outlines through walls, purple scratch marks, and in-match overlays',
+	title: 'Dead by Daylight Cheats hero — ESP gameplay',
+};
+
+const espSurvivorsThroughTrees: GameplayImage = {
+	src: shot('Screenshot%202026-08-17%20200334.png'),
+	alt: 'Dead by Daylight killer-view ESP wallhack — green survivor silhouettes and boxes visible through trees with distance markers',
+	title: 'Dead by Daylight wallhack ESP through trees',
+};
+
+const espKillerGenerators: GameplayImage = {
+	src: shot('Screenshot%202026-08-17%20200343.png'),
+	alt: 'Dead by Daylight killer ESP — green survivor boxes, red and yellow generator progress overlays, and pallet markers through fog and buildings',
+	title: 'Dead by Daylight killer ESP with generator progress',
+};
+
+const espKillerTracking: GameplayImage = {
+	src: shot('Screenshot%202026-08-17%20200351.png'),
+	alt: 'Dead by Daylight survivor ESP — red killer boxes for Spirit and Executioner plus yellow generator percentage and distance labels',
+	title: 'Dead by Daylight killer tracking ESP',
+};
+
+const espFullMapLabels: GameplayImage = {
+	src: shot('Screenshot%202026-08-17%20200432.png'),
+	alt: 'Dead by Daylight full ESP overlay — survivor bone boxes, Nemesis killer marker, and labeled generators, pallets, windows, hooks, totems, and chests with distances',
+	title: 'Dead by Daylight full-map ESP labels',
+};
+
+const espBoneAimTarget: GameplayImage = {
+	src: shot('Screenshot%202026-08-17%20200443.png'),
+	alt: 'Dead by Daylight bone ESP on a hooked survivor with green skeleton overlay, name tag, level info, and nearby generator and pallet distances',
+	title: 'Dead by Daylight bone ESP aim target',
+};
+
+const espSkeletonObjectLabels: GameplayImage = {
+	src: shot('Screenshot%202026-08-17%20200536.png'),
+	alt: 'Dead by Daylight killer ESP — white survivor skeleton through a pallet plus labeled closets, pallets, totems, and chests across the map',
+	title: 'Dead by Daylight skeleton ESP and object labels',
+};
+
+const espObjectDistanceIcons: GameplayImage = {
+	src: shot('Screenshot%202026-08-17%20200632.png'),
+	alt: 'Dead by Daylight object ESP — hook, pallet, and generator icons with meter distance readouts from the killer first-person view',
+	title: 'Dead by Daylight object distance ESP icons',
+};
+
+const espPalletsGensHooks: GameplayImage = {
+	src: shot('Screenshot%202026-08-17%20200646.png'),
+	alt: 'Dead by Daylight ESP wallhack — pink pallet markers, yellow generator progress, red hooks, green survivor boxes, hatch and exit-gate labels through the Fog',
+	title: 'Dead by Daylight pallet generator and hook ESP',
+};
+
+/** Live cheat gameplay shots used site-wide — no old-game assets. */
 export const gameplayImages = {
-	hero: {
-		src: '/images/zomboid-cheats-hero.webp',
-		alt: 'Bloodied survivor with a machete standing on a wrecked van roof as a zombie horde reaches upward in a rain-soaked ruined city',
-		title: 'Project Zomboid Cheats hero — survivor facing a zombie horde',
-	},
-	gameplayStreetCombat: {
-		src: `${SUPABASE_GAMEPLAY_BASE}/images%20(1).jpg`,
-		alt: 'Project Zomboid gameplay — survivor fighting zombies on Knox County streets with melee and firearms',
-		title: 'Project Zomboid street combat gameplay',
-	},
-	gameplayHordeDefense: {
-		src: `${SUPABASE_GAMEPLAY_BASE}/images%20(2).jpg`,
-		alt: 'Project Zomboid gameplay — horde of zombies surrounding a survivor near abandoned buildings',
-		title: 'Project Zomboid horde defense gameplay',
-	},
-	gameplayLootRun: {
-		src: `${SUPABASE_GAMEPLAY_BASE}/images%20(3).jpg`,
-		alt: 'Project Zomboid gameplay — survivor looting supplies while zombies approach in Knox County',
-		title: 'Project Zomboid loot run gameplay',
-	},
-	cheatMenuUi: {
-		src: `${SUPABASE_GAMEPLAY_BASE}/bBeheXR.png`,
-		alt: 'Project Zomboid cheats in-game menu with ESP, aimbot, and radar toggle controls on Windows PC',
-		title: 'Project Zomboid Cheats menu UI',
-	},
-	cheatClientPanel: {
-		src: `${SUPABASE_GAMEPLAY_BASE}/download.jpg`,
-		alt: 'Project Zomboid cheats client panel showing feature toggles for ESP wallhack, aimbot, and radar',
-		title: 'Project Zomboid cheats client panel',
-	},
-	cheatEspOverlay: {
-		src: `${SUPABASE_GAMEPLAY_BASE}/download%20(1).jpg`,
-		alt: 'Project Zomboid ESP overlay screenshot with zombie boxes, loot markers, and distance readouts',
-		title: 'Project Zomboid ESP overlay screenshot',
-	},
+	hero,
+	espSurvivorsThroughTrees,
+	espKillerGenerators,
+	espKillerTracking,
+	espFullMapLabels,
+	espBoneAimTarget,
+	espSkeletonObjectLabels,
+	espObjectDistanceIcons,
+	espPalletsGensHooks,
+	/** Stable aliases for existing page/gallery imports. */
+	gameplayStreetCombat: espSurvivorsThroughTrees,
+	gameplayHordeDefense: espKillerGenerators,
+	gameplayLootRun: espPalletsGensHooks,
+	cheatMenuUi: espFullMapLabels,
+	cheatClientPanel: espSkeletonObjectLabels,
+	cheatEspOverlay: espSurvivorsThroughTrees,
 } as const satisfies Record<string, GameplayImage>;

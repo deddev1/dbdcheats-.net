@@ -1,5 +1,5 @@
 import { customerReviews, siteConfig } from './site';
-import { zomboidImages } from './zomboid';
+import { dbdImages } from './dbd';
 
 export const reviewsBasePath = '/reviews/';
 
@@ -11,32 +11,32 @@ export function absoluteReviewUrl(slug?: string): string {
 	return new URL(slug ? getReviewPath(slug) : reviewsBasePath, siteConfig.url).href;
 }
 
-/** Unique Project Zomboid screenshots for each review sitemap entry. */
+/** Unique Dead by Daylight screenshots for each review sitemap entry. */
 const reviewImagePaths = [
-	zomboidImages.espWallhack,
-	zomboidImages.aimbotCombat,
-	zomboidImages.radarHack,
-	zomboidImages.cover,
-	zomboidImages.loadoutBuilder,
-	zomboidImages.playerEsp,
-	zomboidImages.squadFight,
-	zomboidImages.headerArt,
-	zomboidImages.cheatsPackage,
-	zomboidImages.battleRoyaleCombat,
+	dbdImages.espWallhack,
+	dbdImages.aimbotCombat,
+	dbdImages.radarHack,
+	dbdImages.cover,
+	dbdImages.loadoutBuilder,
+	dbdImages.playerEsp,
+	dbdImages.squadFight,
+	dbdImages.headerArt,
+	dbdImages.cheatsPackage,
+	dbdImages.battleRoyaleCombat,
 ] as const;
 
 const reviewIndexOgImage = {
 	url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
-	title: 'Project Zomboid Cheats customer reviews',
-	caption: 'Project Zomboid Cheats buyer reviews for ESP, aimbot, radar, and cloud DMA',
+	title: 'Dead by Daylight Cheats customer reviews',
+	caption: 'Dead by Daylight Cheats buyer reviews for ESP, aimbot, radar, and cloud DMA',
 };
 
 function reviewImageForIndex(index: number) {
 	const path = reviewImagePaths[index % reviewImagePaths.length];
 	return {
 		url: new URL(path, siteConfig.url).href,
-		title: 'Project Zomboid Cheats review screenshot',
-		caption: 'Project Zomboid Cheats ESP, aimbot, and radar preview from buyer reviews',
+		title: 'Dead by Daylight Cheats review screenshot',
+		caption: 'Dead by Daylight Cheats ESP, aimbot, and radar preview from buyer reviews',
 	};
 }
 
@@ -73,7 +73,7 @@ export function getReviewSitemapEntries() {
 			images: [
 				{
 					url: image.url,
-					title: `Project Zomboid Cheats review by @${review.handle}`,
+					title: `Dead by Daylight Cheats review by @${review.handle}`,
 					caption: review.seoDescription,
 				},
 			],

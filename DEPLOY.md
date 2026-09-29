@@ -1,11 +1,11 @@
-# Deploy projectzomboidcheats.com
+# Deploy dbdcheat.net
 
-Step-by-step guide to deploy the Project Zomboid Cheats static site to **projectzomboidcheats.com** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
+Step-by-step guide to deploy the Dead by Daylight Cheats static site to **dbdcheat.net** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
 
 ## Prerequisites
 
 - Node.js **≥ 22.12.0**
-- Cloudflare account with access to **projectzomboidcheats.com** DNS
+- Cloudflare account with access to **dbdcheat.net** DNS
 - Wrangler CLI (included as dev dependency): `npx wrangler login`
 
 ## 1. Build and validate locally
@@ -71,9 +71,9 @@ Or for Pages: `npm run pages:deploy` (see `wrangler.toml`).
 
 ## 3. Custom domain and DNS
 
-Add **projectzomboidcheats.com** as the primary custom domain on the Pages project.
+Add **dbdcheat.net** as the primary custom domain on the Pages project.
 
-### Apex (projectzomboidcheats.com)
+### Apex (dbdcheat.net)
 
 In **Cloudflare DNS** for the zone:
 
@@ -87,8 +87,8 @@ Cloudflare CNAME flattening handles apex records automatically.
 
 1. Add a DNS record for `www` pointing to the same Pages project (proxied CNAME or A record).
 2. In **Rules** → **Redirect Rules** (or Bulk Redirects), create:
-   - **Source:** `www.projectzomboidcheats.com/*`
-   - **Target:** `https://projectzomboidcheats.com/${1}`
+   - **Source:** `www.dbdcheat.net/*`
+   - **Target:** `https://dbdcheat.net/${1}`
    - **Status:** 301
 
 The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`rusthacks.xyz`, `.net`, `.com`), and legacy path redirects.
@@ -103,33 +103,33 @@ The deployed `functions/_middleware.js` also enforces apex canonical host, legac
 
 Verify these URLs return **200** with correct content:
 
-- `https://projectzomboidcheats.com/`
-- `https://projectzomboidcheats.com/es/`
-- `https://projectzomboidcheats.com/project-zomboid-cheats/`
-- `https://projectzomboidcheats.com/project-zomboid-aimbot/`
-- `https://projectzomboidcheats.com/sitemap-index.xml`
-- `https://projectzomboidcheats.com/robots.txt`
+- `https://dbdcheat.net/`
+- `https://dbdcheat.net/es/`
+- `https://dbdcheat.net/dbd-cheats/`
+- `https://dbdcheat.net/dbd-aimbot/`
+- `https://dbdcheat.net/sitemap-index.xml`
+- `https://dbdcheat.net/robots.txt`
 
 Verify redirects:
 
-- `https://projectzomboidcheats.com` → `https://projectzomboidcheats.com` (301)
-- `https://projectzomboidcheats.com` → `https://projectzomboidcheats.com` (301)
-- `https://rusthacks.xyz` → `https://projectzomboidcheats.com` (301)
-- Legacy paths (e.g. `/warzone-aimbot/`) → Project Zomboid equivalents (301)
+- `https://dbdcheat.net` → `https://dbdcheat.net` (301)
+- `https://dbdcheat.net` → `https://dbdcheat.net` (301)
+- `https://rusthacks.xyz` → `https://dbdcheat.net` (301)
+- Legacy paths (e.g. `/warzone-aimbot/`) → Dead by Daylight equivalents (301)
 
 ## 5. Google Search Console
 
 1. Go to [Google Search Console](https://search.google.com/search-console).
-2. **Add property** → choose **Domain** → enter `projectzomboidcheats.com`.
+2. **Add property** → choose **Domain** → enter `dbdcheat.net`.
 3. Verify ownership via the **DNS TXT record** Cloudflare provides (add in Cloudflare DNS, wait for propagation, then confirm in GSC).
 4. After verification, open **Sitemaps** and submit:
    ```
-   https://projectzomboidcheats.com/sitemap-index.xml
+   https://dbdcheat.net/sitemap-index.xml
    ```
 5. Use **URL Inspection** to request indexing for:
    - Homepage (`/`)
-   - Pillar page (`/project-zomboid-cheats/`)
-   - Key landing pages (`/project-zomboid-aimbot/`, `/project-zomboid-esp/`, `/project-zomboid-cheats-2026/`, etc.)
+   - Pillar page (`/dbd-cheats/`)
+   - Key landing pages (`/dbd-aimbot/`, `/dbd-esp/`, `/dbd-cheats-2026/`, etc.)
    - A sample of locale homepages (`/es/`, `/de/`, `/fr/`)
 6. Monitor **Pages** (Coverage), **Core Web Vitals**, and **International targeting** (hreflang) over the following weeks.
 
@@ -147,11 +147,11 @@ Verify redirects:
 
 - [ ] `npm run build:validate` passes locally
 - [ ] Cloudflare Pages project attached to this repo
-- [ ] Custom domain `projectzomboidcheats.com` attached and active
+- [ ] Custom domain `dbdcheat.net` attached and active
 - [ ] `www` redirects to apex
-- [ ] Legacy domains 301 to `projectzomboidcheats.com`
+- [ ] Legacy domains 301 to `dbdcheat.net`
 - [ ] Always Use HTTPS enabled
-- [ ] `robots.txt` and sitemaps serve from `https://projectzomboidcheats.com`
+- [ ] `robots.txt` and sitemaps serve from `https://dbdcheat.net`
 - [ ] Google Search Console domain verified
 - [ ] `sitemap-index.xml` submitted in GSC
-- [ ] Homepage and `/project-zomboid-cheats/` requested for indexing
+- [ ] Homepage and `/dbd-cheats/` requested for indexing

@@ -2,14 +2,16 @@
 import { getUi } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
-import { productFeatureCategories } from '../data/site';
+import { featureSectionImages } from '../data/dbd';
+import { productFeatureCategories, productFeatureDetails } from '../data/site';
+import FeatureCarousel from './FeatureCarousel.astro';
 import RelatedPages from './RelatedPages.astro';
+import { contentSrc, contentSrcSet, productMainSizes } from '../lib/responsive-images';
 
 interface Props {
 	locale?: LocaleCode;
 	showFullLink?: boolean;
 	showRelatedPages?: boolean;
-	/** On /pricing/ the page banner already has the main title — use a descriptive subheading. */
 	compactHeading?: boolean;
 }
 
@@ -20,93 +22,39 @@ const compactHeading = Astro.props.compactHeading ?? false;
 const ui = getUi(locale);
 const featuresHref = getLocalizedPath('features', locale);
 const sectionTitle = compactHeading ? 'Included in every license' : ui.nav.features;
+
+const detailByTitle = Object.fromEntries(
+	productFeatureDetails.map((section) => [section.title.toLowerCase(), section]),
+);
+
+const slides = productFeatureCategories.map((category, index) => {
+	const detail =
+		detailByTitle[category.title.toLowerCase()] ??
+		productFeatureDetails[Math.min(index, productFeatureDetails.length - 1)];
+	const shot = featureSectionImages[detail.id as keyof typeof featureSectionImages];
+	return {
+		title: category.title,
+		summary: detail.summary,
+		items: category.items,
+		imageSrc: contentSrc(shot.src),
+		imageSrcSet: contentSrcSet(shot.src),
+		imageSizes: productMainSizes,
+		imageAlt: shot.alt,
+	};
+});
 ---
 
-<section class="pricing-features" aria-labelledby="pricing-features-title">
-	<header class="pricing-features__head">
-		<h2 id="pricing-features-title" class="pricing-features__title">{sectionTitle}</h2>
-		<p class="pricing-features__subtitle">
-			Everything included for survival, multiplayer, and Knox County looting on Windows PC.
-		</p>
-		<div class="pricing-features__badges">
-			<span class="pricing-features__badge">
-				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-					<path
-						d="m9.5 12 1.8 1.8 3.7-3.8M12 3.5 5 6.5v5.2c0 4.2 2.9 7.8 7 8.8 4.1-1 7-4.6 7-8.8V6.5L12 3.5Z"
-						stroke="currentColor"
-						stroke-width="1.6"
-						stroke-linecap="round"
-						stroke-linejoin="round"></path>
-				</svg>
-				Windows 10/11
-			</span>
-			<span class="pricing-features__badge">
-				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-					<path
-						d="m9.5 12 1.8 1.8 3.7-3.8M12 3.5 5 6.5v5.2c0 4.2 2.9 7.8 7 8.8 4.1-1 7-4.6 7-8.8V6.5L12 3.5Z"
-						stroke="currentColor"
-						stroke-width="1.6"
-						stroke-linecap="round"
-						stroke-linejoin="round"></path>
-				</svg>
-				Intel/AMD
-			</span>
-		</div>
-	</header>
-
-	<div class="pricing-features__grid">
-		{
-			productFeatureCategories.map((category) => {
-				const splitAt = Math.ceil(category.items.length / 2);
-				const leftItems = category.items.slice(0, splitAt);
-				const rightItems = category.items.slice(splitAt);
-				const pairedRows = leftItems.map((leftItem, index) => ({
-					left: leftItem,
-					right: rightItems[index] ?? null,
-				}));
-
-				return (
-					<article class="pricing-features__card">
-						<h3 class="pricing-features__card-title">{category.title}</h3>
-						{category.columns === 2 ? (
-							<div class="pricing-features__list-rows">
-								{pairedRows.map(({ left, right }) => (
-									<div class="pricing-features__list-row">
-										<div class="pricing-features__list-item">
-											<span class="pricing-features__bullet" aria-hidden="true"></span>
-											<span class="pricing-features__item-text">{left}</span>
-										</div>
-										{right ? (
-											<div class="pricing-features__list-item">
-												<span class="pricing-features__bullet" aria-hidden="true"></span>
-												<span class="pricing-features__item-text">{right}</span>
-											</div>
-										) : (
-											<div class="pricing-features__list-item pricing-features__list-item--empty" aria-hidden="true"></div>
-										)}
-									</div>
-								))}
-							</div>
-						) : (
-							<ul class="pricing-features__list">
-								{category.items.map((item) => (
-									<li>
-										<span class="pricing-features__bullet" aria-hidden="true"></span>
-										<span class="pricing-features__item-text">{item}</span>
-									</li>
-								))}
-							</ul>
-						)}
-					</article>
-				);
-			})
-		}
-	</div>
+<div class="pricing-features">
+	<FeatureCarousel
+		title={sectionTitle}
+		subtitle="One license. Combat assist, ESP, and radar — nothing gated behind add-ons."
+		slides={slides}
+	/>
 
 	{
 		showFullLink && (
-			<a href={featuresHref} class="pricing-features__full-link">
-				See all features
+			<a href={featuresHref} class="pricing-features__link">
+				See full feature breakdown
 				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
 					<path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
 				</svg>
@@ -114,233 +62,31 @@ const sectionTitle = compactHeading ? 'Included in every license' : ui.nav.featu
 		)
 	}
 
-	{
-		showRelatedPages && <RelatedPages locale={locale} />
-	}
-</section>
+	{showRelatedPages && <RelatedPages locale={locale} />}
+</div>
 
 <style>
 	.pricing-features {
 		display: grid;
 		gap: 1.15rem;
 		width: 100%;
-		margin: 0;
-		padding: clamp(0.9rem, 1.8vw, 1.25rem);
-		border-radius: var(--radius-card);
-		border: 1px solid rgba(104, 112, 82, 0.14);
-		background: rgba(10, 28, 29, 0.92);
 	}
 
-	.pricing-features__head {
-		display: grid;
-		justify-items: center;
-		gap: 0.65rem;
-		text-align: center;
-	}
-
-	.pricing-features__title {
-		position: relative;
-		margin: 0;
-		padding-top: 0.85rem;
-		font-family: var(--font-display);
-		font-size: clamp(1.75rem, 3.5vw, 2.25rem);
-		font-weight: 800;
-		letter-spacing: -0.02em;
-		color: var(--color-ink);
-	}
-
-	.pricing-features__title::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 2.5rem;
-		height: 3px;
-		border-radius: 999px;
-		background: linear-gradient(90deg, #D2AE76, #687052);
-	}
-
-	.pricing-features__subtitle {
-		margin: 0;
-		max-width: 34rem;
-		color: rgba(229, 238, 238, 0.78);
-		font-size: 0.95rem;
-		line-height: 1.6;
-	}
-
-	.pricing-features__badges {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 0.5rem;
-		margin-top: 0.15rem;
-	}
-
-	.pricing-features__badge {
+	.pricing-features__link {
 		display: inline-flex;
 		align-items: center;
+		justify-content: center;
 		gap: 0.4rem;
-		padding: 0.4rem 0.8rem;
-		border-radius: 999px;
-		border: 1px solid rgba(104, 112, 82, 0.35);
-		background: rgba(104, 112, 82, 0.12);
+		justify-self: center;
+		padding: 0.55rem 0.2rem;
 		color: var(--color-orchid);
-		font-size: 0.68rem;
-		font-weight: 800;
-		letter-spacing: 0.08em;
-		text-transform: uppercase;
-	}
-
-	.pricing-features__grid {
-		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-		gap: 0.85rem;
-		align-items: stretch;
-	}
-
-	@media (max-width: 1100px) {
-		.pricing-features__grid {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-		}
-	}
-
-	.pricing-features__card {
-		padding: 1.2rem 1.25rem 1.35rem;
-		border-radius: 0.85rem;
-		border: 1px solid rgba(104, 112, 82, 0.22);
-		background: linear-gradient(145deg, rgba(23, 27, 26, 0.98) 0%, rgba(17, 21, 20, 0.98) 100%);
-		display: flex;
-		flex-direction: column;
-		transition:
-			transform 0.22s ease,
-			border-color 0.22s ease,
-			box-shadow 0.22s ease;
-	}
-
-	@media (hover: hover) and (pointer: fine) {
-		.pricing-features__card:hover {
-			transform: translateY(-4px);
-			border-color: rgba(104, 112, 82, 0.42);
-			box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
-		}
-	}
-
-	.pricing-features__card-title {
-		margin: 0 0 0.85rem;
-		padding-bottom: 0.7rem;
-		border-bottom: 1px solid rgba(104, 112, 82, 0.2);
-		font-family: var(--font-display);
-		font-size: 1.02rem;
-		font-weight: 700;
-		letter-spacing: -0.01em;
-		line-height: 1.3;
-		color: var(--color-ink);
-	}
-
-	.pricing-features__list {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		display: grid;
-		gap: 0.65rem;
-		flex: 1;
-	}
-
-	.pricing-features__list-rows {
-		display: grid;
-		gap: 0.65rem;
-		flex: 1;
-	}
-
-	.pricing-features__list-row {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		column-gap: 0.85rem;
-		align-items: start;
-	}
-
-	.pricing-features__list-item {
-		display: flex;
-		align-items: flex-start;
-		gap: 0.5rem;
-		color: rgba(255, 255, 255, 0.92);
-		font-size: 0.88rem;
-		font-weight: 500;
-		line-height: 1.45;
-		min-width: 0;
-	}
-
-	.pricing-features__list-item--empty {
-		visibility: hidden;
-	}
-
-	.pricing-features__list li {
-		display: flex;
-		align-items: flex-start;
-		gap: 0.5rem;
-		color: rgba(255, 255, 255, 0.92);
-		font-size: 0.88rem;
-		font-weight: 500;
-		line-height: 1.45;
-	}
-
-	.pricing-features__bullet {
-		flex: 0 0 0.45rem;
-		width: 0.45rem;
-		height: 0.45rem;
-		margin-top: 0.42em;
-		border-radius: 50%;
-		background: #d2ae76;
-		box-shadow: 0 0 0 2px rgba(104, 112, 82, 0.18);
-	}
-
-	.pricing-features__item-text {
-		flex: 1 1 auto;
-		min-width: 0;
-	}
-
-	.pricing-features__full-link {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		gap: 0.45rem;
-		width: 100%;
-		padding: 0.95rem 1.15rem;
-		border-radius: 0.75rem;
-		border: 1px solid rgba(104, 112, 82, 0.35);
-		background: linear-gradient(180deg, rgba(104, 112, 82, 0.22), rgba(17, 21, 20, 0.18));
-		color: var(--color-ink);
-		font-size: 0.92rem;
+		font-size: 0.9rem;
 		font-weight: 700;
 		text-decoration: none;
-		transition:
-			border-color 0.2s ease,
-			background 0.2s ease,
-			transform 0.2s ease;
+		transition: color 0.2s ease;
 	}
 
-	.pricing-features__full-link:hover {
-		border-color: rgba(104, 112, 82, 0.55);
-		background: linear-gradient(180deg, rgba(104, 112, 82, 0.32), rgba(17, 21, 20, 0.24));
-		transform: translateY(-1px);
-		color: var(--color-ink);
-	}
-
-	@media (max-width: 900px) {
-		.pricing-features__grid {
-			grid-template-columns: 1fr;
-		}
-	}
-
-	@media (max-width: 520px) {
-		.pricing-features__list-row {
-			grid-template-columns: 1fr;
-			row-gap: 0.65rem;
-		}
-
-		.pricing-features__list-item--empty {
-			display: none;
-		}
+	.pricing-features__link:hover {
+		color: var(--color-bright);
 	}
 </style>

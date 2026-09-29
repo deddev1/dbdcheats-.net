@@ -1,5 +1,5 @@
 import { siteConfig } from '../site';
-import { zomboidImages } from '../zomboid';
+import { dbdImages } from '../dbd';
 import {
 	defaultLocale,
 	localeCodes,
@@ -10,16 +10,16 @@ import type { BlogImageKey, BlogPostDefinition, BlogTranslation, ResolvedBlogPos
 import { blogPosts as rawBlogPosts } from './posts.generated';
 
 const imageMap: Record<BlogImageKey, string> = {
-	hero: zomboidImages.hero,
-	espWallhack: zomboidImages.espWallhack,
-	aimbotCombat: zomboidImages.aimbotCombat,
-	squadFight: zomboidImages.squadFight,
-	headerArt: zomboidImages.headerArt,
-	cheatsPackage: zomboidImages.cheatsPackage,
-	playerEsp: zomboidImages.playerEsp,
-	rebootFight: zomboidImages.rebootFight,
-	battleRoyaleCombat: zomboidImages.battleRoyaleCombat,
-	battleRoyaleIslandMap: zomboidImages.battleRoyaleIsland,
+	hero: dbdImages.hero,
+	espWallhack: dbdImages.espWallhack,
+	aimbotCombat: dbdImages.aimbotCombat,
+	squadFight: dbdImages.squadFight,
+	headerArt: dbdImages.headerArt,
+	cheatsPackage: dbdImages.cheatsPackage,
+	playerEsp: dbdImages.playerEsp,
+	rebootFight: dbdImages.rebootFight,
+	battleRoyaleCombat: dbdImages.battleRoyaleCombat,
+	battleRoyaleIslandMap: dbdImages.battleRoyaleIsland,
 };
 
 function expandTranslations(
@@ -167,8 +167,8 @@ export function getBlogSitemapEntries() {
 			images: [
 				{
 					url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
-					title: 'Project Zomboid Cheats Intel blog',
-					caption: 'Project Zomboid Intel blog covering meta guides, ESP, Aimbot, and EAC notes',
+					title: 'Dead by Daylight Cheats Intel blog',
+					caption: 'DBD Intel blog covering meta guides, ESP, Aimbot, and EAC notes',
 				},
 			],
 		},

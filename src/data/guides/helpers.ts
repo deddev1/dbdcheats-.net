@@ -6,40 +6,40 @@ import { externalGuidePosts } from './posts.generated';
 import type { ExternalGuidePost, ResolvedExternalGuide } from './types';
 
 export const guidesBasePath = '/guides/';
-export const NATIVE_GAME_GUIDES_CATEGORY = 'Project Zomboid Game Guides';
+export const NATIVE_GAME_GUIDES_CATEGORY = 'Dead by Daylight Game Guides';
 
-/** Trusted third-party Project Zomboid resources shown below native guides on /guides/. */
-export const zomboidAuthorityLinks = [
+/** Trusted third-party Dead by Daylight resources shown below native guides on /guides/. */
+export const dbdAuthorityLinks = [
 	{
-		title: 'Project Zomboid on Steam',
+		title: 'Dead by Daylight on Steam',
 		description: 'Official store page, system requirements, and player reviews.',
-		href: 'https://store.steampowered.com/app/108600/Project_Zomboid/',
+		href: 'https://store.steampowered.com/app/381210/Dead_by_Daylight/',
 	},
 	{
-		title: 'Project Zomboid patch notes & news',
+		title: 'Dead by Daylight patch notes & news',
 		description: 'Read official PC update posts before you change your loadout.',
-		href: 'https://projectzomboid.com/blog/',
+		href: 'https://forum.deadbydaylight.com/en/categories/patch-notes',
 	},
 	{
-		title: 'Official Project Zomboid website',
-		description: 'Game overview, news, and resources from The Indie Stone.',
-		href: 'https://projectzomboid.com/',
+		title: 'Official Dead by Daylight website',
+		description: 'Game overview, news, and resources from Behaviour Interactive.',
+		href: 'https://deadbydaylight.com/',
 	},
 	{
-		title: 'Project Zomboid Steam community hub',
+		title: 'Dead by Daylight Steam community hub',
 		description: 'Announcements, guides, and community discussions.',
-		href: 'https://steamcommunity.com/app/108600',
+		href: 'https://steamcommunity.com/app/381210',
 	},
 ] as const;
 
-/** Pedagogical order for native Project Zomboid guides on the hub. */
+/** Pedagogical order for native Dead by Daylight guides on the hub. */
 const NATIVE_GUIDE_ORDER = [
-	'project-zomboid-new-player-guide',
-	'project-zomboid-gameplay-modes-explained',
-	'project-zomboid-zombie-types-guide',
-	'project-zomboid-loot-farming-guide',
-	'project-zomboid-survival-beginners-guide',
-	'project-zomboid-patch-notes-guide',
+	'dbd-new-player-guide',
+	'dbd-game-modes-explained',
+	'dbd-killer-roster-guide',
+	'dbd-totem-generator-guide',
+	'dbd-survivor-beginners-guide',
+	'dbd-patch-notes-guide',
 ];
 
 export function getGuidePath(slug: string): string {
@@ -69,8 +69,8 @@ export function getExternalGuideBySlug(slug: string): ResolvedExternalGuide | un
 	return post ? resolveExternalGuide(post) : undefined;
 }
 
-/** Native Project Zomboid game guides from the blog — shown at top of /guides/. */
-export function getNativeZomboidGuides() {
+/** Native Dead by Daylight game guides from the blog — shown at top of /guides/. */
+export function getNativeDbdGuides() {
 	const guides = getPostsByCategory(defaultLocale, NATIVE_GAME_GUIDES_CATEGORY);
 	const order = new Map(NATIVE_GUIDE_ORDER.map((id, index) => [id, index]));
 	return [...guides].sort((a, b) => {
@@ -144,7 +144,7 @@ export function getGuidesSitemapEntries() {
 				{
 					url: new URL(siteConfig.defaultOgImage, siteConfig.url).href,
 					title: 'Game guides hub',
-					caption: 'Project Zomboid survival and gameplay guides',
+					caption: 'Dead by Daylight survival and gameplay guides',
 				},
 			],
 		},

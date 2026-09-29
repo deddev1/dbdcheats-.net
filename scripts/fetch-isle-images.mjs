@@ -27,27 +27,27 @@ const STEAM_SHOTS = [
 
 /** Map existing SEO filenames → Steam screenshot index */
 const TARGETS = [
-	{ file: 'zomboid-cheats-hero.webp', shot: 0 },
-	{ file: 'zomboid-esp-overlay.webp', shot: 1 },
-	{ file: 'zomboid-esp-zombies.webp', shot: 2 },
-	{ file: 'zomboid-esp-modules.webp', shot: 3 },
-	{ file: 'zomboid-aimbot-menu.webp', shot: 4 },
+	{ file: 'dbd-cheats-hero.webp', shot: 0 },
+	{ file: 'dbd-esp-overlay.webp', shot: 1 },
+	{ file: 'dbd-esp-killers.webp', shot: 2 },
+	{ file: 'dbd-esp-modules.webp', shot: 3 },
+	{ file: 'dbd-aimbot-menu.webp', shot: 4 },
 	{ file: 'rust-recoil-trainer.webp', shot: 5 },
-	{ file: 'project-zomboid-aimbot-ui.webp', shot: 6 },
-	{ file: 'project-zomboid-wallhack-ui.webp', shot: 7 },
-	{ file: 'project-zomboid-cheats-menu.webp', shot: 8 },
-	{ file: 'project-zomboid-cheats-dashboard.webp', shot: 8 },
-	{ file: 'project-zomboid-cheats-cover.webp', shot: 9 },
-	{ file: 'project-zomboid-cheats-panel.webp', shot: 10 },
-	{ file: 'project-zomboid-cheats-status.webp', shot: 11 },
-	{ file: 'project-zomboid-radar-ui.webp', shot: 2 },
-	{ file: 'project-zomboid-soft-aim-ui.webp', shot: 4 },
-	{ file: 'project-zomboid-cheats-dashboard.webp', shot: 1 },
+	{ file: 'dbd-aimbot-ui.webp', shot: 6 },
+	{ file: 'dbd-wallhack-ui.webp', shot: 7 },
+	{ file: 'dbd-cheats-menu.webp', shot: 8 },
+	{ file: 'dbd-cheats-dashboard.webp', shot: 8 },
+	{ file: 'dbd-cheats-cover.webp', shot: 9 },
+	{ file: 'dbd-cheats-panel.webp', shot: 10 },
+	{ file: 'dbd-cheats-status.webp', shot: 11 },
+	{ file: 'dbd-radar-ui.webp', shot: 2 },
+	{ file: 'dbd-soft-aim-ui.webp', shot: 4 },
+	{ file: 'dbd-cheats-dashboard.webp', shot: 1 },
 ];
 
 async function fetchBuffer(url) {
 	const res = await fetch(url, {
-		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Project Zomboid CheatsSite/1.0)' },
+		headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Dead by Daylight CheatsSite/1.0)' },
 	});
 	if (!res.ok) throw new Error(`Failed ${url}: ${res.status}`);
 	return Buffer.from(await res.arrayBuffer());

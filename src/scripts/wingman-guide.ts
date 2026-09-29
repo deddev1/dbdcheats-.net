@@ -1,4 +1,4 @@
-/** Spiffo wingman — slides in from the right with a short tagline. */
+/** The Legion wingman — slides in from the right with a short tagline. */
 import { wingmanConfig } from '../data/wingman';
 
 let hideTimer: ReturnType<typeof setTimeout> | undefined;
