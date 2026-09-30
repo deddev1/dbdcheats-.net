@@ -144,9 +144,17 @@ export function shouldSkipLocaleRedirect(pathname: string): boolean {
 	return SKIP_PREFIXES.some((prefix) => pathname === prefix || pathname.startsWith(prefix));
 }
 
+/** Crawlers must never be soft-redirected by locale detection (GSC Page fetch). */
+export function isCrawlerUserAgent(userAgent: string | null | undefined): boolean {
+	if (!userAgent) return false;
+	return /googlebot|google-inspectiontool|storebot-google|adsbot-google|apis-google|bingbot|bingpreview|slurp|duckduckbot|baiduspider|yandex|sogou|facebookexternalhit|facebot|twitterbot|linkedinbot|embedly|quora link preview|pinterest|redditbot|applebot|semrush|ahrefs|dotbot|rogerbot|gptbot|claudebot|perplexity|bytespider|petalbot|crawler|spider|bot\b/i.test(
+		userAgent,
+	);
+}
+
 /**
- * Returns a redirect target when the visitor's preferred locale differs from the
- * page locale. Respects `fc_locale` cookie and `?lang=` query overrides.
+ * Returns a redirect target when the visitor already chose a locale via `fc_locale`.
+ * Does not use Accept-Language or geo — those soft redirects broke Google Page fetch.
  */
 export function getLocaleRedirectTarget(
 	pathname: string,
@@ -155,9 +163,11 @@ export function getLocaleRedirectTarget(
 		acceptLanguage?: string | null;
 		cookie?: string | null;
 		country?: string | null;
+		userAgent?: string | null;
 	},
 ): string | null {
 	if (shouldSkipLocaleRedirect(pathname)) return null;
+	if (isCrawlerUserAgent(headers.userAgent)) return null;
 
 	const params = new URLSearchParams(search.startsWith('?') ? search.slice(1) : search);
 	if (params.has('noredirect')) return null;
@@ -165,9 +175,10 @@ export function getLocaleRedirectTarget(
 	const langParam = params.get('lang');
 	if (langParam && isLocaleCode(langParam)) return null;
 
-	const { locale: currentLocale, pageId } = resolvePathContext(pathname);
-	const preferred = detectPreferredLocale(headers);
+	const preferred = parseLocaleCookie(headers.cookie ?? null);
+	if (!preferred) return null;
 
+	const { locale: currentLocale, pageId } = resolvePathContext(pathname);
 	if (preferred === currentLocale) return null;
 
 	const targetPath = getLocalizedPath(pageId, preferred);

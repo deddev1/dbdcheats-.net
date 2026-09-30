@@ -20,6 +20,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
 				acceptLanguage: request.headers.get('accept-language'),
 				cookie: request.headers.get('cookie'),
 				country: request.headers.get('cf-ipcountry'),
+				userAgent: request.headers.get('user-agent'),
 			});
 
 			if (redirectTarget) {
