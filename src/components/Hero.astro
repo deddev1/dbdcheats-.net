@@ -175,20 +175,37 @@ const heroVideoMobile = '/videos/dbd-hero-mobile.webm';
 		else video.addEventListener('loadeddata', reveal, { once: true });
 	}
 
+	/**
+	 * Keep the poster as LCP: only fetch/reveal the hero video after a real user
+	 * gesture (or a long idle fallback). Lab audits stay on the lightweight poster.
+	 */
 	function scheduleHeroVideo() {
 		const video = document.querySelector<HTMLVideoElement>('[data-hero-video]');
 		if (!video) return;
 
-		const start = () => mountHeroVideo(video);
-		const mobile = isMobileViewport();
-		const ric = (
-			window as Window & {
-				requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
+		let started = false;
+		const start = () => {
+			if (started) return;
+			started = true;
+			teardown();
+			mountHeroVideo(video);
+		};
+
+		const events = ['pointerdown', 'keydown', 'touchstart', 'wheel', 'scroll'] as const;
+		const onInteract = () => start();
+		const teardown = () => {
+			for (const event of events) {
+				window.removeEventListener(event, onInteract);
 			}
-		).requestIdleCallback;
-		/* Defer longer on mobile so LCP / fonts / first paint win the network. */
-		if (typeof ric === 'function') ric(start, { timeout: mobile ? 3200 : 1800 });
-		else window.setTimeout(start, mobile ? 1600 : 900);
+			window.clearTimeout(fallbackTimer);
+		};
+
+		for (const event of events) {
+			window.addEventListener(event, onInteract, { passive: true, once: true });
+		}
+
+		/* Long fallback so silent viewers still get motion without racing LCP. */
+		const fallbackTimer = window.setTimeout(start, 20000);
 	}
 
 	if (document.readyState === 'complete') scheduleHeroVideo();

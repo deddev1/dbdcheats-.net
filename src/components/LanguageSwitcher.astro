@@ -14,7 +14,7 @@ const ui = getUi(currentLocale);
 ---
 
 <details class="lang-switcher">
-	<summary class="lang-switcher__toggle" aria-label={ui.common.language}>
+	<summary class="lang-switcher__toggle">
 		<svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
 			<circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle>
 			<path
@@ -23,6 +23,7 @@ const ui = getUi(currentLocale);
 				stroke-width="1.6"></path>
 		</svg>
 		<span>{currentMeta.nativeName}</span>
+		<span class="sr-only"> — {ui.common.language}</span>
 	</summary>
 	<div class="lang-switcher__panel">
 		<p class="lang-switcher__note">{ui.common.officialLanguageNote}</p>

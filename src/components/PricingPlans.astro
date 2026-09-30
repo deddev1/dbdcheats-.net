@@ -80,7 +80,6 @@ const featurePills = [
 					<button
 						type="button"
 						class:list={['pricing-showcase__thumb', { 'is-active': index === 0 }]}
-						aria-label={image.alt}
 						aria-pressed={index === 0 ? 'true' : 'false'}
 						data-thumb
 						data-src={image.displaySrc}
@@ -88,13 +87,13 @@ const featurePills = [
 						data-alt={image.alt}
 					>
 						<img
-							src={image.displaySrc}
+							src={image.displaySrcSet ? image.displaySrcSet.split(',')[0].trim().split(' ')[0] : image.displaySrc}
 							srcset={image.displaySrcSet}
-							alt=""
+							alt={image.alt}
 							sizes={productThumbSizes}
 							width="320"
 							height="200"
-							loading={index === 0 ? 'eager' : 'lazy'}
+							loading="lazy"
 							decoding="async"
 						/>
 					</button>

@@ -71,7 +71,8 @@ const seeAllLabel = reviewsUi.seeAll ?? 'See all reviews';
 							<time datetime={review.date}>{formatReviewDate(review.date)}</time>
 						</p>
 					</div>
-					<p class="reviews__stars" aria-label={`${review.rating} out of 5 stars`}>
+					<p class="reviews__stars">
+						<span class="sr-only">{`${review.rating} out of 5 stars`}</span>
 						<span aria-hidden="true">{stars(review.rating)}</span>
 					</p>
 					<p class="reviews__text">{review.short}</p>

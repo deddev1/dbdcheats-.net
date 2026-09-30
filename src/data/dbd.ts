@@ -11,7 +11,7 @@ export type DbdScreenshot = {
 	title: string;
 };
 
-/** Dead by Daylight cheat gameplay screenshots — hosted on Supabase CDN. */
+/** Dead by Daylight cheat gameplay screenshots — local optimized WebP. */
 export const dbdScreenshots = {
 	mainMenu: g.espFullMapLabels,
 	espOverlay: g.espSurvivorsThroughTrees,

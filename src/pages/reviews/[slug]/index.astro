@@ -87,7 +87,8 @@ const extraGraph: Record<string, unknown>[] = [
 					<div class="review-detail__meta">
 						<h1 class="review-detail__title">{review.title}</h1>
 						<p class="review-detail__author">@{review.handle}</p>
-						<p class="review-detail__stars" aria-label={`${review.rating} out of 5 stars`}>
+						<p class="review-detail__stars">
+							<span class="sr-only">{`${review.rating} out of 5 stars`}</span>
 							<span aria-hidden="true">{stars(review.rating)}</span>
 						</p>
 						<p class="review-detail__date">
@@ -120,8 +121,9 @@ const extraGraph: Record<string, unknown>[] = [
 							<a class="review-detail__more-card" href={getReviewPath(other.slug)}>
 								<span class="review-detail__more-top">
 									<span class="review-detail__more-handle">@{other.handle}</span>
-									<span class="review-detail__more-stars" aria-label={`${other.rating} out of 5 stars`}>
-										{stars(other.rating)}
+									<span class="review-detail__more-stars">
+										<span class="sr-only">{`${other.rating} out of 5 stars`}</span>
+										<span aria-hidden="true">{stars(other.rating)}</span>
 									</span>
 								</span>
 								<span class="review-detail__more-text">{other.short}</span>

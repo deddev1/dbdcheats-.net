@@ -7,7 +7,6 @@ import I18nHead from '../components/I18nHead.astro';
 import LocaleSuggest from '../components/LocaleSuggest.astro';
 import { defaultLocale, localeMap, locales, type LocaleCode } from '../data/i18n/locales';
 import type { PageId } from '../data/i18n/content.generated';
-import { SUPABASE_CDN_ORIGIN } from '../lib/performance';
 
 interface Crumb {
 	label: string;
@@ -163,16 +162,14 @@ if (softwareNode) {
 		{keywords && <meta name="keywords" content={keywords} />}
 		<meta name="author" content={siteConfig.name} />
 		<link rel="canonical" href={canonicalURL} />
-		<link rel="dns-prefetch" href={SUPABASE_CDN_ORIGIN} />
-		<link rel="preconnect" href={SUPABASE_CDN_ORIGIN} crossorigin />
 		{pageId && <I18nHead pageId={pageId} locale={locale} />}
-		<link rel="icon" href="/favicon.ico" sizes="any" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-		<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
-		<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" href="/favicon.ico?v=dbd2" sizes="any" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=dbd2" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=dbd2" />
+		<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=dbd2" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png?v=dbd2" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png?v=dbd2" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=dbd2" />
 		<link rel="sitemap" type="application/xml" title="Sitemap Index" href="/sitemap-index.xml" />
 		<link rel="sitemap" type="application/xml" title="Page Sitemap" href="/sitemap.xml" />
 		<link rel="sitemap" type="application/xml" title="Image Sitemap" href="/sitemap-images.xml" />
@@ -242,7 +239,20 @@ if (softwareNode) {
 		)}
 
 		<title>{title}</title>
-		<script is:inline src="/trusted-types-policy.js"></script>
+		<script is:inline>
+			(() => {
+				if (!window.trustedTypes || !window.trustedTypes.createPolicy) return;
+				try {
+					window.trustedTypes.createPolicy('default', {
+						createHTML: (input) => input,
+						createScript: (input) => input,
+						createScriptURL: (input) => input,
+					});
+				} catch {
+					/* Policy may already exist from a previous navigation. */
+				}
+			})();
+		</script>
 	</head>
 	<body data-page-id={pageId ?? ''}>
 		{pageId && <LocaleSuggest currentLocale={locale} pageId={pageId} />}
